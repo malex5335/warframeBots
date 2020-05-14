@@ -15,13 +15,7 @@ public class NoraNight extends BasicBot {
         super(NoraNight.TOKEN, NoraNight.GUILD_ID, NoraNight.CHANNEL_ID);
     }
 
-    public static void main(String[] args) {
-        NoraNight noraNight = new NoraNight();
-        //noraNight.connect();
-        setUpTasks();
-    }
-
-    private static void setUpTasks() {
+    public static void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new DailyReminder(),
                 getNextStart(3),

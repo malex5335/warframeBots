@@ -13,12 +13,7 @@ public class BaroKiTeer extends BasicBot {
         super(BaroKiTeer.TOKEN, BaroKiTeer.GUILD_ID, BaroKiTeer.CHANNEL_ID);
     }
 
-    public static void main(String[] args) {
-        BaroKiTeer baroKiTeer = new BaroKiTeer();
-        baroKiTeer.connect();
-        setUpTasks();
-    }
-    private static void setUpTasks() {
+    public static void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(),
                 getNextStart(16),
