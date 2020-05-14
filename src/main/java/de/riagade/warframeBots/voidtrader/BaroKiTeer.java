@@ -5,6 +5,7 @@ import net.dv8tion.jda.api.events.DisconnectEvent;
 import net.dv8tion.jda.api.events.ReadyEvent;
 
 import javax.annotation.Nonnull;
+import java.sql.ResultSetMetaData;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -17,21 +18,12 @@ public class BaroKiTeer extends BasicBot {
         super(BaroKiTeer.TOKEN, BaroKiTeer.GUILD_ID, BaroKiTeer.CHANNEL_ID);
     }
 
-    public static void setUpTasks() {
+    public void setUpTasks() {
+        sendMessage("Browsing is always free. How fortunate for you.");
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(),
                 getNextStart(16),
                 TimeUnit.DAYS.toMillis(14));
-    }
-
-    @Override
-    public void onReady(@Nonnull ReadyEvent event) {
-        sendMessage("Browsing is always free. How fortunate for you.");
-    }
-
-    @Override
-    public void onDisconnect(@Nonnull DisconnectEvent event) {
-        sendMessage("I'm afraid I must be off; the Void is calling my name.");
     }
 
 }

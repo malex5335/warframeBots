@@ -17,7 +17,8 @@ public class NoraNight extends BasicBot {
         super(NoraNight.TOKEN, NoraNight.GUILD_ID, NoraNight.CHANNEL_ID);
     }
 
-    public static void setUpTasks() {
+    public void setUpTasks() {
+        sendMessage("It's that time again, Dreamers.");
         new Timer().scheduleAtFixedRate(
                 new DailyReminder(),
                 getNextStart(3),
@@ -26,15 +27,5 @@ public class NoraNight extends BasicBot {
                 new WeeklyReminder(),
                 getNextStart(3),
                 TimeUnit.DAYS.toMillis(7));
-    }
-
-    @Override
-    public void onReady(@Nonnull ReadyEvent event) {
-        sendMessage("It's that time again, Dreamers.");
-    }
-
-    @Override
-    public void onDisconnect(@Nonnull DisconnectEvent event) {
-        sendMessage("It's time for Nora to say good night.");
     }
 }
