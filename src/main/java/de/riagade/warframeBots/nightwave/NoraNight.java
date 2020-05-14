@@ -1,7 +1,10 @@
 package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.BasicBot;
+import net.dv8tion.jda.api.events.DisconnectEvent;
+import net.dv8tion.jda.api.events.ReadyEvent;
 
+import javax.annotation.Nonnull;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -25,4 +28,13 @@ public class NoraNight extends BasicBot {
                 TimeUnit.DAYS.toMillis(7));
     }
 
+    @Override
+    public void onReady(@Nonnull ReadyEvent event) {
+        sendMessage("It's that time again, Dreamers.");
+    }
+
+    @Override
+    public void onDisconnect(@Nonnull DisconnectEvent event) {
+        sendMessage("It's time for Nora to say good night.");
+    }
 }
