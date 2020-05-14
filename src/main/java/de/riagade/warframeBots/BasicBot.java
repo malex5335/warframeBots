@@ -55,6 +55,7 @@ public class BasicBot extends ListenerAdapter {
     public void connect(){
         try {
             setJda(new JDABuilder(getBotToken()).build());
+            getJda().setAutoReconnect(true);
             getJda().awaitReady();
         } catch (LoginException e){
             e.printStackTrace();
@@ -68,6 +69,7 @@ public class BasicBot extends ListenerAdapter {
     }
 
     public void sendMessage(String msg){
+
         getJda().getTextChannelById(getChannelId()).sendMessage(msg).queue();
     }
 
