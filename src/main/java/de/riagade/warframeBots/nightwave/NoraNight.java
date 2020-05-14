@@ -1,10 +1,6 @@
 package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.BasicBot;
-import net.dv8tion.jda.api.events.DisconnectEvent;
-import net.dv8tion.jda.api.events.ReadyEvent;
-
-import javax.annotation.Nonnull;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +14,6 @@ public class NoraNight extends BasicBot {
     }
 
     public void setUpTasks() {
-        sendMessage("It's that time again, Dreamers.");
         new Timer().scheduleAtFixedRate(
                 new DailyReminder(),
                 getNextStart(3),

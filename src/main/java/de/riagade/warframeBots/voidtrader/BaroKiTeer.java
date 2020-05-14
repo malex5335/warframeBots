@@ -1,11 +1,6 @@
 package de.riagade.warframeBots.voidtrader;
 
 import de.riagade.warframeBots.BasicBot;
-import net.dv8tion.jda.api.events.DisconnectEvent;
-import net.dv8tion.jda.api.events.ReadyEvent;
-
-import javax.annotation.Nonnull;
-import java.sql.ResultSetMetaData;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +14,6 @@ public class BaroKiTeer extends BasicBot {
     }
 
     public void setUpTasks() {
-        sendMessage("Browsing is always free. How fortunate for you.");
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(),
                 getNextStart(16),
