@@ -6,12 +6,12 @@ import de.riagade.warframeBots.voidtrader.BaroKiTeer;
 public class MainClass {
     public static void main(String[] args) {
         NoraNight noraNight = new NoraNight();
-        //noraNight.connect();
+        noraNight.connect();
         noraNight.setUpTasks();
 
 
         BaroKiTeer baroKiTeer = new BaroKiTeer();
-        //baroKiTeer.connect();
+        baroKiTeer.connect();
         baroKiTeer.setUpTasks();
     }
 }
