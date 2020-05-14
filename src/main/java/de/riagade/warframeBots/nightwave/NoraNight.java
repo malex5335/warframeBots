@@ -1,6 +1,8 @@
 package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.BasicBot;
+
+import java.util.Calendar;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -15,11 +17,11 @@ public class NoraNight extends BasicBot {
 
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
-                new DailyReminder(),
+                new DailyReminder(this),
                 getNextStart(3),
                 TimeUnit.DAYS.toMillis(1));
         new Timer().scheduleAtFixedRate(
-                new WeeklyReminder(),
+                new WeeklyReminder(this),
                 getNextStart(3),
                 TimeUnit.DAYS.toMillis(7));
     }
