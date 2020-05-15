@@ -1,6 +1,6 @@
 package de.riagade.warframeBots.nightwave;
 
-import de.riagade.warframeBots.BasicBot;
+import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.nightwave.util.ChallengeDescriptor;
 import de.riagade.warframeBots.nightwave.util.E_MissionType;
 import de.riagade.warframeBots.nightwave.util.Mission;

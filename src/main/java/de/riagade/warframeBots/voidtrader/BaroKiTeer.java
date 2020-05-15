@@ -1,6 +1,6 @@
 package de.riagade.warframeBots.voidtrader;
 
-import de.riagade.warframeBots.BasicBot;
+import de.riagade.warframeBots.util.BasicBot;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -14,6 +14,12 @@ public class BaroKiTeer extends BasicBot {
 
     public BaroKiTeer() {
         super(BaroKiTeer.TOKEN, BaroKiTeer.GUILD_ID, BaroKiTeer.CHANNEL_ID);
+    }
+
+    public static void injectInstance() {
+        BaroKiTeer baroKiTeer = new BaroKiTeer();
+        baroKiTeer.connect();
+        baroKiTeer.setUpTasks();
     }
 
     public void setUpTasks() {

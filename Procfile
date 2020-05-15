@@ -1,1 +1,1 @@
-worker: java $JAVA_OPTS -cp target/classes:target/dependency/* de.riagade.warframeBots.MainClass
+worker: java $JAVA_OPTS -cp target/classes:target/dependency/* de.riagade.warframeBots.BotInjector

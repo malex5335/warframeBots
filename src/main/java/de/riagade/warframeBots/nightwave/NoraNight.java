@@ -1,6 +1,6 @@
 package de.riagade.warframeBots.nightwave;
 
-import de.riagade.warframeBots.BasicBot;
+import de.riagade.warframeBots.util.BasicBot;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -14,6 +14,12 @@ public class NoraNight extends BasicBot {
 
     public NoraNight() {
         super(NoraNight.TOKEN, NoraNight.GUILD_ID, NoraNight.CHANNEL_ID);
+    }
+
+    public static void injectInstance() {
+        NoraNight noraNight = new NoraNight();
+        noraNight.connect();
+        noraNight.setUpTasks();
     }
 
     public void setUpTasks() {

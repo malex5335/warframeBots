@@ -1,6 +1,6 @@
 package de.riagade.warframeBots.nightwave.util;
 
-import de.riagade.warframeBots.BasicBot;
+import de.riagade.warframeBots.util.BasicBot;
 
 public class Mission {
     private String name, description;

@@ -1,7 +1,7 @@
 package de.riagade.warframeBots.nightwave.util;
 
 public enum E_MissionType {
-    DAILY(0), WEEKLY(1), ELITE(2);
+    DAILY(1000), WEEKLY(4500), ELITE(7000);
     private int value;
 
     E_MissionType(int value){
@@ -15,4 +15,5 @@ public enum E_MissionType {
     private void setValue(int value) {
         this.value = value;
     }
+
 }
