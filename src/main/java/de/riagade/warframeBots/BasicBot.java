@@ -57,7 +57,7 @@ public class BasicBot extends ListenerAdapter {
             JDABuilder builder = new JDABuilder(AccountType.BOT);
             builder.setToken(getBotToken());
             builder.setAutoReconnect(true);
-            builder.setStatus(OnlineStatus.IDLE);
+            builder.setStatus(OnlineStatus.ONLINE);
             setJda(builder.build());
             getJda().awaitReady();
         } catch (LoginException e){
