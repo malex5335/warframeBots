@@ -9,7 +9,6 @@ public class MainClass {
         noraNight.connect();
         noraNight.setUpTasks();
 
-
         BaroKiTeer baroKiTeer = new BaroKiTeer();
         baroKiTeer.connect();
         baroKiTeer.setUpTasks();

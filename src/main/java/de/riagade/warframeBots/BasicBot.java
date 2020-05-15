@@ -1,12 +1,12 @@
 package de.riagade.warframeBots;
 
+import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import javax.security.auth.login.LoginException;
-import java.util.Calendar;
-import java.util.Date;
 
 
 public class BasicBot extends ListenerAdapter {
@@ -52,10 +52,13 @@ public class BasicBot extends ListenerAdapter {
         this.jda = jda;
     }
 
-    public void connect(){
+    public void connect() {
         try {
-            setJda(new JDABuilder(getBotToken()).build());
-            getJda().setAutoReconnect(true);
+            JDABuilder builder = new JDABuilder(AccountType.BOT);
+            builder.setToken(getBotToken());
+            builder.setAutoReconnect(true);
+            builder.setStatus(OnlineStatus.IDLE);
+            setJda(builder.build());
             getJda().awaitReady();
         } catch (LoginException e){
             e.printStackTrace();
@@ -64,25 +67,12 @@ public class BasicBot extends ListenerAdapter {
         }
     }
 
-    public void disconnect(){
+    public void disconnect() {
         getJda().shutdown();
     }
 
-    public void sendMessage(String msg){
-
+    public void sendMessage(String msg) {
         getJda().getTextChannelById(getChannelId()).sendMessage(msg).queue();
-    }
-
-    public static Date getNextStart(int hourOfDay){
-        Calendar nextStart = Calendar.getInstance();
-        if (nextStart.get(Calendar.HOUR_OF_DAY) >= hourOfDay) {
-            nextStart.add(Calendar.DAY_OF_YEAR, 1);
-        }
-        nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        nextStart.set(Calendar.MINUTE, 0);
-        nextStart.set(Calendar.SECOND, 0);
-        nextStart.set(Calendar.MILLISECOND, 0);
-        return nextStart.getTime();
     }
 
 }

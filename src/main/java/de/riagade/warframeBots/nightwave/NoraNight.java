@@ -3,6 +3,7 @@ package de.riagade.warframeBots.nightwave;
 import de.riagade.warframeBots.BasicBot;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +23,34 @@ public class NoraNight extends BasicBot {
                 TimeUnit.DAYS.toMillis(1));
         new Timer().scheduleAtFixedRate(
                 new WeeklyReminder(this),
-                getNextStart(3),
+                getNextStartWeekly(3),
                 TimeUnit.DAYS.toMillis(7));
     }
+
+    public static Date getNextStart(int hourOfDay){
+        Calendar nextStart = Calendar.getInstance();
+        if (nextStart.get(Calendar.HOUR_OF_DAY) >= hourOfDay) {
+            nextStart.add(Calendar.DAY_OF_YEAR, 1);
+        }
+        nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
+        nextStart.set(Calendar.MINUTE, 0);
+        nextStart.set(Calendar.SECOND, 0);
+        nextStart.set(Calendar.MILLISECOND, 0);
+        return nextStart.getTime();
+    }
+
+    public static Date getNextStartWeekly(int hourOfDay){
+        Calendar nextStart = Calendar.getInstance();
+        if (!(nextStart.get(Calendar.HOUR_OF_DAY) < hourOfDay
+                && nextStart.get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)) {
+            nextStart.add(Calendar.WEEK_OF_YEAR, 1);
+            nextStart.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        }
+        nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
+        nextStart.set(Calendar.MINUTE, 0);
+        nextStart.set(Calendar.SECOND, 0);
+        nextStart.set(Calendar.MILLISECOND, 0);
+        return nextStart.getTime();
+    }
+
 }

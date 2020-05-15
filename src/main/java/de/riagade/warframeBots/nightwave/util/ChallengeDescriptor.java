@@ -26,7 +26,7 @@ public class ChallengeDescriptor {
         descriptionMap.put("","Play 1 Emote");
         descriptionMap.put("","While piloting a hijacked Crewship, destroy 3 enemy Fighters");
         descriptionMap.put("","Collect 100 Resources");
-        descriptionMap.put("","Kill 20 Enemies while Aim Gliding");
+        descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyAimGlide","Kill 20 Enemies while Aim Gliding");
         descriptionMap.put("","Deploy a Glyph");
         descriptionMap.put("","Hack 8 Consoles");
         descriptionMap.put("","Complete a Mission with only a Primary Weapon equipped");
