@@ -4,6 +4,7 @@ import de.riagade.warframeBots.util.BasicBot;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
@@ -11,9 +12,10 @@ public class BaroKiTeer extends BasicBot {
     public static final String TOKEN = "NzEwNDMzODk1OTUwMDU3NTU0.Xr0hUg.OR5hNFw4jpL8CODqne-6zvCnToM";
     public static final long GUILD_ID = 564803688301068288L;
     public static final long CHANNEL_ID = 571408897420820513L;
+    public static final Locale LOCALE = Locale.GERMANY;
 
     public BaroKiTeer() {
-        super(BaroKiTeer.TOKEN, BaroKiTeer.GUILD_ID, BaroKiTeer.CHANNEL_ID);
+        super(BaroKiTeer.TOKEN, BaroKiTeer.GUILD_ID, BaroKiTeer.CHANNEL_ID, BaroKiTeer.LOCALE);
     }
 
     public static void injectInstance() {
@@ -30,7 +32,7 @@ public class BaroKiTeer extends BasicBot {
     }
 
     public static Date getNextStartBiWeekly(int hourOfDay){
-        Calendar nextStart = Calendar.getInstance();
+        Calendar nextStart = Calendar.getInstance(BaroKiTeer.LOCALE);
         if(nextStart.get(Calendar.WEEK_OF_YEAR) % 2 == 0){
             if(nextStart.get(Calendar.HOUR_OF_DAY) >= hourOfDay
                     && nextStart.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY) {

@@ -23,7 +23,7 @@ public class ChallengeDescriptor {
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Pick up 20 Energy Orbs");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Complete 3 Transmutations");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Kill 10 Enemies with Finishers");
-        descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Play 1 Emote");
+        descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlayEmote","Play 1 Emote");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","While piloting a hijacked Crewship, destroy 3 enemy Fighters");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Collect 100 Resources");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyAimGlide","Kill 20 Enemies while Aim Gliding");

@@ -5,14 +5,15 @@ import de.riagade.warframeBots.nightwave.util.ChallengeDescriptor;
 import de.riagade.warframeBots.nightwave.util.E_MissionType;
 import de.riagade.warframeBots.nightwave.util.Mission;
 import de.riagade.warframeBots.util.GenericJSONParser;
+import org.codehaus.plexus.util.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TimerTask;
+import java.util.*;
 
 public class DailyReminder extends TimerTask {
+    private static final boolean ONLY_REMIND_LAST = Boolean.TRUE;
+
     private BasicBot bot;
 
     public DailyReminder(BasicBot bot) {
@@ -30,8 +31,12 @@ public class DailyReminder extends TimerTask {
     @Override
     public void run() {
         List<Mission> missionList = generateMissions("http://content.warframe.com/dynamic/worldState.php");
-        for(Mission mission : missionList){
-            mission.sendMessage(getBot());
+        if(DailyReminder.ONLY_REMIND_LAST) {
+            missionList.get(missionList.size() - 1).sendMessage(getBot());
+        } else {
+            for (Mission mission : missionList) {
+                mission.sendMessage(getBot());
+            }
         }
     }
 
@@ -44,8 +49,13 @@ public class DailyReminder extends TimerTask {
             for(int i = 0; i < activeChallenges.length(); i++){
                 JSONObject challenge = activeChallenges.getJSONObject(i);
                 String name = challenge.getString("Challenge");
+                String expiry = challenge.getJSONObject("Expiry").getJSONObject("$date").getString("$numberLong");
+                Calendar expireDate = Calendar.getInstance(getBot().getLocale());
+                if(StringUtils.isNumeric(expiry)) {
+                    expireDate.setTimeInMillis(Long.valueOf(expiry));
+                }
                 if(name.contains("/Daily/")) {
-                    missionList.add(new Mission(name, ChallengeDescriptor.getDescription(name), E_MissionType.DAILY));
+                    missionList.add(new Mission(name, ChallengeDescriptor.getDescription(name), E_MissionType.DAILY, expireDate.getTime()));
                 }
             }
         } catch (Exception e){

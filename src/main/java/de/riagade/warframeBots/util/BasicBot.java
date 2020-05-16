@@ -7,16 +7,19 @@ import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import javax.security.auth.login.LoginException;
+import java.util.Locale;
 
 public class BasicBot extends ListenerAdapter {
     private long guildId, channelId;
     private String botToken;
+    private Locale locale;
     private JDA jda;
 
-    public BasicBot (String botToken, long guildId, long channelId){
+    public BasicBot (String botToken, long guildId, long channelId, Locale locale){
         setBotToken(botToken);
         setGuildId(guildId);
         setChannelId(channelId);
+        setLocale(locale);
     }
 
     public long getGuildId() {
@@ -41,6 +44,14 @@ public class BasicBot extends ListenerAdapter {
 
     private void setBotToken(String botToken) {
         this.botToken = botToken;
+    }
+
+    public Locale getLocale() {
+        return locale;
+    }
+
+    private void setLocale(Locale locale) {
+        this.locale = locale;
     }
 
     public JDA getJda() {
