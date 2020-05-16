@@ -5,10 +5,12 @@ import de.riagade.warframeBots.nightwave.util.ChallengeDescriptor;
 import de.riagade.warframeBots.nightwave.util.E_MissionType;
 import de.riagade.warframeBots.nightwave.util.Mission;
 import de.riagade.warframeBots.util.GenericJSONParser;
+import org.codehaus.plexus.util.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.TimerTask;
 
@@ -44,11 +46,22 @@ public class WeeklyReminder  extends TimerTask {
             for(int i = 0; i < activeChallenges.length(); i++){
                 JSONObject challenge = activeChallenges.getJSONObject(i);
                 String name = challenge.getString("Challenge");
+                String expiry = challenge.getJSONObject("Expiry").getJSONObject("$date").getString("$numberLong");
+                Calendar expireDate = Calendar.getInstance(getBot().getLocale());
+                if(StringUtils.isNumeric(expiry)) {
+                    expireDate.setTimeInMillis(Long.valueOf(expiry));
+                }
                 if(name.contains("/Weekly")){
                     if(name.contains("/WeeklyHard/")){
-                        missionList.add(new Mission(name, ChallengeDescriptor.getDescription(name), E_MissionType.ELITE));
+                        missionList.add(new Mission(name,
+                                ChallengeDescriptor.getDescription(name),
+                                E_MissionType.ELITE,
+                                expireDate.getTime()));
                     }
-                    missionList.add(new Mission(name, ChallengeDescriptor.getDescription(name), E_MissionType.WEEKLY));
+                    missionList.add(new Mission(name,
+                            ChallengeDescriptor.getDescription(name),
+                            E_MissionType.WEEKLY,
+                            expireDate.getTime()));
                 }
             }
         } catch (Exception e){

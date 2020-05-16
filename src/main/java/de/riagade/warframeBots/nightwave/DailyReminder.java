@@ -55,7 +55,10 @@ public class DailyReminder extends TimerTask {
                     expireDate.setTimeInMillis(Long.valueOf(expiry));
                 }
                 if(name.contains("/Daily/")) {
-                    missionList.add(new Mission(name, ChallengeDescriptor.getDescription(name), E_MissionType.DAILY, expireDate.getTime()));
+                    missionList.add(new Mission(name,
+                            ChallengeDescriptor.getDescription(name),
+                            E_MissionType.DAILY,
+                            expireDate.getTime()));
                 }
             }
         } catch (Exception e){
