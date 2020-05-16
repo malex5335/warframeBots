@@ -50,17 +50,30 @@ public class Mission {
     }
 
     public void sendMessage(BasicBot bot) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm", bot.getLocale());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm z", bot.getLocale());
+        StringBuilder messageBuilder = new StringBuilder();
         switch (getMissionType()) {
             case DAILY:
-                bot.sendMessage("Daily: " + getDescription() + " Expires: " + dateFormat.format(getExpireDate()));
+                messageBuilder.append("```ini\n");
+                messageBuilder.append("[Daily]\n");
                 break;
             case WEEKLY:
-                bot.sendMessage("Weekly: " + getDescription() + " Expires: " + dateFormat.format(getExpireDate()));
+                messageBuilder.append("```fix\n");
+                messageBuilder.append("[Weekly]\n");
                 break;
             case ELITE:
-                bot.sendMessage("Elite: " + getDescription() + " Expires: " + dateFormat.format(getExpireDate()));
+                messageBuilder.append("```css\n");
+                messageBuilder.append("[Elite]\n");
+                break;
+            default:
+                messageBuilder.append("```diff\n");
+                messageBuilder.append("- MISSION_TYPE\n");
                 break;
         }
+        messageBuilder.append("``````diff\n");
+        messageBuilder.append("+ " + getDescription() + "\n");
+        messageBuilder.append("+ " + ChallengeHelper.getStanding(getMissionType()) + "\n");
+        messageBuilder.append("- " + dateFormat.format(getExpireDate()) + "\n");
+        messageBuilder.append("```");
     }
 }

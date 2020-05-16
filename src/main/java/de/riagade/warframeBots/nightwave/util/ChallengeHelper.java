@@ -3,7 +3,7 @@ package de.riagade.warframeBots.nightwave.util;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class ChallengeDescriptor {
+public class ChallengeHelper {
     public static final Map<String, String> descriptionMap;
     static{
         descriptionMap = new TreeMap<String, String>();
@@ -124,5 +124,18 @@ public class ChallengeDescriptor {
             return descriptionMap.get(key);
         }
         return key;
+    }
+
+    public static String getStanding(E_MissionType missionType) {
+        switch (missionType) {
+            case DAILY:
+                return "1.000";
+            case WEEKLY:
+                return "4.500";
+            case ELITE:
+                return "7.000";
+            default:
+                return "0";
+        }
     }
 }

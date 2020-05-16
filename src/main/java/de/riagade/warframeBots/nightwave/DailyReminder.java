@@ -1,7 +1,7 @@
 package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.util.BasicBot;
-import de.riagade.warframeBots.nightwave.util.ChallengeDescriptor;
+import de.riagade.warframeBots.nightwave.util.ChallengeHelper;
 import de.riagade.warframeBots.nightwave.util.E_MissionType;
 import de.riagade.warframeBots.nightwave.util.Mission;
 import de.riagade.warframeBots.util.GenericJSONParser;
@@ -56,7 +56,7 @@ public class DailyReminder extends TimerTask {
                 }
                 if(name.contains("/Daily/")) {
                     missionList.add(new Mission(name,
-                            ChallengeDescriptor.getDescription(name),
+                            ChallengeHelper.getDescription(name),
                             E_MissionType.DAILY,
                             expireDate.getTime()));
                 }
