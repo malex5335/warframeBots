@@ -56,7 +56,8 @@ public class DailyReminder extends TimerTask {
                 }
                 if(name.contains("/Daily/")) {
                     missionList.add(new Mission(name,
-                            ChallengeHelper.getDescription(name),
+                            ChallengeHelper.getDescription(name)
+                                    .replace(ChallengeHelper.DAILY_PREFIX,""),
                             E_MissionType.DAILY,
                             expireDate.getTime()));
                 }

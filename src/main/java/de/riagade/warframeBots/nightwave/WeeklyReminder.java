@@ -54,14 +54,17 @@ public class WeeklyReminder  extends TimerTask {
                 if(name.contains("/Weekly")){
                     if(name.contains("/WeeklyHard/")){
                         missionList.add(new Mission(name,
-                                ChallengeHelper.getDescription(name),
+                                ChallengeHelper.getDescription(name)
+                                        .replace(ChallengeHelper.ELITE_PREFIX,""),
                                 E_MissionType.ELITE,
                                 expireDate.getTime()));
+                    } else {
+                        missionList.add(new Mission(name,
+                                ChallengeHelper.getDescription(name)
+                                        .replace(ChallengeHelper.WEEKLY_PREFIX, ""),
+                                E_MissionType.WEEKLY,
+                                expireDate.getTime()));
                     }
-                    missionList.add(new Mission(name,
-                            ChallengeHelper.getDescription(name),
-                            E_MissionType.WEEKLY,
-                            expireDate.getTime()));
                 }
             }
         } catch (Exception e){
