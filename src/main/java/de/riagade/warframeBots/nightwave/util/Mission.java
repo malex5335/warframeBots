@@ -72,8 +72,9 @@ public class Mission {
         }
         messageBuilder.append("``````diff\n");
         messageBuilder.append("+ " + getDescription() + "\n");
-        messageBuilder.append("+ " + ChallengeHelper.getStanding(getMissionType()) + "\n");
+        messageBuilder.append("+ " + ChallengeHelper.getStanding(getMissionType()) + " Standing\n");
         messageBuilder.append("- " + dateFormat.format(getExpireDate()) + "\n");
         messageBuilder.append("```");
+        bot.sendMessage(messageBuilder.toString());
     }
 }

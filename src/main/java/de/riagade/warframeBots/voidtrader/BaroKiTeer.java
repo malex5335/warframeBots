@@ -12,7 +12,7 @@ public class BaroKiTeer extends BasicBot {
     public static final String TOKEN = "NzEwNDMzODk1OTUwMDU3NTU0.Xr0hUg.OR5hNFw4jpL8CODqne-6zvCnToM";
     public static final long GUILD_ID = 564803688301068288L;
     public static final long CHANNEL_ID = 571408897420820513L;
-    public static final Locale LOCALE = Locale.GERMANY;
+    public static final Locale LOCALE = Locale.UK;
 
     public BaroKiTeer() {
         super(BaroKiTeer.TOKEN, BaroKiTeer.GUILD_ID, BaroKiTeer.CHANNEL_ID, BaroKiTeer.LOCALE);

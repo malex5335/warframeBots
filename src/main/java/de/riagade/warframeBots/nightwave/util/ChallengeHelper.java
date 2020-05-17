@@ -1,5 +1,9 @@
 package de.riagade.warframeBots.nightwave.util;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -21,7 +25,7 @@ public class ChallengeHelper {
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Kill 150 Enemies with Blast Damage");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Deploy a Specter");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Pick up 20 Energy Orbs");
-        descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Complete 3 Transmutations");
+        descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyTransmuteMods","Complete 3 Transmutations");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","Kill 10 Enemies with Finishers");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlayEmote","Play 1 Emote");
         descriptionMap.put("/Lotus/Types/Challenges/Seasons/Daily/SeasonDaily","While piloting a hijacked Crewship, destroy 3 enemy Fighters");
@@ -127,15 +131,10 @@ public class ChallengeHelper {
     }
 
     public static String getStanding(E_MissionType missionType) {
-        switch (missionType) {
-            case DAILY:
-                return "1.000";
-            case WEEKLY:
-                return "4.500";
-            case ELITE:
-                return "7.000";
-            default:
-                return "0";
-        }
+        DecimalFormat format = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+        // DecimalFormatSymbols formatSymbols = format.getDecimalFormatSymbols();
+        // formatSymbols.setGroupingSeparator('.');
+        // format.setDecimalFormatSymbols(formatSymbols);
+        return format.format(missionType.getValue());
     }
 }

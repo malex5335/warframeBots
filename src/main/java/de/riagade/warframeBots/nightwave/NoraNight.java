@@ -12,7 +12,7 @@ public class NoraNight extends BasicBot {
     public static final String TOKEN = "NzEwMzk0MTYwMDY2MDY4NTMx.Xr0blg.LiOz86e3J5b-uVbLbY6iMDl-rcE";
     public static final long GUILD_ID = 564803688301068288L;
     public static final long CHANNEL_ID = 571386096051814410L;
-    public static final Locale LOCALE = Locale.GERMANY;
+    public static final Locale LOCALE = Locale.UK;
 
     public NoraNight() {
         super(NoraNight.TOKEN, NoraNight.GUILD_ID, NoraNight.CHANNEL_ID, NoraNight.LOCALE);
