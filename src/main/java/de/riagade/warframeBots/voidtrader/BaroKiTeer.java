@@ -27,11 +27,11 @@ public class BaroKiTeer extends BasicBot {
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(),
-                getNextStartBiWeekly(16),
+                getNextStartBiWeekly(16, 0, 0),
                 TimeUnit.DAYS.toMillis(14));
     }
 
-    public static Date getNextStartBiWeekly(int hourOfDay){
+    public static Date getNextStartBiWeekly(int hourOfDay, int minute, int second){
         Calendar nextStart = Calendar.getInstance(BaroKiTeer.LOCALE);
         if(nextStart.get(Calendar.WEEK_OF_YEAR) % 2 == 0){
             if(nextStart.get(Calendar.HOUR_OF_DAY) >= hourOfDay
@@ -49,8 +49,8 @@ public class BaroKiTeer extends BasicBot {
             nextStart.set(Calendar.DAY_OF_WEEK, Calendar.FRIDAY);
         }
         nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        nextStart.set(Calendar.MINUTE, 0);
-        nextStart.set(Calendar.SECOND, 0);
+        nextStart.set(Calendar.MINUTE, minute);
+        nextStart.set(Calendar.SECOND, second);
         nextStart.set(Calendar.MILLISECOND, 0);
         return nextStart.getTime();
     }
