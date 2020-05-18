@@ -27,36 +27,36 @@ public class NoraNight extends BasicBot {
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new DailyReminder(this),
-                getNextStart(3),
+                getNextStart(3, 0, 0),
                 TimeUnit.DAYS.toMillis(1));
         new Timer().scheduleAtFixedRate(
                 new WeeklyReminder(this),
-                getNextStartWeekly(3),
+                getNextStartWeekly(3, 0, 5),
                 TimeUnit.DAYS.toMillis(7));
     }
 
-    public static Date getNextStart(int hourOfDay){
+    public static Date getNextStart(int hourOfDay, int minute, int second){
         Calendar nextStart = Calendar.getInstance(NoraNight.LOCALE);
         if (nextStart.get(Calendar.HOUR_OF_DAY) >= hourOfDay) {
             nextStart.add(Calendar.DAY_OF_YEAR, 1);
         }
         nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        nextStart.set(Calendar.MINUTE, 0);
-        nextStart.set(Calendar.SECOND, 0);
+        nextStart.set(Calendar.MINUTE, minute);
+        nextStart.set(Calendar.SECOND, second);
         nextStart.set(Calendar.MILLISECOND, 0);
         return nextStart.getTime();
     }
 
-    public static Date getNextStartWeekly(int hourOfDay){
-        Calendar nextStart = Calendar.getInstance();
+    public static Date getNextStartWeekly(int hourOfDay, int minute, int second){
+        Calendar nextStart = Calendar.getInstance(NoraNight.LOCALE);
         if (!(nextStart.get(Calendar.HOUR_OF_DAY) < hourOfDay
                 && nextStart.get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)) {
             nextStart.add(Calendar.WEEK_OF_YEAR, 1);
             nextStart.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
         }
         nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        nextStart.set(Calendar.MINUTE, 0);
-        nextStart.set(Calendar.SECOND, 0);
+        nextStart.set(Calendar.MINUTE, minute);
+        nextStart.set(Calendar.SECOND, second);
         nextStart.set(Calendar.MILLISECOND, 0);
         return nextStart.getTime();
     }

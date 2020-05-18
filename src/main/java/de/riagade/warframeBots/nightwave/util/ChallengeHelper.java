@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 public class ChallengeHelper {
     public static final String DAILY_PREFIX = "/Lotus/Types/Challenges/Seasons/Daily/";
-    public static final String WEEKLY_PREFIX = "/Lotus/Types/Challenges/Seasons/SeasonWeekly/";
+    public static final String WEEKLY_PREFIX = "/Lotus/Types/Challenges/Seasons/Weekly/";
     public static final String ELITE_PREFIX = "/Lotus/Types/Challenges/Seasons/WeeklyHard/";
     public static final Map<String, String> descriptionMap;
     static{
@@ -26,7 +26,7 @@ public class ChallengeHelper {
         descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDaily","Suspend 5 or more enemies in the air at once with a Heavy Slam Melee Attack");
         descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDaily","Kill 150 Enemies with Cold Damage");
         descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDaily","Kill 150 Enemies with Blast Damage");
-        descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDaily","Deploy a Specter");
+        descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDailyDeploySpecter","Deploy a Specter");
         descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDaily","Pick up 20 Energy Orbs");
         descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDailyTransmuteMods","Complete 3 Transmutations");
         descriptionMap.put(ChallengeHelper.DAILY_PREFIX + "SeasonDaily","Kill 10 Enemies with Finishers");
@@ -67,18 +67,18 @@ public class ChallengeHelper {
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Assassination missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Find all caches in 3 Sabotage missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Hijack a Crewship from the enemy");
-        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 6 different Perfect Animal Captures");
+        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyPerfectAnimalCapture","Complete 6 different Perfect Animal Captures");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 12 Conduits in Disruption");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Kuva Siphon Missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 5 different Bounties in the Plains of Eidolon");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Catch 6 Rare Fish in the Plains of Eidolon");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Mine 6 Rare Gems or Ore in the Plains of Eidolon");
-        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Exterminate missions");
+        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyCompleteExterminate","Complete 3 Exterminate missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Pick up 8 Rare Mods");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Kill 30 Eximus");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Railjack Missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Help Clem with his weekly mission");
-        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Clear a Railjack Boarding Party without your Warframe taking damage");
+        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyBoardingPartyNoDamage","Clear a Railjack Boarding Party without your Warframe taking damage");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Destroy a Crewship with Forward Artillery");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyKillArchgunEnemies","Kill 500 enemies with an Arch Gun");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 9 Invasion missions of any type");
@@ -86,7 +86,7 @@ public class ChallengeHelper {
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Kill 500 Enemies");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyCompleteVenusRace","Complete 3 different K-Drive races in Orb Vallis");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Spy missions");
-        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Polarize with Forma 1 time (not in Simulacrum)");
+        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyUseForma","Polarize with Forma 1 time (not in Simulacrum)");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyCompleteMobileDefense","Complete 3 Mobile Defense missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Rescue missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 3 Sabotage missions");
@@ -95,7 +95,7 @@ public class ChallengeHelper {
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 1 Sortie");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyCompleteSyndicateMissions","Complete 10 Syndicate missions");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 8 waves of Sanctuary Onslaught");
-        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Kill a Tusk Thumper in the Plains of Eidolon");
+        descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeeklyKillThumper","Kill a Tusk Thumper in the Plains of Eidolon");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Unlock 3 Relics");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Unlock 4 Orokin Derelict Vaults");
         descriptionMap.put(ChallengeHelper.WEEKLY_PREFIX + "SeasonWeekly","Complete 5 different bounties in the Orb Vallis");
@@ -105,12 +105,12 @@ public class ChallengeHelper {
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Complete 4 Halls of Ascension on Lua");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Kill or Convert a Kuva Lich");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Win 3 wagers in a row without letting the enemy score in one match of The Index");
-        descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Complete a Defense mission reaching at least wave 20");
+        descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHardFriendsDefense","Complete a Defense mission reaching at least wave 20");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Complete 8 Railjack Missions");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Complete 8 Zones of Elite Sanctuary Onslaught");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHardKillEximus","Kill 100 Eximus");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Defeat the Ropalolyst");
-        descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Kill The Exploiter Orb");
+        descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHardKillExploiterOrb","Kill The Exploiter Orb");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Kill 1 Silver Grove Specter");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Survive over 30 minutes in Kuva Survival");
         descriptionMap.put(ChallengeHelper.ELITE_PREFIX + "SeasonWeeklyHard","Kill or Capture an Eidolon Hydrolyst");
