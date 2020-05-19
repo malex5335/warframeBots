@@ -7,495 +7,359 @@
   "challenges": {
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyBulletJump": {
       "desc": "Bullet Jump 150 times",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyAimGlide": {
       "desc": "Kill 20 Enemies while Aim Gliding",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCodexScan": {
       "desc": "Scan 25 Objects or Enemies",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCollectCredits": {
       "desc": "Pick up 15,000 Credits",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMission": {
       "desc": "Complete a Mission",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDeployGlyph": {
       "desc": "Deploy a Glyph",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDeploySpecter": {
       "desc": "Deploy a Specter",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemies": {
       "desc": "Kill 200 Enemies",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithAbilities": {
       "desc": "Kill 150 Enemies with Abilities",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithCorrosive": {
       "desc": "Kill 150 Enemies with Corrosive Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithFinishers": {
       "desc": "Kill 10 Enemies with Finishers",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithFire": {
       "desc": "Kill 150 Enemies with Heat Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithFreeze": {
       "desc": "Kill 150 Enemies with Cold Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithGas": {
       "desc": "Kill 150 Enemies with Gas Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithHeadshots": {
       "desc": "Kill 40 Enemies with Headshots",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithMagnetic": {
       "desc": "Kill 150 Enemies with Magnetic Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithRadiation": {
       "desc": "Kill 150 Enemies with Radiation Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithSecondary": {
       "desc": "Kill 150 Enemies with a Secondary Weapon",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithViral": {
       "desc": "Kill 150 Enemies with Viral Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPickUpEnergy": {
       "desc": "Pick up 20 Energy Orbs",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPickUpMods": {
       "desc": "Pick up 8 Mods",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlaceMarker": {
       "desc": "Mark 5 Mods or Resources",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlayEmote": {
       "desc": "Play 1 Emote",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySlideKills": {
       "desc": "Kill 20 Enemies while Sliding",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySolveCiphers": {
       "desc": "Hack 8 Consoles",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyTransmuteMods": {
       "desc": "Complete 3 Transmutations",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithBlast": {
       "desc": "Kill 150 Enemies with Blast Damage",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDeployAirSupport": {
       "desc": "Deploy an Air Support Charge in a Mission",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyInteractWithPet": {
       "desc": "Interact with your Kubrow or Kavat",
-      "daily": true,
-      "weekly": false,
-      "elite": false
+      "daily": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteRescue": {
       "desc": "Complete 3 Rescue missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
-    "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeekly": {
+    "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyUnlockRelics": {
       "desc": "Unlock 3 Relics",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyBoardingPartyNoDamage": {
       "desc": "Clear a Railjack Boarding Party without your Warframe taking damage",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCatchRarePlainsFish": {
       "desc": "Catch 6 Rare Fish in the Plains of Eidolon",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCatchRareVenusFish": {
       "desc": "Catch 6 Rare Servofish in the Orb Vallis",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteAssassination": {
       "desc": "Complete 3 Assassination missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteCapture": {
       "desc": "Complete 3 Capture missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteClemMission": {
       "desc": "Help Clem with his weekly mission",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteExterminate": {
       "desc": "Complete 3 Exterminate missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteInvasionMissions": {
       "desc": "Complete 9 Invasion missions of any type",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteKuva": {
       "desc": "Complete 3 Kuva Siphon Missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteMobileDefense": {
       "desc": "Complete 3 Mobile Defense missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteNightmareMissions": {
       "desc": "Complete 3 Nightmare missions of any type",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSabotage": {
       "desc": "Complete 3 Sabotage missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSortie": {
       "desc": "Complete 1 Sortie",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSpy": {
       "desc": "Complete 3 Spy missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSyndicateMissions": {
       "desc": "Complete 10 Syndicate missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteTreasures": {
       "desc": "Fully socket 3 Ayatan Sculptures",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteVenusRace": {
       "desc": "Complete 3 different K-Drive races in Orb Vallis",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillArchgunEnemies": {
       "desc": "Kill 500 enemies with an Arch Gun",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillEximus": {
       "desc": "Kill 30 Eximus",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillThumper": {
       "desc": "Kill a Tusk Thumper in the Plains of Eidolon",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyMineRarePlainsResources": {
       "desc": "Mine 6 Rare Gems or Ore in the Plains of Eidolon",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyMineRareVenusResources": {
       "desc": "Mine 6 Rare Gems or Ore in the Orb Vallis",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPerfectAnimalCapture": {
       "desc": "Complete 6 different Perfect Animal Captures",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPickUpRareMods": {
       "desc": "Pick up 8 Rare Mods",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPlainsBounties": {
       "desc": "Complete 5 different Bounties in the Plains of Eidolon",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySabotageCaches": {
       "desc": "Find all caches in 3 Sabotage missions",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySanctuaryOnslaught": {
       "desc": "Complete 8 waves of Sanctuary Onslaught",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySimarisScan": {
       "desc": "Complete 5 Scans for Cephalon Simaris",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyUnlockDragonVaults": {
       "desc": "Unlock 4 Orokin Derelict Vaults",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyUseForma": {
       "desc": "Polarize with Forma 1 time (not in Simulacrum)",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyVenusBounties": {
       "desc": "Complete 5 different bounties in the Orb Vallis",
-      "daily": false,
-      "weekly": true,
-      "elite": false
+      "weekly": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/": {
       "desc": "Complete 3 Sorties",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteNightmareMissions": {
       "desc": "Complete 10 Nightmare missions of any type",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardExterminateNoAlarm": {
       "desc": "Complete an Extermination mission with only level 30 or higher enemies without triggering alarms",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFastCapture": {
       "desc": "Finish a Capture mission in less than 90 seconds",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsDefense": {
       "desc": "Complete a Defense mission reaching at least wave 20",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsProfitTaker": {
       "desc": "Kill Profit-Taker",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsSurvival": {
       "desc": "Complete a Survival mission reaching at least 30 minutes",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEximus": {
       "desc": "Kill 100 Eximus",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillExploiterOrb": {
       "desc": "Kill The Exploiter Orb",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillRopalolyst": {
       "desc": "Defeat the Ropalolyst",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillSilverGroveSpecters": {
       "desc": "Kill 1 Silver Grove Specter",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillThumper": {
       "desc": "Kill a Tusk Thumper Doma in the Plains of Eidolon",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardUnlockRelics": {
       "desc": "Unlock 10 Relics",
-      "daily": false,
-      "weekly": false,
       "elite": true
     },
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithElectricity": {
         "desc": "Kill 150 enemies with electricity damage",
-        "daily": true,
-		"weekly": false,
-		"elite": false
+        "daily": true
     },
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithMelee": {
         "desc": "Kill 150 enemies with a melee weapon",
-        "daily": true,
-		"weekly": false,
-		"elite": false
+        "daily": true
     },
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithPoison": {
-        "description": "Kill 150 enemies with toxin damage",
-        "daily": true,
-		"weekly": false,
-		"elite": false
+        "desc": "Kill 150 enemies with toxin damage",
+        "daily": true
     },
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithPrimary": {
-        "description": "Kill 150 enemies with a primary weapon",
-        "daily": true,
-		"weekly": false,
-		"elite": false
+        "desc": "Kill 150 enemies with a primary weapon",
+        "daily": true
     },
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyOpenLockers": {
-        "description": "Open 20 lockers",
-        "daily": true,
-		"weekly": false,
-		"elite": false
+        "desc": "Open 20 lockers",
+        "daily": true
     },
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPickUpMedallion": {
-        "description": "Pick up 5 syndicate medallions",
-        "daily": true,
-		"weekly": false,
-		"elite": false
+        "desc": "Pick up 5 syndicate medallions",
+        "daily": true
     },
-	"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteDisruptionConduits": {
-        "description": "Complete 12 conduits in Disruption missions",
-        "daily": false,
-		"weekly": true,
-		"elite": false
+    "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteDisruptionConduits": {
+      "desc": "Complete 12 conduits in Disruption missions",
+      "weekly": true
+    },
+    "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillEnemies": {
+      "desc": "Kill 500 Enemies",
+      "weekly": true
+    },
+    "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardLuaPuzzles": {
+      "desc": "Complete 4 Halls of Ascension on Lua",
+      "elite": true
+    },
+    "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKuvaSurvivalNoCapsules": {
+      "desc": "Survive over 30 minutes in Kuva Survival",
+      "elite": true
+    },
+    "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillOrCaptureRainalyst": {
+      "desc": "Kill or Capture an Eidolon Hydrolyst",
+      "elite": true
+    },
+    "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEnemies": {
+      "desc": "Kill 1,500 Enemies",
+      "elite": true
+    },
+    "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardIndexWinStreak": {
+      "desc": "Win 3 wagers in a row without letting the enemy score in one match of The Index",
+      "elite": true
+    },
+    "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardEliteSanctuaryOnslaught": {
+      "desc": "Complete 8 Zones of Elite Sanctuary Onslaught",
+      "elite": true
     }
   }
 }
