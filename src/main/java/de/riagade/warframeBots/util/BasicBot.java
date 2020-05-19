@@ -10,6 +10,7 @@ import javax.security.auth.login.LoginException;
 import java.util.Locale;
 
 public class BasicBot extends ListenerAdapter {
+    public static final String WORLD_STATE = "http://content.warframe.com/dynamic/worldState.php";
     private long guildId, channelId;
     private String botToken;
     private Locale locale;

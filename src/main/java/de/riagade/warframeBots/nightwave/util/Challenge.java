@@ -5,15 +5,16 @@ import de.riagade.warframeBots.util.BasicBot;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Mission {
-    private String name, description;
-    private E_MissionType missionType;
+public class Challenge {
+    private String name, description, standing;
+    private E_ChallengeType missionType;
     private Date expireDate;
 
-    public Mission(String name, String description, E_MissionType missionType, Date expireDate){
+    public Challenge(String name, Date expireDate){
         setName(name);
-        setDescription(description);
-        setMissionType(missionType);
+        setDescription(ChallengeHelper.getDescription(getName()));
+        setStanding(ChallengeHelper.getStanding(getName()));
+        setMissionType(ChallengeHelper.getMissionType(getName()));
         setExpireDate(expireDate);
     }
 
@@ -21,7 +22,7 @@ public class Mission {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
 
@@ -29,24 +30,32 @@ public class Mission {
         return description;
     }
 
-    public void setDescription(String description) {
+    private void setDescription(String description) {
         this.description = description;
     }
 
-    public E_MissionType getMissionType() {
+    public String getStanding() {
+        return standing;
+    }
+
+    private void setStanding(String standing) {
+        this.standing = standing;
+    }
+
+    public E_ChallengeType getMissionType() {
         return missionType;
+    }
+
+    private void setMissionType(E_ChallengeType missionType) {
+        this.missionType = missionType;
     }
 
     public Date getExpireDate() {
         return expireDate;
     }
 
-    public void setExpireDate(Date expireDate) {
+    private void setExpireDate(Date expireDate) {
         this.expireDate = expireDate;
-    }
-
-    public void setMissionType(E_MissionType missionType) {
-        this.missionType = missionType;
     }
 
     public void sendMessage(BasicBot bot) {
@@ -71,9 +80,9 @@ public class Mission {
                 break;
         }
         messageBuilder.append("``````diff\n");
-        messageBuilder.append("+ " + getDescription() + "\n");
-        messageBuilder.append("+ " + ChallengeHelper.getStanding(getMissionType()) + " Standing\n");
-        messageBuilder.append("- " + dateFormat.format(getExpireDate()) + "\n");
+        messageBuilder.append("+ ").append(getDescription()).append("\n");
+        messageBuilder.append("+ ").append(getStanding()).append(" Standing\n");
+        messageBuilder.append("- ").append(dateFormat.format(getExpireDate())).append("\n");
         messageBuilder.append("```");
         bot.sendMessage(messageBuilder.toString());
     }
