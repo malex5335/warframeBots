@@ -179,7 +179,7 @@
       "weekly": false,
       "elite": false
     },
-    "/Lotus/Types/Challenges/Seasons/Weekly/": {
+    "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteRescue": {
       "desc": "Complete 3 Rescue missions",
       "daily": false,
       "weekly": true,
@@ -454,6 +454,48 @@
       "daily": false,
       "weekly": false,
       "elite": true
+    },
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithElectricity": {
+        "desc": "Kill 150 enemies with electricity damage",
+        "daily": true,
+		"weekly": false,
+		"elite": false
+    },
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithMelee": {
+        "desc": "Kill 150 enemies with a melee weapon",
+        "daily": true,
+		"weekly": false,
+		"elite": false
+    },
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithPoison": {
+        "description": "Kill 150 enemies with toxin damage",
+        "daily": true,
+		"weekly": false,
+		"elite": false
+    },
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithPrimary": {
+        "description": "Kill 150 enemies with a primary weapon",
+        "daily": true,
+		"weekly": false,
+		"elite": false
+    },
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyOpenLockers": {
+        "description": "Open 20 lockers",
+        "daily": true,
+		"weekly": false,
+		"elite": false
+    },
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPickUpMedallion": {
+        "description": "Pick up 5 syndicate medallions",
+        "daily": true,
+		"weekly": false,
+		"elite": false
+    },
+	"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteDisruptionConduits": {
+        "description": "Complete 12 conduits in Disruption missions",
+        "daily": false,
+		"weekly": true,
+		"elite": false
     }
   }
 }
