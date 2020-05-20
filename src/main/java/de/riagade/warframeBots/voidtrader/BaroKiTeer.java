@@ -27,7 +27,7 @@ public class BaroKiTeer extends BasicBot {
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(),
-                getNextStartBiWeekly(16, 0, 0),
+                getNextStartBiWeekly(14, 0, 0),
                 TimeUnit.DAYS.toMillis(14));
     }
 

@@ -27,11 +27,11 @@ public class NoraNight extends BasicBot {
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new DailyReminder(this),
-                getNextStart(3, 0, 0),
+                getNextStart(1, 0, 0),
                 TimeUnit.DAYS.toMillis(1));
         new Timer().scheduleAtFixedRate(
                 new WeeklyReminder(this),
-                getNextStartWeekly(3, 0, 5),
+                getNextStartWeekly(1, 0, 5),
                 TimeUnit.DAYS.toMillis(7));
     }
 
