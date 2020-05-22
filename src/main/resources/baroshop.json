@@ -57,6 +57,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/MiscItems/PhotoboothTileInarosTomb": {
 			"desc": "Inaros Tomb Scene",
+			"mission": true
 		},
 		"/Lotus/StoreItems/Weapons/Tenno/Pistol/RevolverPistol": {
 			"desc": "Lato",
@@ -562,6 +563,10 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Scarves/BaroCape": {
 			"desc": "Ki'Teer Syandana",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/PrismaLotusEmblem": {
+			"desc": "Prisma Lotus Emblem",
+			"skin": true
 		}
 	}
 }
