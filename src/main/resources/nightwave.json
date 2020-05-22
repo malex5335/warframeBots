@@ -360,6 +360,10 @@
     "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardEliteSanctuaryOnslaught": {
       "desc": "Complete 8 Zones of Elite Sanctuary Onslaught",
       "elite": true
+    },
+    "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlayMinigame": {
+      "desc": "Play a game of Frame Fighter, Happy Zephyr, or Wyrmius",
+      "daily": true
     }
   }
 }

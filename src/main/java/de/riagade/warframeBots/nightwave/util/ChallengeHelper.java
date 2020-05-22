@@ -31,7 +31,7 @@ public class ChallengeHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return Boolean.FALSE;
+        return key.contains("/Daily/");
     }
 
     public static boolean isWeekly(String key) {
@@ -43,7 +43,7 @@ public class ChallengeHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return Boolean.FALSE;
+        return key.contains("/Weekly/");
     }
 
     public static boolean isElite(String key) {
@@ -55,7 +55,7 @@ public class ChallengeHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return Boolean.FALSE;
+        return key.contains("/WeeklyHard/");
     }
 
     public static String getStanding(String key) {
