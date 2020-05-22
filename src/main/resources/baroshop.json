@@ -1,0 +1,567 @@
+{
+	"shopitems": {
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/AvatarImageGlyphCookieKubrow": {
+			"desc": "Cookie Kubrow Glyph",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponToxinDamageModExpert": {
+			"desc": "Primed Fever Strike",
+			"mod": true
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetThreeWinged/VTSetThreeLegRightArmor": {
+			"desc": "Right Prisma Daedalus Knee Plates",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/VTHornSkullScarf": {
+			"desc": "Prisma Hecate Syandana",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Types/Game/QuartersWallpapers/BaroWallpaper": {
+			"desc": "Ki'Teer Stencil",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Types/StoreItems/SuitCustomizations/ColourPickerTwitchBItemA": {
+			"desc": "Eminence Color Pallette",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/GrineerTurbines/WraithTurbinesLegArmor": {
+			"desc": "Harkonar Wraith Leg Armor",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum": {
+			"desc": "Prisma Angstrum",
+			"weapon": true
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper": {
+			"desc": "Viper Wraith",
+			"weapon": true
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetTwoSamurai/VTSetTwoLegLeftArmor": {
+			"desc": "Left Prisma Edo Knee Plates",
+			"skin": true
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/BaroCape2Scarf": {
+			"desc": "Ki'Teer Razza Syandana",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisTigris": {
+			"desc": "Tigris Elixis Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisOpticor": {
+			"desc": "Opticor Elixis Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/BaroArrow": {
+			"desc": "Ki'Teer Arrow Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Tails/PrismaFishTail": {
+			"desc": "Prisma Koi Sentinel Tail",
+		},
+		"/Lotus/StoreItems/Types/Items/MiscItems/PhotoboothTileInarosTomb": {
+			"desc": "Inaros Tomb Scene",
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Pistol/RevolverPistol": {
+			"desc": "Lato",
+			"weapon": true
+		},
+		"/Lotus/StoreItems/Types/Recipes/Components/CorruptedBombardBallBlueprint": {
+			"desc": "Corrupted Bombard Specter Blueprint",
+			"recipe": true
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Archwing/Melee/VoidTraderArchsword/VTArchSwordWeapon": {
+			"desc": "Prisma Veritux",
+			"weapon": true
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetThreeWinged/VTSetThreeArmRightArmor": {
+			"desc": "Right Prisma Daedalus Shoulder Guard",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/WeaponEventShotgunImpactDamageMod": {
+			"desc": "Full Contact",
+			"mod": true
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/DualStat/FireEventPistolMod": {
+			"desc": "Scorch",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunConvertAmmoModExpert": {
+			"desc": "Primed Shotgun Ammo Mutation",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/MeleeDangles/BaroMeleeDangle": {
+			"desc": "Ki'Teer Sugatra",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponClipMaxModExpert": {
+			"desc": "Primed Slip Magazine",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Pirate/HydroidAlternateSkin": {
+			"desc": "Hydroid Immortal Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/GrineerTurbines/WraithTurbinesChestArmor": {
+			"desc": "Harkonar Wraith Chest Armor",
+		},
+		"/Lotus/Types/StoreItems/Boosters/AffinityBooster3DayStoreItem": {
+			"desc": "3 Day Affinity Booster",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/WraithTurbinesScarf": {
+			"desc": "Harkonar Wraith Cloak",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/VTEos/VTEosChestArmor": {
+			"desc": "Eos Prime Chest Plate",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Catbrows/Armor/CatbrowArmorHalloweenA": {
+			"desc": "Wysar Day of the Dead Kavat Armor",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisSonicor": {
+			"desc": "Sonicor Elixis Skin",
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/CorpusUMP/PrismaCorpusUMP": {
+			"desc": "Prisma Tetra",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponElectricityDamageModExpert": {
+			"desc": "Primed Charged Shell",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Masks/BaroPetMask": {
+			"desc": "Ki'Teer Sentinel Mask",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/VTDinoSpikeScarf": {
+			"desc": "Prisma Yamako Syandana",
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon": {
+			"desc": "Prisma Twin Gremlins",
+		},
+		"/Lotus/Types/StoreItems/Packages/KavatColorPackNexus": {
+			"desc": "Nexus Gene-Masking Kit",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/PrimedWeaponCritDamageMod": {
+			"desc": "Primed Target Cracker",
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/ExcaliburArchwingBobbleHead": {
+			"desc": "Noggle Statue - Excalibur With Odonata",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetSkinVoidTrader": {
+			"desc": "Liset Prisma Skin",
+		},
+		"/Lotus/StoreItems/Types/Restoratives/Consumable/BaroFireWorksCrate": {
+			"desc": "Ki'Teer Fireworks",
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Melee/MeleeTrees/AxeCmbThreeMeleeTree": {
+			"desc": "Tempo Royal",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/VTEos/VTEosALArmor": {
+			"desc": "Left Eos Prime Shoulder Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetBlueSkySkinPrimeTrader": {
+			"desc": "Scimitar Prisma Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod": {
+			"desc": "Volcanic Edge",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/KazBaroCape": {
+			"desc": "Ki'Teer Diax Syandana",
+		},
+		"/Lotus/StoreItems/Types/Keys/MummyQuestKeyBlueprint": {
+			"desc": "Sands of Inaros Blueprint",
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropOstRugBaro": {
+			"desc": "Tenno Kindred Rug",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponFireDamageModExpert": {
+			"desc": "Primed Heated Charge",
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/ImageBaroKiteer": {
+			"desc": "Baro Ki'Teer Glyph",
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/PedistalPrime": {
+			"desc": "Pedastal Prime",
+		},
+		"/Lotus/StoreItems/Weapons/ClanTech/Energy/VandalElectroProd": {
+			"desc": "Prova Vandal",
+		},
+		"/Lotus/StoreItems/Types/Game/Projections/T4VoidProjectionMagNovaVaultBBronze": {
+			"desc": "Axi A5 Relic",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageGrineer": {
+			"desc": "Primed Bane of Grineer",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/WeaponEventSlashDamageMod": {
+			"desc": "Sweeping Serration",
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageBaroIcon": {
+			"desc": "Ki'Teer Tribute Glyph",
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/AvatarImageGlyphCookieKavat": {
+			"desc": "Cookie Kavat Glyph",
+		},
+		"/Lotus/StoreItems/Types/Game/KubrowPet/Patterns/KubrowPetPatternPrimeTraderA": {
+			"desc": "Nexus Fur Pattern",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetTwoSamurai/VTSetTwoArmRightArmor": {
+			"desc": "Right Prisma Edo Shoulder Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/VTEos/VTEosLRArmor": {
+			"desc": "Right Eos Prime Spurs",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/EarpieceBaroC": {
+			"desc": "Ki'Teer Atmos Earpiece",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/DualStat/ElectEventRifleMod": {
+			"desc": "High Voltage",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/WeaponRifleConvertAmmoModExpert": {
+			"desc": "Primed Rifle Ammo Mutation",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/EarpieceBaroB": {
+			"desc": "Ki'Teer Solo Earpiece",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetThreeWinged/VTSetThreeArmLeftArmor": {
+			"desc": "Left Prisma Daedalus Shoulder Guard",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sigils/PrimeTraderSigil": {
+			"desc": "Prisma Sigil",
+		},
+		"/Lotus/Types/StoreItems/Boosters/CreditBooster3DayStoreItem": {
+			"desc": "3-Day Credit Booster",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponEventMeleeImpactDamageMod": {
+			"desc": "Collision Force",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/EarpieceBaroA": {
+			"desc": "Ki'Teer Earpiece",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageCorpusExpert": {
+			"desc": "Primed Expel Corpus",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Wings/KavatPetWings": {
+			"desc": "Kavat Sentinel Wings",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/GrineerTurbines/WraithTurbinesArmArmor": {
+			"desc": "Harkonar Wraith Arm Armor",
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Melee/MeleeTrees/ClawCmbTwoMeleeTree": {
+			"desc": "Vermillion Storm",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/WeaponReloadSpeedModExpert": {
+			"desc": "Primed Fast Hands",
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/OrbiterPictureFrameBaro": {
+			"desc": "Display - Argyle",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Archwing/Expert/ArchwingSuitAbilityStrengthModExpert": {
+			"desc": "Primed Morphic Transformer",
+		},
+		"/Lotus/StoreItems/Types/Sentinels/SentinelPrecepts/PrimedRegen": {
+			"desc": "Primed Regen",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/DualStat/FireEventRifleMod": {
+			"desc": "Thermite Rounds",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponEventSlashDamageMod": {
+			"desc": "Buzz Kill",
+		},
+		"/Lotus/StoreItems/Types/Restoratives/Consumable/AssassinBait": {
+			"desc": "Stalker Beacon",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/Gyroscope/LisetGyroscopeSkinPrimeTrader": {
+			"desc": "Xiphos Prisma Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponDamageAmountModExpert": {
+			"desc": "Primed Point Blank",
+		},
+		"/Lotus/StoreItems/Types/Game/Projections/T4VoidProjectionPBronze": {
+			"desc": "Axi A2 Relic",
+		},
+		"/Lotus/Types/StoreItems/Packages/VTEosArmourBundle": {
+			"desc": "Eos Prime Armor Set",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/DualStat/ElectEventMeleeMod": {
+			"desc": "Voltaic Strike",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/BaroInarosPolearmSkin": {
+			"desc": "Anpu Staff Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroQuantumBadgeItem": {
+			"desc": "Ki'Teer Sekhara",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/InarosLisetSkin": {
+			"desc": "Liset Cydonia Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/BaroVisor": {
+			"desc": "Ki'Teer Atmos Oculus",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/VTEos/VTEosLLArmor": {
+			"desc": "Left Eos Prime Spurs",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/MeleeDangles/BaroInarosMeleeDangle": {
+			"desc": "Anpu Sugatra",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/VTHalloweenDarkSword": {
+			"desc": "Dark Sword Day of the Dead Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolConvertAmmoModExpert": {
+			"desc": "Primed Pistol Ammo Mutation",
+		},
+		"/Lotus/StoreItems/Types/BoosterPacks/PremiumRareArtifactPack": {
+			"desc": "Dragon Mod Pack",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisOdonataSkin": {
+			"desc": "Odonata Elixis Skin",
+		},
+		"/Lotus/StoreItems/Types/Items/Emotes/BaroEmote": {
+			"desc": "Ki'Teer Presence",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sigils/BaroKubrowSigil": {
+			"desc": "Pack Leader Sigil",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageGrineerExpert": {
+			"desc": "Primed Expel Grineer",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponCritDamageModExpert": {
+			"desc": "Primed Ravage",
+		},
+		"/Lotus/StoreItems/Weapons/VoidTrader/PrismaSkana": {
+			"desc": "Prisma Skana",
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers": {
+			"desc": "Prisma Dual Cleavers",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/Halloween2014Wings/PrismaNaberusArmArmor": {
+			"desc": "Prisma Naberus",
+		},
+		"/Lotus/StoreItems/Types/Items/MiscItems/PhotoboothTileOrokinExtraction": {
+			"desc": "Ki'Teer Color Pallette",
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/Melee/KickAndPunch/PrismaObex": {
+			"desc": "Prisma Obex",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/SolsticeBaroCape": {
+			"desc": "Ki'Teer Solstice Syandana",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetTwoSamurai/VTSetTwoChestArmor": {
+			"desc": "Prisma Edo Chest Plate",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageCorpus": {
+			"desc": "Primed Bane of Corpus",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/VTRedeemerSkin": {
+			"desc": "Redeemer Elixis Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Tails/BaroPetTail": {
+			"desc": "Ki'Teer Sentinel Tail",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/BaroHorn": {
+			"desc": "Ki'Teer Cornu Diadem",
+		},
+		"/Lotus/StoreItems/Weapons/VoidTrader/PrismaGrakata": {
+			"desc": "Prisma Grakata",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sigils/BaroKavatSigil": {
+			"desc": "Glaring Sigil",
+		},
+		"/Lotus/StoreItems/Types/Restoratives/Consumable/CorruptedHeavyGunnerBall": {
+			"desc": "Corrupted Heavy Gunner Specter",
+		},
+		"/Lotus/StoreItems/Types/StoreItems/SuitCustomizations/ColourPickerKiteerItemA": {
+			"desc": "Ki'Teer Color Pallette",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetInsectSkinPrimeTrader": {
+			"desc": "Mantis Prisma Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Skins/DesertTaxonSkin": {
+			"desc": "Taxon Desert-Camo Skin",
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/Machinegun/SupraVandal": {
+			"desc": "Supra Vandal",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/PrismaArrow": {
+			"desc": "Prisma Arrows",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/PrismaRazorScarf": {
+			"desc": "Prisma Uru Syandana",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageCorruptedExpert": {
+			"desc": "Primed Expel Corrupted",
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/LongGuns/VoidTraderGorgon/VTGorgon": {
+			"desc": "Prisma Gorgon",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageInfestedExpert": {
+			"desc": "Primed Expel Infested",
+		},
+		"/Lotus/StoreItems/Types/BoosterPacks/UncommonArtifactPack": {
+			"desc": "Falcon Mod Pack",
+		},
+		"/Lotus/StoreItems/Weapons/VoidTrader/VTDetron": {
+			"desc": "Mara Detron",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetThreeWinged/VTSetThreeLegLeftArmor": {
+			"desc": "Left Prisma Daedalus Knee Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponReloadSpeedModExpert": {
+			"desc": "Primed Quickdraw",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/LisetScarf": {
+			"desc": "Domus Syandana",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetTwoSamurai/VTSetTwoArmLeftArmor": {
+			"desc": "Left Prisma Edo Shoulder Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/VTEos/VTEosARArmor": {
+			"desc": "Right Eos Prime  Shoulder Plates",
+		},
+		"/Lotus/StoreItems/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit": {
+			"desc": "Prisma Shade",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Masks/KavatPetMask": {
+			"desc": "Kavat Sentinel Mask",
+		},
+		"/Lotus/StoreItems/Types/Game/Projections/T3VoidProjectionVoltOdonataPrimeBronze": {
+			"desc": "Neo O1 Relic",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/BaroArmour/BaroArmourL": {
+			"desc": "Ki'Teer Leg Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeDamageModExpert": {
+			"desc": "Primed Pressure Point",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeRangeIncModExpert": {
+			"desc": "Primed Reach",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageCorrupted": {
+			"desc": "Primed Bane of Corrupted",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/DualStat/ElectEventShotgunMod": {
+			"desc": "Shell Shock",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/WeaponEventPistolImpactDamageMod": {
+			"desc": "Pummel",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/PrimedWeaponFactionDamageInfested": {
+			"desc": "Primed Bane of Infested",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/WeaponEventRifleImpactDamageMod": {
+			"desc": "Crash Course",
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Melee/MeleeTrees/GlaiveCmbTwoMeleeTree": {
+			"desc": "Astral Twilight",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/BaroArmour/BaroArmourC": {
+			"desc": "Ki'Teer Chest Plate",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/BaroArmour/BaroArmourA": {
+			"desc": "Ki'Teer Shoulder Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/SummerSolstice/SummerSolsticeGorgon": {
+			"desc": "Gorgon Towsun Skin",
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerBobbleHead": {
+			"desc": "Noggle Statue - Baro Ki'Teer",
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Akimbo/AkimboShotGun": {
+			"desc": "Akbronco",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/BaroArmourTwo/BaroArmourTwoL": {
+			"desc": "Ki'Teer Foros Leg Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Harlequin/MirageAlternateSkin": {
+			"desc": "Mirage Immortal Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/VTQuanta": {
+			"desc": "Quanta Aufeis Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/BaroTiara": {
+			"desc": "Ki'Teer Atmos Diadem",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/MeleeDangles/InfestedMeleeDangle": {
+			"desc": "null",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Warframe/Expert/AvatarAbilityDurationModExpert": {
+			"desc": "Primed Continuity",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/BaroArmourTwo/BaroArmourTwoC": {
+			"desc": "Ki'Teer Foros Chest Plate",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/WeaponFreezeDamageModExpert": {
+			"desc": "Primed Cryo Rounds",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/BaroArmourTwo/BaroArmourTwoA": {
+			"desc": "Ki'Teer Foros Shoulder Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/BaroMouthPieceA": {
+			"desc": "Ki'Teer Atmos Mask",
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/CrpShockRifle/QuantaVandal": {
+			"desc": "Quanta Vandal",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Tails/KavatPetTail": {
+			"desc": "Kavat Sentinel Tail",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Tengu/ZephyrAlternateSkin": {
+			"desc": "Zephyr Immortal Skin",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponCritChanceModBeginnerExpert": {
+			"desc": "Primed Pistol Gambit",
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/LongGuns/GrineerSniperRifle/VulkarWraith": {
+			"desc": "Vulkar Wraith",
+		},
+		"/Lotus/StoreItems/Types/Restoratives/Consumable/AssassinBaitC": {
+			"desc": "Grustrag Three Beacon",
+		},
+		"/Lotus/StoreItems/Types/Restoratives/Consumable/AssassinBaitB": {
+			"desc": "Zanuka Hunter Beacon",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Wings/PrismaJetWings": {
+			"desc": "Prisma Jet Sentinel Wings",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetThreeWinged/VTSetThreeChestArmor": {
+			"desc": "Prisma Daedalus Chest Plate",
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/WraithMacheteWeapon": {
+			"desc": "Machete Wraith",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Catbrows/Armor/CatbrowArmorVoidTraderA": {
+			"desc": "Ki'Teer Kavat Armor",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/DualStat/ElectEventPistolMod": {
+			"desc": "Jolt",
+		},
+		"/Lotus/StoreItems/Types/Game/Projections/T4VoidProjectionVoltOdonataPrimeBronze": {
+			"desc": "Axi V8 Relic",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Kubrows/Armor/KubrowArmorBaro": {
+			"desc": "Ki'Teer Kubrow Armor",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Masks/PrismaMechHeadMask": {
+			"desc": "Prisma Mech Head Sentinel Mask",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/SummerSolstice/SummerSolsticeTwinGrakatas": {
+			"desc": "Twin Grakatas Towsun Skin",
+		},
+		"/Lotus/Types/StoreItems/Boosters/ResourceAmount3DayStoreItem": {
+			"desc": "3 Day Resource Booster",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Wings/BaroPetWings": {
+			"desc": "Ki'Teer Sentinel Wings",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/DualStat/FireEventShotgunMod": {
+			"desc": "Scattering Inferno",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/WeaponEventSlashDamageMod": {
+			"desc": "Fanged Fusillade",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetTwoSamurai/VTSetTwoLegRightArmor": {
+			"desc": "Right Prisma Edo Knee Plates",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/MeleeDangles/FireMeleeDangle": {
+			"desc": "Pyra Sugatra",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Warframe/Expert/AvatarPowerMaxModExpert": {
+			"desc": "Primed Regen",
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/WeaponEventSlashDamageMod": {
+			"desc": "Maim",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Kubrows/Armor/KubrowArmorPrisma": {
+			"desc": "Prisma Rostam Kubrow Armor",
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/BaroCape": {
+			"desc": "Ki'Teer Syandana",
+		}
+	}
+}
