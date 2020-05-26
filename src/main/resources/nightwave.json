@@ -373,9 +373,9 @@
 		"desc": "Complete 8 Railjack Missions",
 		"elite": true
 	},
-	"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyHijackCrewship": {
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyHijackCrewship": {
 		"desc": "Hijack a Crewship from the enemy",
-		"weekly": true
+		"daily": true
 	}
   }
 }
