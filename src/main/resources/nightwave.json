@@ -376,6 +376,14 @@
 	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyHijackCrewship": {
 		"desc": "Hijack a Crewship from the enemy",
 		"daily": true
+	},
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionSecondary": {
+		"desc": "Complete a Mission with only a Secondary Weapon equipped",
+		"daily": true
+	},
+	"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardSpyManualNoAlarms": {
+		"desc": "Complete a Spy mission with 3 manual console hacks and no alarms",
+		"elite": true
 	}
   }
 }
