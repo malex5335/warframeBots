@@ -767,6 +767,30 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationD": {
 			"desc": "Dvad Luxxum Ornament",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/CrpFreezeRay/Vandal/CrpFreezeRayVandalRifle": {
+			"desc": "Glaxion Vandal",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/KavatBust": {
+			"desc": "Bronze Kavat Bust",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnLatronArmor/TnLatronArmArmorPrisma": {
+			"desc": "Prisma Latron Shoulder Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnLatronArmor/TnLatronLegArmorPrisma": {
+			"desc": "Prisma Latron Leg Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnLatronArmor/TnLatronChestArmorPrisma": {
+			"desc": "Prisma Latron Chest Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetBlueSkySkinInaros": {
+			"desc": "Scimitar Cydonia Skin",
+			"cat": 1
 		}
 	}
 }
