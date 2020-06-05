@@ -384,6 +384,10 @@
 	"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardSpyManualNoAlarms": {
 		"desc": "Complete a Spy mission with 3 manual console hacks and no alarms",
 		"elite": true
+	},
+	"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCollectHundredResources": {
+		"desc": "Collect 1,500 Resources",
+		"daily": true
 	}
   }
 }
