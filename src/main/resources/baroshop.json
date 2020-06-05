@@ -110,7 +110,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponClipMaxModExpert": {
 			"desc": "Primed Slip Magazine",
-			"cat": 1
+			"cat": 3
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Pirate/HydroidAlternateSkin": {
 			"desc": "Hydroid Immortal Skin",
@@ -617,7 +617,7 @@
 			"cat": 1
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/MeleeDangles/InfestedMeleeDangle": {
-			"desc": "null",
+			"desc": "Occyst Sugatra",
 			"cat": 1
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Warframe/Expert/AvatarAbilityDurationModExpert": {
