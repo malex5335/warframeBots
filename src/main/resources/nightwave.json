@@ -393,7 +393,7 @@
 			"desc": "Mercy Kill an Enemy",
 			"daily": true
 		},
-		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyRailjackDestroyThree": {
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyRailjackHijackDestroyThree": {
 			"desc": "While piloting a hijacked Crewship, destroy 3 enemy Fighters",
 			"weekly": true
 		}
