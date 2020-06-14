@@ -25,8 +25,13 @@ public class ChallengeHelper {
     public static boolean isDaily(String key) {
         try {
             JSONObject challenge = getChallenge(key);
-            if (!challenge.isEmpty() && challenge.has("daily")) {
-                return challenge.getBoolean("daily");
+            if(!challenge.isEmpty()) {
+                if (!challenge.isEmpty() && challenge.has("daily")) {
+                    return challenge.getBoolean("daily");
+                }
+                if (isWeekly(key) || isElite(key)) {
+                    return Boolean.FALSE;
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -37,8 +42,13 @@ public class ChallengeHelper {
     public static boolean isWeekly(String key) {
         try {
             JSONObject challenge = getChallenge(key);
-            if (!challenge.isEmpty() && challenge.has("weekly")) {
-                return challenge.getBoolean("weekly");
+            if(!challenge.isEmpty()) {
+                if (!challenge.isEmpty() && challenge.has("weekly")) {
+                    return challenge.getBoolean("weekly");
+                }
+                if (isDaily(key) || isElite(key)) {
+                    return Boolean.FALSE;
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -49,8 +59,13 @@ public class ChallengeHelper {
     public static boolean isElite(String key) {
         try {
             JSONObject challenge = getChallenge(key);
-            if (!challenge.isEmpty() && challenge.has("elite")) {
-                return challenge.getBoolean("elite");
+            if(!challenge.isEmpty()) {
+                if (!challenge.isEmpty() && challenge.has("elite")) {
+                    return challenge.getBoolean("elite");
+                }
+                if (isWeekly(key) || isDaily(key)) {
+                    return Boolean.FALSE;
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
