@@ -9,7 +9,7 @@ import java.util.Timer;
 import java.util.concurrent.TimeUnit;
 
 public class NoraNight extends BasicBot {
-    public static final String TOKEN = "NzEwMzk0MTYwMDY2MDY4NTMx.XsOwig.NyCG72MhcDtHB3OS_rfJau3z4KY";
+    public static final String TOKEN = System.getenv().get("NORA_TOKEN");
     public static final long GUILD_ID = 564803688301068288L;
     public static final long CHANNEL_ID = 571386096051814410L;
     public static final Locale LOCALE = Locale.UK;
