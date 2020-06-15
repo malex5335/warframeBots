@@ -1,5 +1,6 @@
 package de.riagade.warframeBots.nightwave.util;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import de.riagade.warframeBots.util.GenericJSONParser;
 import org.json.JSONObject;
 
@@ -22,14 +23,17 @@ public class ChallengeHelper {
         return key;
     }
 
-    public static boolean isDaily(String key) {
+    private static boolean isDaily(String key, E_ChallengeType before){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
-                if (!challenge.isEmpty() && challenge.has("daily")) {
+                if (challenge.has("daily")) {
                     return challenge.getBoolean("daily");
                 }
-                if (isWeekly(key) || isElite(key)) {
+                if(!before.equals(E_ChallengeType.ELITE) && isElite(key, E_ChallengeType.DAILY)) {
+                    return Boolean.FALSE;
+                }
+                if (!before.equals(E_ChallengeType.WEEKLY) && isWeekly(key, E_ChallengeType.DAILY)) {
                     return Boolean.FALSE;
                 }
             }
@@ -39,14 +43,21 @@ public class ChallengeHelper {
         return key.contains("/Daily/");
     }
 
-    public static boolean isWeekly(String key) {
+    public static boolean isDaily(String key) {
+        return isDaily(key, E_ChallengeType.DAILY);
+    }
+
+    private static boolean isWeekly(String key, E_ChallengeType before){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
-                if (!challenge.isEmpty() && challenge.has("weekly")) {
+                if (challenge.has("weekly")) {
                     return challenge.getBoolean("weekly");
                 }
-                if (isDaily(key) || isElite(key)) {
+                if(!before.equals(E_ChallengeType.ELITE) && isElite(key, E_ChallengeType.WEEKLY)) {
+                    return Boolean.FALSE;
+                }
+                if (!before.equals(E_ChallengeType.DAILY) && isDaily(key, E_ChallengeType.WEEKLY)) {
                     return Boolean.FALSE;
                 }
             }
@@ -56,14 +67,21 @@ public class ChallengeHelper {
         return key.contains("/Weekly/");
     }
 
-    public static boolean isElite(String key) {
+    public static boolean isWeekly(String key) {
+        return isWeekly(key, E_ChallengeType.WEEKLY);
+    }
+
+    private static boolean isElite(String key, E_ChallengeType before){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
-                if (!challenge.isEmpty() && challenge.has("elite")) {
+                if (challenge.has("elite")) {
                     return challenge.getBoolean("elite");
                 }
-                if (isWeekly(key) || isDaily(key)) {
+                if (!before.equals(E_ChallengeType.DAILY) && isDaily(key, E_ChallengeType.ELITE)) {
+                    return Boolean.FALSE;
+                }
+                if (!before.equals(E_ChallengeType.WEEKLY) && isWeekly(key, E_ChallengeType.ELITE)) {
                     return Boolean.FALSE;
                 }
             }
@@ -71,6 +89,10 @@ public class ChallengeHelper {
             e.printStackTrace();
         }
         return key.contains("/WeeklyHard/");
+    }
+
+    public static boolean isElite(String key) {
+        return isElite(key, E_ChallengeType.ELITE);
     }
 
     public static String getStanding(String key) {
