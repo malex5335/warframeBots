@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class BaroKiTeer extends BasicBot {
-    public static final String TOKEN = "NzEwNDMzODk1OTUwMDU3NTU0.XsOwuw.IT7RIuUkG2SgDF0Uk-rWKJYh73A";
+    public static final String TOKEN = System.getenv().get("BARO_TOKEN");
     public static final long GUILD_ID = 564803688301068288L;
     public static final long CHANNEL_ID = 571408897420820513L;
     public static final Locale LOCALE = Locale.UK;
