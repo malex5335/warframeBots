@@ -253,10 +253,6 @@
 			"desc": "Complete 5 different bounties in the Orb Vallis",
 			"weekly": true
 		},
-		"/Lotus/Types/Challenges/Seasons/WeeklyHard/": {
-			"desc": "Complete 3 Sorties",
-			"elite": true
-		},
 		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteNightmareMissions": {
 			"desc": "Complete 10 Nightmare missions of any type",
 			"elite": true
