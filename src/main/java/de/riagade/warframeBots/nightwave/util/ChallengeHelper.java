@@ -23,7 +23,7 @@ public class ChallengeHelper {
         return key;
     }
 
-    private static boolean isDaily(String key){
+    public static boolean isDaily(String key){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
@@ -39,7 +39,7 @@ public class ChallengeHelper {
         return key.contains("/Daily/");
     }
 
-    private static boolean isWeekly(String key){
+    public static boolean isWeekly(String key){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
@@ -55,7 +55,7 @@ public class ChallengeHelper {
         return key.contains("/Weekly/");
     }
 
-    private static boolean isElite(String key){
+    public static boolean isElite(String key){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
