@@ -791,6 +791,22 @@
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetBlueSkySkinInaros": {
 			"desc": "Scimitar Cydonia Skin",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Archwing/Rifle/Expert/ArchwingRifleDamageAmountModExpert": {
+			"desc": "Primed Rubedo-Lined Barrel",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Sentinel/Kubrow/Expert/KubrowPackLeaderExpertMod": {
+			"desc": "Primed Pack Leader",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/PlushyDesertSkate": {
+			"desc": "Desert Skate Floof",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Camo/DesertDirigaSkin": {
+			"desc": "Diriga Desert-Camo Skin",
+			"cat": 1
 		}
 	}
 }
