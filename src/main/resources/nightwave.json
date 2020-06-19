@@ -392,6 +392,10 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyRailjackHijackDestroyThree": {
 			"desc": "While piloting a hijacked Crewship, destroy 3 enemy Fighters",
 			"weekly": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionPrimary": {
+			"desc": "Complete a Mission with only a Primary Weapon equipped",
+			"daily": true
 		}
 	}
 }
