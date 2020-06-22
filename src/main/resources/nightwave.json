@@ -400,6 +400,10 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySuspendFiveEnemies": {
 			"desc": "Suspend 5 or more enemies in the air at once with a Heavy Slam Melee Attack",
 			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyGildModular": {
+			"desc": "Gild 1 Modular Items",
+			"weekly": true
 		}
 	}
 }
