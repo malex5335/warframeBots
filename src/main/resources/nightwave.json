@@ -404,6 +404,10 @@
 		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyGildModular": {
 			"desc": "Gild 1 Modular Items",
 			"weekly": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionMelee": {
+			"desc": "Complete a Mission with only a Melee Weapon equipped",
+			"daily": true
 		}
 	}
 }
