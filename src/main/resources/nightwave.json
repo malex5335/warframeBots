@@ -409,5 +409,9 @@
 			"desc": "Complete a Mission with only a Melee Weapon equipped",
 			"daily": true
 		}
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyVisitFeaturedDojo": {
+			"desc": "Visit a Featured Dojo",
+			"daily": true
+		}
 	}
 }
