@@ -412,6 +412,10 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyVisitFeaturedDojo": {
 			"desc": "Visit a Featured Dojo",
 			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyLichNode": {
+			"desc": "Clear a personal Lich Influenced Node",
+			"daily": true
 		}
 	}
 }
