@@ -416,6 +416,10 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyLichNode": {
 			"desc": "Clear a personal Lich Influenced Node",
 			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillThrall": {
+			"desc": "Kill a Kuva Thrall",
+			"daily": true
 		}
 	}
 }
