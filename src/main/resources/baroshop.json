@@ -807,6 +807,26 @@
 		"/Lotus/StoreItems/Upgrades/Skins/Camo/DesertDirigaSkin": {
 			"desc": "Diriga Desert-Camo Skin",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sigils/PrismaLotusSigil": {
+			"desc": "Prisma Lotus Sigil",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Sentinel/SentinelLootRadarEnemyRadarExpertMod": {
+			"desc": "Primed Animal Instinct",
+			"cat": 3
+		},
+		"//Lotus/StoreItems/Upgrades/Skins/Cowgirl/MesaImmortallSkin": {
+			"desc": "Mesa Immortal Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Effects/BaroEphemeraA": {
+			"desc": "Ki'Teer Ephemera",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKavat": {
+			"desc": "Prisma Kavat Glyph",
+			"cat": 1
 		}
 	}
 }
