@@ -420,6 +420,10 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillThrall": {
 			"desc": "Kill a Kuva Thrall",
 			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFinishLich": {
+			"desc": "Kill or Convert a Kuva Lich",
+			"elite": true
 		}
 	}
 }
