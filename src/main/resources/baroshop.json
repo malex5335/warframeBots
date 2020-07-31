@@ -827,6 +827,26 @@
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKavat": {
 			"desc": "Prisma Kavat Glyph",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Effects/LotusFlowers": {
+			"desc": "Lotus Ephemera",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/PrismaGrinlokWeapon": {
+			"desc": "Prisma Grinlok",
+			"cat": 4
+		},
+		"/Lotus/Types/StoreItems/Boosters/ModDropChanceBooster3DayStoreItem": {
+			"desc": "3 Day Mod Drop Chance Booster",
+			"cat": 8
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Magician/LimboImmortalSkin": {
+			"desc": "Limbo Immortal Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropCleaningDroneBaro": {
+			"desc": "Ki'Teer Domestik Drone",
+			"cat": 1
 		}
 	}
 }
