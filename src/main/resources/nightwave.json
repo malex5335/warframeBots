@@ -424,6 +424,10 @@
 		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFinishLich": {
 			"desc": "Kill or Convert a Kuva Lich",
 			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDonateLeverian": {
+			"desc": "Donate to the Leverian",
+			"daily": true
 		}
 	}
 }
