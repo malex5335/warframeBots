@@ -428,6 +428,10 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDonateLeverian": {
 			"desc": "Donate to the Leverian",
 			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteSortie": {
+			"desc": "Complete 3 Sorties",
+			"elite": true
 		}
 	}
 }
