@@ -1,4 +1,4 @@
-{
+a{
 	"categories": [
 		"unassigned",
 		"Skins and Cosmetics",
@@ -847,6 +847,14 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropCleaningDroneBaro": {
 			"desc": "Ki'Teer Domestik Drone",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/UmbraPedestal": {
+			"desc": "Pedestral Umbra",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/ClanTech/Chemical/FlameThrowerWraith": {
+			"desc": "Ignis Wraith",
+			"cat": 4
 		}
 	}
 }
