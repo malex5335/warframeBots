@@ -432,6 +432,10 @@
 		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteSortie": {
 			"desc": "Complete 3 Sorties",
 			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyRailjackMissions": {
+			"desc": "Complete 3 Railjack Missions",
+			"weekly": true
 		}
 	}
 }
