@@ -855,6 +855,22 @@
 		"/Lotus/StoreItems/Weapons/ClanTech/Chemical/FlameThrowerWraith": {
 			"desc": "Ignis Wraith",
 			"cat": 4
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol": {
+			"desc": "Zylok",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Hoverboard/HoverboardStickerBaroB": {
+			"desc": "Green Ki'Teer Safari K-Drive Scrawl",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKubrowBadgeItem": {
+			"desc": "Pack Leader Emblem",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationH": {
+			"desc": "Vez Luxxum Ornament",
+			"cat": 1
 		}
 	}
 }
