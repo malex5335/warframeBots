@@ -871,6 +871,22 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationH": {
 			"desc": "Vez Luxxum Ornament",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisLatronPistol": {
+			"desc": "Elixis Latron Pistol Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Hoverboard/HoverboardStickerBaroA": {
+			"desc": "Blue Ki'Teer Safari K-Drive Scrawl",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationG": {
+			"desc": "Sima Luxxum Ornament",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKavatBadgeItem": {
+			"desc": "Glaring Emblem",
+			"cat": 1
 		}
 	}
 }
