@@ -4,6 +4,8 @@ import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.nightwave.util.ChallengeHelper;
 import de.riagade.warframeBots.nightwave.util.Challenge;
 import de.riagade.warframeBots.util.GenericJSONParser;
+import lombok.Getter;
+import lombok.Setter;
 import org.codehaus.plexus.util.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -13,19 +15,13 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.TimerTask;
 
+@Getter
+@Setter
 public class WeeklyReminder  extends TimerTask {
     private BasicBot bot;
 
     public WeeklyReminder(BasicBot bot) {
         setBot(bot);
-    }
-
-    public BasicBot getBot() {
-        return bot;
-    }
-
-    public void setBot(BasicBot bot) {
-        this.bot = bot;
     }
 
     @Override

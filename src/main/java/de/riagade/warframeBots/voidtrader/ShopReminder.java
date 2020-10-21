@@ -4,25 +4,21 @@ import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.GenericJSONParser;
 import de.riagade.warframeBots.voidtrader.util.ShopItem;
 import de.riagade.warframeBots.voidtrader.util.ShopItemHelper;
+import lombok.Getter;
+import lombok.Setter;
 import org.codehaus.plexus.util.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.*;
 
+@Getter
+@Setter
 public class ShopReminder extends TimerTask {
     private BasicBot bot;
 
     public ShopReminder(BasicBot bot){
         setBot(bot);
-    }
-
-    public BasicBot getBot() {
-        return bot;
-    }
-
-    public void setBot(BasicBot bot) {
-        this.bot = bot;
     }
 
     @Override

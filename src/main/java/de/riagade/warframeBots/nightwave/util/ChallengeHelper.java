@@ -1,13 +1,14 @@
 package de.riagade.warframeBots.nightwave.util;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import de.riagade.warframeBots.util.GenericJSONParser;
+import lombok.experimental.UtilityClass;
 import org.json.JSONObject;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
 
+@UtilityClass
 public class ChallengeHelper {
     public static final String CHALLENGE_DATA = "nightwave.json";
 

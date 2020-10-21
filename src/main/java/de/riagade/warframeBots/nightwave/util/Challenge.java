@@ -1,10 +1,14 @@
 package de.riagade.warframeBots.nightwave.util;
 
 import de.riagade.warframeBots.util.BasicBot;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Getter
+@Setter
 public class Challenge {
     private String name, description, standing;
     private E_ChallengeType missionType;
@@ -16,46 +20,6 @@ public class Challenge {
         setStanding(ChallengeHelper.getStanding(getName()));
         setMissionType(ChallengeHelper.getMissionType(getName()));
         setExpireDate(expireDate);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    private void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    private void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getStanding() {
-        return standing;
-    }
-
-    private void setStanding(String standing) {
-        this.standing = standing;
-    }
-
-    public E_ChallengeType getMissionType() {
-        return missionType;
-    }
-
-    private void setMissionType(E_ChallengeType missionType) {
-        this.missionType = missionType;
-    }
-
-    public Date getExpireDate() {
-        return expireDate;
-    }
-
-    private void setExpireDate(Date expireDate) {
-        this.expireDate = expireDate;
     }
 
     public void sendMessage(BasicBot bot) {

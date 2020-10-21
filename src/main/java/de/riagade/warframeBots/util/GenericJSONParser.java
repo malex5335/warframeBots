@@ -1,11 +1,13 @@
 package de.riagade.warframeBots.util;
 
+import lombok.experimental.UtilityClass;
 import org.json.JSONObject;
 
 import java.io.*;
 import java.net.URL;
 import java.util.Objects;
 
+@UtilityClass
 public class GenericJSONParser {
 
     public static JSONObject getJSONObject(String jsonLocation) throws Exception {

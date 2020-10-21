@@ -1,9 +1,8 @@
 package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.util.BasicBot;
+import de.riagade.warframeBots.util.CronHelper;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.concurrent.TimeUnit;
@@ -27,38 +26,12 @@ public class NoraNight extends BasicBot {
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new DailyReminder(this),
-                getNextStart(1, 0, 0),
+                CronHelper.getNextDate("0 0 1 ? * * *"),
                 TimeUnit.DAYS.toMillis(1));
         new Timer().scheduleAtFixedRate(
                 new WeeklyReminder(this),
-                getNextStartWeekly(1, 0, 5),
+                CronHelper.getNextDate("5 0 1 ? * * *"),
                 TimeUnit.DAYS.toMillis(7));
-    }
-
-    public static Date getNextStart(int hourOfDay, int minute, int second){
-        Calendar nextStart = Calendar.getInstance(NoraNight.LOCALE);
-        if (nextStart.get(Calendar.HOUR_OF_DAY) >= hourOfDay) {
-            nextStart.add(Calendar.DAY_OF_YEAR, 1);
-        }
-        nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        nextStart.set(Calendar.MINUTE, minute);
-        nextStart.set(Calendar.SECOND, second);
-        nextStart.set(Calendar.MILLISECOND, 0);
-        return nextStart.getTime();
-    }
-
-    public static Date getNextStartWeekly(int hourOfDay, int minute, int second){
-        Calendar nextStart = Calendar.getInstance(NoraNight.LOCALE);
-        if (!(nextStart.get(Calendar.HOUR_OF_DAY) < hourOfDay
-                && nextStart.get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY)) {
-            nextStart.add(Calendar.WEEK_OF_YEAR, 1);
-            nextStart.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
-        }
-        nextStart.set(Calendar.HOUR_OF_DAY, hourOfDay);
-        nextStart.set(Calendar.MINUTE, minute);
-        nextStart.set(Calendar.SECOND, second);
-        nextStart.set(Calendar.MILLISECOND, 0);
-        return nextStart.getTime();
     }
 
 }

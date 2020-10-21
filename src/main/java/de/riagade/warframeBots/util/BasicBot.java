@@ -1,5 +1,7 @@
 package de.riagade.warframeBots.util;
 
+import lombok.Getter;
+import lombok.Setter;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -9,9 +11,12 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import javax.security.auth.login.LoginException;
 import java.util.Locale;
 
+@Getter
+@Setter
 public class BasicBot extends ListenerAdapter {
     public static final String WORLD_STATE = "http://content.warframe.com/dynamic/worldState.php";
-    private long guildId, channelId;
+    private long guildId;
+    private long channelId;
     private String botToken;
     private Locale locale;
     private JDA jda;
@@ -21,46 +26,6 @@ public class BasicBot extends ListenerAdapter {
         setGuildId(guildId);
         setChannelId(channelId);
         setLocale(locale);
-    }
-
-    public long getGuildId() {
-        return guildId;
-    }
-
-    private void setGuildId(long guildId) {
-        this.guildId = guildId;
-    }
-
-    public long getChannelId() {
-        return channelId;
-    }
-
-    private void setChannelId(long channelId) {
-        this.channelId = channelId;
-    }
-
-    public String getBotToken() {
-        return botToken;
-    }
-
-    private void setBotToken(String botToken) {
-        this.botToken = botToken;
-    }
-
-    public Locale getLocale() {
-        return locale;
-    }
-
-    private void setLocale(Locale locale) {
-        this.locale = locale;
-    }
-
-    public JDA getJda() {
-        return jda;
-    }
-
-    private void setJda(JDA jda) {
-        this.jda = jda;
     }
 
     public void connect() {
