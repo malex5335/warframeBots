@@ -24,17 +24,13 @@ public class ChallengeHelper {
         return key;
     }
 
-    private static boolean isDaily(String key, E_ChallengeType before){
+    public static boolean isDaily(String key){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
                 if (challenge.has("daily")) {
                     return challenge.getBoolean("daily");
-                }
-                if(!before.equals(E_ChallengeType.ELITE) && isElite(key, E_ChallengeType.DAILY)) {
-                    return Boolean.FALSE;
-                }
-                if (!before.equals(E_ChallengeType.WEEKLY) && isWeekly(key, E_ChallengeType.DAILY)) {
+                } else {
                     return Boolean.FALSE;
                 }
             }
@@ -44,21 +40,13 @@ public class ChallengeHelper {
         return key.contains("/Daily/");
     }
 
-    public static boolean isDaily(String key) {
-        return isDaily(key, E_ChallengeType.DAILY);
-    }
-
-    private static boolean isWeekly(String key, E_ChallengeType before){
+    public static boolean isWeekly(String key){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
                 if (challenge.has("weekly")) {
                     return challenge.getBoolean("weekly");
-                }
-                if(!before.equals(E_ChallengeType.ELITE) && isElite(key, E_ChallengeType.WEEKLY)) {
-                    return Boolean.FALSE;
-                }
-                if (!before.equals(E_ChallengeType.DAILY) && isDaily(key, E_ChallengeType.WEEKLY)) {
+                } else {
                     return Boolean.FALSE;
                 }
             }
@@ -68,21 +56,13 @@ public class ChallengeHelper {
         return key.contains("/Weekly/");
     }
 
-    public static boolean isWeekly(String key) {
-        return isWeekly(key, E_ChallengeType.WEEKLY);
-    }
-
-    private static boolean isElite(String key, E_ChallengeType before){
+    public static boolean isElite(String key){
         try {
             JSONObject challenge = getChallenge(key);
             if(!challenge.isEmpty()) {
                 if (challenge.has("elite")) {
                     return challenge.getBoolean("elite");
-                }
-                if (!before.equals(E_ChallengeType.DAILY) && isDaily(key, E_ChallengeType.ELITE)) {
-                    return Boolean.FALSE;
-                }
-                if (!before.equals(E_ChallengeType.WEEKLY) && isWeekly(key, E_ChallengeType.ELITE)) {
+                } else {
                     return Boolean.FALSE;
                 }
             }
@@ -90,10 +70,6 @@ public class ChallengeHelper {
             e.printStackTrace();
         }
         return key.contains("/WeeklyHard/");
-    }
-
-    public static boolean isElite(String key) {
-        return isElite(key, E_ChallengeType.ELITE);
     }
 
     public static String getStanding(String key) {

@@ -392,6 +392,50 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyRailjackHijackDestroyThree": {
 			"desc": "While piloting a hijacked Crewship, destroy 3 enemy Fighters",
 			"weekly": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionPrimary": {
+			"desc": "Complete a Mission with only a Primary Weapon equipped",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySuspendFiveEnemies": {
+			"desc": "Suspend 5 or more enemies in the air at once with a Heavy Slam Melee Attack",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyGildModular": {
+			"desc": "Gild 1 Modular Items",
+			"weekly": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionMelee": {
+			"desc": "Complete a Mission with only a Melee Weapon equipped",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyVisitFeaturedDojo": {
+			"desc": "Visit a Featured Dojo",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyLichNode": {
+			"desc": "Clear a personal Lich Influenced Node",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillThrall": {
+			"desc": "Kill a Kuva Thrall",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFinishLich": {
+			"desc": "Kill or Convert a Kuva Lich",
+			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDonateLeverian": {
+			"desc": "Donate to the Leverian",
+			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteSortie": {
+			"desc": "Complete 3 Sorties",
+			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyRailjackMissions": {
+			"desc": "Complete 3 Railjack Missions",
+			"weekly": true
 		}
 	}
 }

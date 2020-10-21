@@ -729,7 +729,7 @@
 			"cat": 1
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Warframe/Expert/AvatarPowerMaxModExpert": {
-			"desc": "Primed Regen",
+			"desc": "Primed Flow",
 			"cat": 3
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/WeaponEventSlashDamageMod": {
@@ -790,6 +790,102 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetBlueSkySkinInaros": {
 			"desc": "Scimitar Cydonia Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Archwing/Rifle/Expert/ArchwingRifleDamageAmountModExpert": {
+			"desc": "Primed Rubedo-Lined Barrel",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Sentinel/Kubrow/Expert/KubrowPackLeaderExpertMod": {
+			"desc": "Primed Pack Leader",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/PlushyDesertSkate": {
+			"desc": "Desert Skate Floof",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Camo/DesertDirigaSkin": {
+			"desc": "Diriga Desert-Camo Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sigils/PrismaLotusSigil": {
+			"desc": "Prisma Lotus Sigil",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Sentinel/SentinelLootRadarEnemyRadarExpertMod": {
+			"desc": "Primed Animal Instinct",
+			"cat": 3
+		},
+		"//Lotus/StoreItems/Upgrades/Skins/Cowgirl/MesaImmortallSkin": {
+			"desc": "Mesa Immortal Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Effects/BaroEphemeraA": {
+			"desc": "Ki'Teer Ephemera",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKavat": {
+			"desc": "Prisma Kavat Glyph",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Effects/LotusFlowers": {
+			"desc": "Lotus Ephemera",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/LongGuns/GrineerLeverActionRifle/PrismaGrinlokWeapon": {
+			"desc": "Prisma Grinlok",
+			"cat": 4
+		},
+		"/Lotus/Types/StoreItems/Boosters/ModDropChanceBooster3DayStoreItem": {
+			"desc": "3 Day Mod Drop Chance Booster",
+			"cat": 8
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Magician/LimboImmortalSkin": {
+			"desc": "Limbo Immortal Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropCleaningDroneBaro": {
+			"desc": "Ki'Teer Domestik Drone",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/UmbraPedestal": {
+			"desc": "Pedestral Umbra",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/ClanTech/Chemical/FlameThrowerWraith": {
+			"desc": "Ignis Wraith",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol": {
+			"desc": "Zylok",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Hoverboard/HoverboardStickerBaroB": {
+			"desc": "Green Ki'Teer Safari K-Drive Scrawl",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKubrowBadgeItem": {
+			"desc": "Pack Leader Emblem",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationH": {
+			"desc": "Vez Luxxum Ornament",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisLatronPistol": {
+			"desc": "Elixis Latron Pistol Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Hoverboard/HoverboardStickerBaroA": {
+			"desc": "Blue Ki'Teer Safari K-Drive Scrawl",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationG": {
+			"desc": "Sima Luxxum Ornament",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKavatBadgeItem": {
+			"desc": "Glaring Emblem",
 			"cat": 1
 		}
 	}
