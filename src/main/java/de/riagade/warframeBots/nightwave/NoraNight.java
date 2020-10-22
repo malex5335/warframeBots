@@ -30,7 +30,7 @@ public class NoraNight extends BasicBot {
                 TimeUnit.DAYS.toMillis(1));
         new Timer().scheduleAtFixedRate(
                 new WeeklyReminder(this),
-                CronHelper.getNextDate("5 0 1 ? * * *"),
+                CronHelper.getNextDate("5 0 1 ? * 2/7 *"),
                 TimeUnit.DAYS.toMillis(7));
     }
 
