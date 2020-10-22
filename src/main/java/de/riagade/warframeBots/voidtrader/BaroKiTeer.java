@@ -25,7 +25,7 @@ public class BaroKiTeer extends BasicBot {
     public void setUpTasks() {
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(this),
-                CronHelper.calculatePartWeekly("* 0 0 ? * FRI *", 2, true),
+                CronHelper.calculatePartWeekly("0 0 14 ? * FRI *", 2, true),
                 TimeUnit.DAYS.toMillis(14));
     }
 
