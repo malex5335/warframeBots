@@ -36,7 +36,7 @@ public class DailyReminder extends TimerTask {
     }
 
     private List<Challenge> generateMissions() {
-        List<Challenge> challengeList = new ArrayList<Challenge>();
+        List<Challenge> challengeList = new ArrayList<>();
         try {
             JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
             JSONObject seasonInfo = object.getJSONObject("SeasonInfo");

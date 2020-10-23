@@ -52,13 +52,13 @@ public class ShopReminder extends TimerTask {
     }
 
     private Map<String, List<ShopItem>> orderShopItems(List<ShopItem> shopItemList) {
-        Map<String, List<ShopItem>> orderedShopItems = new TreeMap<String, List<ShopItem>>();
+        Map<String, List<ShopItem>> orderedShopItems = new TreeMap<>();
         for(ShopItem item : shopItemList){
             String key = item.getCategory();
             if(orderedShopItems.containsKey(key)){
                 orderedShopItems.get(key).add(item);
             } else {
-                List<ShopItem> items = new ArrayList<ShopItem>();
+                List<ShopItem> items = new ArrayList<>();
                 items.add(item);
                 orderedShopItems.put(key, items);
             }
@@ -93,7 +93,7 @@ public class ShopReminder extends TimerTask {
     }
 
     private List<ShopItem> generateShopItems() {
-        List<ShopItem> shopItems = new ArrayList<ShopItem>();
+        List<ShopItem> shopItems = new ArrayList<>();
         try {
             JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
             JSONArray voidTraders = object.getJSONArray("VoidTraders");

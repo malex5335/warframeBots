@@ -1,16 +1,31 @@
 package de.riagade.warframeBots.nightwave.util;
 
+import com.google.inject.internal.util.Lists;
 import de.riagade.warframeBots.util.GenericJSONParser;
 import lombok.experimental.UtilityClass;
 import org.json.JSONObject;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 @UtilityClass
 public class ChallengeHelper {
     public static final String CHALLENGE_DATA = "nightwave.json";
+
+    public static List<String> getKeys() {
+        List<String> keys = new ArrayList<>();
+        try{
+            JSONObject challenges = GenericJSONParser.getJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+                    .getJSONObject("challenges");
+            keys.addAll(Lists.newArrayList(challenges.keys()));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return keys;
+    }
 
     public static String getDescription(String key) {
         try {

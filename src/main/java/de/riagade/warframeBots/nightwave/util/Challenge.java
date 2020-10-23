@@ -10,7 +10,9 @@ import java.util.Date;
 @Getter
 @Setter
 public class Challenge {
-    private String name, description, standing;
+    private String name;
+    private String description;
+    private String standing;
     private E_ChallengeType missionType;
     private Date expireDate;
 

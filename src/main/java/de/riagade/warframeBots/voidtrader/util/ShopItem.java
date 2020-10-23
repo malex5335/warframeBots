@@ -4,7 +4,11 @@ import lombok.Data;
 
 @Data
 public class ShopItem {
-    private String name, description, category,ducats, credits;
+    private String name;
+    private String description;
+    private String category;
+    private String ducats;
+    private String credits;
 
     public ShopItem(String name, int ducats, int credits){
         setName(name);

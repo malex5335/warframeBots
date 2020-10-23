@@ -2,6 +2,7 @@ package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.CronHelper;
+import de.riagade.warframeBots.voidtrader.PastItemMessagesCorrector;
 
 import java.util.Locale;
 import java.util.Timer;
@@ -32,6 +33,10 @@ public class NoraNight extends BasicBot {
                 new WeeklyReminder(this),
                 CronHelper.getNextDate("5 0 1 ? * 2/7 *"),
                 TimeUnit.DAYS.toMillis(7));
+        new Timer().scheduleAtFixedRate(
+                new PastChallengeMessagesCorrector(this),
+                CronHelper.getNextDate("0 0 * ? * * *"),
+                TimeUnit.HOURS.toMillis(1));
     }
 
 }
