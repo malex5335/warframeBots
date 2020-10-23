@@ -1,7 +1,7 @@
 {
 	"categories": [
 		"unassigned",
-		"Skins and Cosmetics",
+		"Skins, Cosmetics and Decoration",
 		"Blueprints",
 		"Mods",
 		"Weapons and Sentinels",
@@ -886,6 +886,30 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKavatBadgeItem": {
 			"desc": "Glaring Emblem",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConA": {
+			"desc": "Deimos Fass Prex",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConC": {
+			"desc": "Deimos Velocipod Prex",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/BowMultiShotOnHitMod": {
+			"desc": "Split Flights",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Cowgirl/MesaImmortallSkin": {
+			"desc": "Mesa Immortal Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Halloween/HalloweenDread": {
+			"desc": "Dread Day of the Dead",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/Halloween2019GrendelTreat": {
+			"desc": "In Mah Belly Glyph",
 			"cat": 1
 		}
 	}
