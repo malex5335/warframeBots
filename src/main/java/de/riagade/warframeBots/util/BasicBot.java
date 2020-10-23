@@ -46,4 +46,8 @@ public class BasicBot extends ListenerAdapter {
         Objects.requireNonNull(getJda().getTextChannelById(getChannelId())).sendMessage(msg).queue();
     }
 
+    public void editMessage(String id, String msg) {
+        Objects.requireNonNull(getJda().getTextChannelById(getChannelId())).editMessageById(id, msg).queue();
+    }
+
 }

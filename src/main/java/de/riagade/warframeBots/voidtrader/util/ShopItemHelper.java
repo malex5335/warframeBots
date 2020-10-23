@@ -1,5 +1,6 @@
 package de.riagade.warframeBots.voidtrader.util;
 
+import com.google.inject.internal.util.Lists;
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.GenericJSONParser;
 import org.json.JSONArray;
@@ -8,14 +9,23 @@ import org.json.JSONObject;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 
 public class ShopItemHelper {
     public static final String SHOP_ITEM_DATA = "baroshop.json";
+
+    public static List<String> getKeys() {
+        List<String> keys = new ArrayList<>();
+        try{
+            JSONObject shopItems = GenericJSONParser.getJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
+                    .getJSONObject("items");
+            keys.addAll(Lists.newArrayList(shopItems.keys()));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return keys;
+    }
 
     public static String getDescription(String key) {
         try{

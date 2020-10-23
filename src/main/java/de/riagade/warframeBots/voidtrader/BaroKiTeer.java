@@ -26,7 +26,11 @@ public class BaroKiTeer extends BasicBot {
         new Timer().scheduleAtFixedRate(
                 new ShopReminder(this),
                 CronHelper.getNextDate("0 0 14 ? * FRI *"),
-                TimeUnit.DAYS.toMillis(14));
+                TimeUnit.DAYS.toMillis(7));
+        new Timer().scheduleAtFixedRate(
+                new PastMessageCorrector(this),
+                CronHelper.getNextDate("0 0/30 * ? * * *"),
+                TimeUnit.MINUTES.toMillis(30));
     }
 
 }
