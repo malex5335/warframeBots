@@ -36,26 +36,4 @@ public class CronHelper {
             return new Date(0);
         }
     }
-
-    /**
-     * calculates the next possible Date for a cron expression
-     *
-     * @param cronExpression the cron expression to check for
-     * @param moduloNumber the number of n in 'each n week'
-     * @param revertExpectation true if the result should ne every every week but the expected one
-     * @return the next Date to run according to the cron expression or new Date(0) if something goes wrong
-     */
-    public static Date calculatePartWeekly(String cronExpression, int moduloNumber, boolean revertExpectation) {
-        Calendar referenceDate = Calendar.getInstance();
-        if(revertExpectation){
-            while(referenceDate.get(Calendar.WEEK_OF_YEAR) % moduloNumber == 0) {
-                referenceDate.add(Calendar.DATE, 1);
-            }
-        } else {
-            while(referenceDate.get(Calendar.WEEK_OF_YEAR) % moduloNumber > 0) {
-                referenceDate.add(Calendar.DATE, 1);
-            }
-        }
-        return CronHelper.getNextDateAfter(referenceDate.getTime(), cronExpression);
-    }
 }

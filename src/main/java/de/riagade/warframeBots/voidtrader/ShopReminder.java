@@ -16,18 +16,39 @@ import java.util.*;
 @Setter
 public class ShopReminder extends TimerTask {
     private BasicBot bot;
+    private boolean active;
 
     public ShopReminder(BasicBot bot){
         setBot(bot);
+        setActive(retrieveActiveState());
     }
 
     @Override
     public void run() {
-        Date expireDate = getExpireDate();
-        List<ShopItem> shopItemList = generateShopItems();
-        String msg = ShopItemHelper.createBaroMessage(getBot(), getStartDate(), getExpireDate(),
-                orderShopItems(shopItemList));
-        getBot().sendMessage(msg);
+        if(isActive()) {
+            List<ShopItem> shopItemList = generateShopItems();
+            getBot().sendMessage(ShopItemHelper.createBaroTimeMessage(getBot(), getStartDate(), getExpireDate()));
+            for(String category : orderShopItems(shopItemList).keySet()){
+                getBot().sendMessage(ShopItemHelper.createMessageForItemGroup(category, orderShopItems(shopItemList).get(category)));
+            }
+        }
+    }
+
+    private boolean retrieveActiveState() {
+        try {
+            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            if(object.has("VoidTraders")) {
+                JSONArray voidTraders = object.getJSONArray("VoidTraders");
+                JSONObject firstEntry = voidTraders.getJSONObject(0);
+                if(firstEntry.has("Manifest")) {
+                    JSONArray manifest = firstEntry.getJSONArray("Manifest");
+                    return manifest.length() > 0;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     private Map<String, List<ShopItem>> orderShopItems(List<ShopItem> shopItemList) {

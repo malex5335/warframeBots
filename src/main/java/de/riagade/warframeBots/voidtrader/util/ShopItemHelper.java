@@ -75,19 +75,10 @@ public class ShopItemHelper {
         return decimalFormat.format(value);
     }
 
-    public static String createMessageForItemGroups(Map<String, List<ShopItem>> orderedShopItems) {
-        StringBuilder sb = new StringBuilder();
-        for(String key : orderedShopItems.keySet()){
-            List<ShopItem> items = orderedShopItems.get(key);
-            sb.append(ShopItemHelper.createMessageForItemGroup(key, orderedShopItems.get(key)));
-        }
-        return sb.toString();
-    }
-
-    public static String createMessageForItemGroup(String key, List<ShopItem> items) {
+    public static String createMessageForItemGroup(String category, List<ShopItem> items) {
         StringBuilder sb = new StringBuilder();
         sb.append("```ini\n");
-        sb.append("[").append(key).append("]\n");
+        sb.append("[").append(category).append("]\n");
         sb.append("``````diff");
         for(ShopItem item : items){
             sb.append(createMessageForItem(item));
@@ -102,19 +93,15 @@ public class ShopItemHelper {
                 "-- Credits: " + item.getCredits() + "\n";
     }
 
-    public static String createBaroMessage(BasicBot bot,
+    public static String createBaroTimeMessage(BasicBot bot,
                                            Date startDate,
-                                           Date expireDate,
-                                           Map<String, List<ShopItem>> orderedShopItems) {
+                                           Date expireDate) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm z", bot.getLocale());
-        StringBuilder sb = new StringBuilder();
-        sb.append("```css\n");
-        sb.append("[Times]\n");
-        sb.append("``````diff\n");
-        sb.append("- Arrived: ").append(dateFormat.format(startDate)).append("\n");
-        sb.append("- Leaving: ").append(dateFormat.format(expireDate)).append("\n");
-        sb.append("```\n");
-        sb.append(createMessageForItemGroups(orderedShopItems));
-        return sb.toString();
+        return "```css\n" +
+                "[Times]\n" +
+                "``````diff\n" +
+                "- Arrived: " + dateFormat.format(startDate) + "\n" +
+                "- Leaving: " + dateFormat.format(expireDate) + "\n" +
+                "```\n";
     }
 }

@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import javax.security.auth.login.LoginException;
 import java.util.Locale;
+import java.util.Objects;
 
 @Getter
 @Setter
@@ -36,19 +37,13 @@ public class BasicBot extends ListenerAdapter {
             builder.setStatus(OnlineStatus.ONLINE);
             setJda(builder.build());
             getJda().awaitReady();
-        } catch (LoginException e){
-            e.printStackTrace();
-        } catch (InterruptedException e){
+        } catch (LoginException | InterruptedException e){
             e.printStackTrace();
         }
     }
 
-    public void disconnect() {
-        getJda().shutdown();
-    }
-
     public void sendMessage(String msg) {
-        getJda().getTextChannelById(getChannelId()).sendMessage(msg).queue();
+        Objects.requireNonNull(getJda().getTextChannelById(getChannelId())).sendMessage(msg).queue();
     }
 
 }
