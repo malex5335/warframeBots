@@ -41,7 +41,7 @@ public class NoraNight extends BasicBot {
         new Timer().scheduleAtFixedRate(
                 new NoraStatusSwitcher(this),
                 CronHelper.getNextDate("0 * * ? * * *"),
-                TimeUnit.MINUTES.toMillis(30));
+                TimeUnit.MINUTES.toMillis(1));
     }
 
 }

@@ -35,7 +35,7 @@ public class BaroKiTeer extends BasicBot {
         new Timer().scheduleAtFixedRate(
                 new BaroStatusSwitcher(this),
                 CronHelper.getNextDate("0 * * ? * * *"),
-                TimeUnit.MINUTES.toMillis(30));
+                TimeUnit.MINUTES.toMillis(1));
     }
 
 }
