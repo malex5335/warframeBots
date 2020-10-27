@@ -2,6 +2,7 @@ package de.riagade.warframeBots.voidtrader;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.GenericJSONParser;
+import de.riagade.warframeBots.voidtrader.util.BaroHelper;
 import de.riagade.warframeBots.voidtrader.util.ShopItem;
 import de.riagade.warframeBots.voidtrader.util.ShopItemHelper;
 import lombok.Getter;
@@ -20,7 +21,7 @@ public class ShopReminder extends TimerTask {
 
     public ShopReminder(BasicBot bot){
         setBot(bot);
-        setActive(retrieveActiveState());
+        setActive(BaroHelper.retrieveActiveState());
     }
 
     @Override
@@ -32,23 +33,6 @@ public class ShopReminder extends TimerTask {
                 getBot().sendMessage(ShopItemHelper.createMessageForItemGroup(category, orderShopItems(shopItemList).get(category)));
             }
         }
-    }
-
-    private boolean retrieveActiveState() {
-        try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
-            if(object.has("VoidTraders")) {
-                JSONArray voidTraders = object.getJSONArray("VoidTraders");
-                JSONObject firstEntry = voidTraders.getJSONObject(0);
-                if(firstEntry.has("Manifest")) {
-                    JSONArray manifest = firstEntry.getJSONArray("Manifest");
-                    return manifest.length() > 0;
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false;
     }
 
     private Map<String, List<ShopItem>> orderShopItems(List<ShopItem> shopItemList) {

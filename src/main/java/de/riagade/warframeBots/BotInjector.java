@@ -6,8 +6,8 @@ import de.riagade.warframeBots.voidtrader.BaroKiTeer;
 public class BotInjector {
 
     public static void main(String[] args) {
-        NoraNight.injectInstance();
         BaroKiTeer.injectInstance();
+        NoraNight.injectInstance();
     }
 
 }

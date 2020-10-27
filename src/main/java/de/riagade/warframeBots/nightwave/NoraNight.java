@@ -2,7 +2,7 @@ package de.riagade.warframeBots.nightwave;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.CronHelper;
-import de.riagade.warframeBots.voidtrader.PastItemMessagesCorrector;
+import net.dv8tion.jda.api.entities.Activity;
 
 import java.util.Locale;
 import java.util.Timer;
@@ -22,6 +22,7 @@ public class NoraNight extends BasicBot {
         NoraNight noraNight = new NoraNight();
         noraNight.connect();
         noraNight.setUpTasks();
+        noraNight.overwriteActivity(Activity.watching("For some lucky Dreamers"));
     }
 
     public void setUpTasks() {
@@ -37,6 +38,10 @@ public class NoraNight extends BasicBot {
                 new PastChallengeMessagesCorrector(this),
                 CronHelper.getNextDate("0 0 * ? * * *"),
                 TimeUnit.HOURS.toMillis(1));
+        new Timer().scheduleAtFixedRate(
+                new NoraStatusSwitcher(this),
+                CronHelper.getNextDate("0 * * ? * * *"),
+                TimeUnit.MINUTES.toMillis(30));
     }
 
 }

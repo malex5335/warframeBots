@@ -6,7 +6,9 @@ import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
+import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 import javax.security.auth.login.LoginException;
 import java.util.Locale;
@@ -21,6 +23,7 @@ public class BasicBot extends ListenerAdapter {
     private String botToken;
     private Locale locale;
     private JDA jda;
+    private JDABuilder jdaBuilder;
 
     public BasicBot (String botToken, long guildId, long channelId, Locale locale){
         setBotToken(botToken);
@@ -30,16 +33,12 @@ public class BasicBot extends ListenerAdapter {
     }
 
     public void connect() {
-        try {
-            JDABuilder builder = new JDABuilder(AccountType.BOT);
-            builder.setToken(getBotToken());
-            builder.setAutoReconnect(true);
-            builder.setStatus(OnlineStatus.ONLINE);
-            setJda(builder.build());
-            getJda().awaitReady();
-        } catch (LoginException | InterruptedException e){
-            e.printStackTrace();
-        }
+        setJdaBuilder(JDABuilder.createDefault(getBotToken()));
+        getJdaBuilder().disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
+        getJdaBuilder().setBulkDeleteSplittingEnabled(false);
+        getJdaBuilder().setAutoReconnect(true);
+        getJdaBuilder().setStatus(OnlineStatus.ONLINE);
+        rebuild();
     }
 
     public void sendMessage(String msg) {
@@ -50,4 +49,26 @@ public class BasicBot extends ListenerAdapter {
         Objects.requireNonNull(getJda().getTextChannelById(getChannelId())).editMessageById(id, msg).queue();
     }
 
+    public void overwriteActivity(Activity activity) {
+        if(!Objects.equals(getJda().getPresence().getActivity(), activity)) {
+            getJdaBuilder().setActivity(activity);
+            rebuild();
+        }
+    }
+
+    public void overwriteOnlineStatus(OnlineStatus onlineStatus) {
+        if(!Objects.equals(getJda().getPresence().getStatus(), onlineStatus)) {
+            getJdaBuilder().setStatus(onlineStatus);
+            rebuild();
+        }
+    }
+
+    private void rebuild() {
+        try {
+            setJda(getJdaBuilder().build());
+            getJda().awaitReady();
+        } catch (LoginException | InterruptedException e){
+            e.printStackTrace();
+        }
+    }
 }

@@ -2,6 +2,7 @@ package de.riagade.warframeBots.voidtrader;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.CronHelper;
+import net.dv8tion.jda.api.entities.Activity;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -31,6 +32,10 @@ public class BaroKiTeer extends BasicBot {
                 new PastItemMessagesCorrector(this),
                 CronHelper.getNextDate("0 0 * ? * * *"),
                 TimeUnit.HOURS.toMillis(1));
+        new Timer().scheduleAtFixedRate(
+                new BaroStatusSwitcher(this),
+                CronHelper.getNextDate("0 * * ? * * *"),
+                TimeUnit.MINUTES.toMillis(30));
     }
 
 }
