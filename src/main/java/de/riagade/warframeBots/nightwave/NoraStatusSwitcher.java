@@ -24,9 +24,11 @@ public class NoraStatusSwitcher extends TimerTask {
         if(NoraHelper.retrieveActiveState(getBot().getLocale())) {
             getBot().overwriteActivity(Activity.watching("Season " + NoraHelper.retrieveSeasonInfo() + " Phase " + NoraHelper.retrievePhaseInfo()));
             getBot().overwriteOnlineStatus(OnlineStatus.ONLINE);
+            getBot().overwriteIdle(false);
         } else {
             getBot().overwriteActivity(Activity.listening("For your dreams"));
             getBot().overwriteOnlineStatus(OnlineStatus.DO_NOT_DISTURB);
+            getBot().overwriteIdle(true);
         }
     }
 }

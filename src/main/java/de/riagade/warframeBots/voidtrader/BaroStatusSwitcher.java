@@ -23,9 +23,11 @@ public class BaroStatusSwitcher extends TimerTask {
         if(BaroHelper.retrieveActiveState()) {
             getBot().overwriteActivity(Activity.playing("at " + BaroHelper.retrieveShopLocation()));
             getBot().overwriteOnlineStatus(OnlineStatus.ONLINE);
+            getBot().overwriteIdle(false);
         } else {
             getBot().overwriteActivity(Activity.playing("Hide and Seek"));
             getBot().overwriteOnlineStatus(OnlineStatus.DO_NOT_DISTURB);
+            getBot().overwriteIdle(true);
         }
     }
 }
