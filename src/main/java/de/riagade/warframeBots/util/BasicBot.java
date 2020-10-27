@@ -51,15 +51,15 @@ public class BasicBot extends ListenerAdapter {
 
     public void overwriteActivity(Activity activity) {
         if(!Objects.equals(getJda().getPresence().getActivity(), activity)) {
-            getJdaBuilder().setActivity(activity);
-            rebuild();
+            getJda().getPresence().setActivity(activity);
+            //rebuild();
         }
     }
 
     public void overwriteOnlineStatus(OnlineStatus onlineStatus) {
         if(!Objects.equals(getJda().getPresence().getStatus(), onlineStatus)) {
-            getJdaBuilder().setStatus(onlineStatus);
-            rebuild();
+            getJda().getPresence().setStatus(onlineStatus);
+            //rebuild();
         }
     }
 
