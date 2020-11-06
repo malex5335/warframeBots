@@ -911,6 +911,10 @@
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/Halloween2019GrendelTreat": {
 			"desc": "In Mah Belly Glyph",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponGlaiveSecondaryHeadshotKillMod": {
+			"desc": "Combo Killer",
+			"cat": 3
 		}
 	}
 }
