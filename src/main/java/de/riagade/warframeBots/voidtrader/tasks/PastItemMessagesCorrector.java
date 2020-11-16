@@ -26,6 +26,7 @@ public class PastItemMessagesCorrector extends TimerTask {
                 .getTextChannelById(getBot().getChannelId())).getHistoryFromBeginning(100);
         List<String> keys = ShopItemHelper.getKeys();
         for (Message message : history.complete().getRetrievedHistory()) {
+            // @TODO: extract this part to another method to reduce complexity
             String newText = message.getContentRaw();
             boolean changedSomething = Boolean.FALSE;
             for (String key : keys) {
