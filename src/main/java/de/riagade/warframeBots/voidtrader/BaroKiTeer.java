@@ -2,7 +2,9 @@ package de.riagade.warframeBots.voidtrader;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.CronHelper;
-import net.dv8tion.jda.api.entities.Activity;
+import de.riagade.warframeBots.voidtrader.tasks.BaroStatusSwitcher;
+import de.riagade.warframeBots.voidtrader.tasks.PastItemMessagesCorrector;
+import de.riagade.warframeBots.voidtrader.tasks.ShopReminder;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;

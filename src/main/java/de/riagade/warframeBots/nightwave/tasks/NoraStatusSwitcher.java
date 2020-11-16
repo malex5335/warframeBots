@@ -1,8 +1,7 @@
-package de.riagade.warframeBots.nightwave;
+package de.riagade.warframeBots.nightwave.tasks;
 
 import de.riagade.warframeBots.nightwave.util.NoraHelper;
 import de.riagade.warframeBots.util.BasicBot;
-import de.riagade.warframeBots.voidtrader.ShopReminder;
 import lombok.Getter;
 import lombok.Setter;
 import net.dv8tion.jda.api.OnlineStatus;

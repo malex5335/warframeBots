@@ -1,5 +1,9 @@
 package de.riagade.warframeBots.nightwave;
 
+import de.riagade.warframeBots.nightwave.tasks.DailyReminder;
+import de.riagade.warframeBots.nightwave.tasks.NoraStatusSwitcher;
+import de.riagade.warframeBots.nightwave.tasks.PastChallengeMessagesCorrector;
+import de.riagade.warframeBots.nightwave.tasks.WeeklyReminder;
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.CronHelper;
 import net.dv8tion.jda.api.entities.Activity;

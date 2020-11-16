@@ -18,7 +18,7 @@ public class ShopItemHelper {
     public static List<String> getKeys() {
         List<String> keys = new ArrayList<>();
         try{
-            JSONObject shopItems = GenericJSONParser.getJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
+            JSONObject shopItems = GenericJSONParser.retrieveJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
                     .getJSONObject("items");
             keys.addAll(Lists.newArrayList(shopItems.keys()));
         } catch (Exception e){
@@ -58,7 +58,7 @@ public class ShopItemHelper {
     private static JSONObject getItem(String key) {
         JSONObject shopItem = new JSONObject();
         try {
-            JSONObject shopItems = GenericJSONParser.getJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
+            JSONObject shopItems = GenericJSONParser.retrieveJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
                     .getJSONObject("items");
             if(shopItems.has(key)) {
                 shopItem = shopItems.getJSONObject(key);
@@ -72,7 +72,7 @@ public class ShopItemHelper {
     public static JSONArray getCategories() {
         JSONArray categories = new JSONArray();
         try{
-            categories = GenericJSONParser.getJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
+            categories = GenericJSONParser.retrieveJSONFromResource(ShopItemHelper.SHOP_ITEM_DATA)
                     .getJSONArray("categories");
         } catch (Exception e){
             e.printStackTrace();
@@ -86,6 +86,7 @@ public class ShopItemHelper {
     }
 
     public static String createMessageForItemGroup(String category, List<ShopItem> items) {
+        // @TODO: a template for this message would be nice
         StringBuilder sb = new StringBuilder();
         sb.append("```ini\n");
         sb.append("[").append(category).append("]\n");

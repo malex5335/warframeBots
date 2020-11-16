@@ -1,4 +1,4 @@
-package de.riagade.warframeBots.nightwave;
+package de.riagade.warframeBots.nightwave.tasks;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.nightwave.util.ChallengeHelper;
@@ -35,7 +35,7 @@ public class WeeklyReminder  extends TimerTask {
     private List<Challenge> generateMissions() {
         List<Challenge> challengeList = new ArrayList<>();
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONObject seasonInfo = object.getJSONObject("SeasonInfo");
             JSONArray activeChallenges = seasonInfo.getJSONArray("ActiveChallenges");
             for(int i = 0; i < activeChallenges.length(); i++){

@@ -1,4 +1,4 @@
-package de.riagade.warframeBots.voidtrader;
+package de.riagade.warframeBots.voidtrader.tasks;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.voidtrader.util.BaroHelper;

@@ -18,7 +18,7 @@ public class ChallengeHelper {
     public static List<String> getKeys() {
         List<String> keys = new ArrayList<>();
         try{
-            JSONObject challenges = GenericJSONParser.getJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
                     .getJSONObject("challenges");
             keys.addAll(Lists.newArrayList(challenges.keys()));
         } catch (Exception e){
@@ -91,7 +91,7 @@ public class ChallengeHelper {
         DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getInstance(Locale.US);
         int value = 0;
         try {
-            JSONObject standing = GenericJSONParser.getJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+            JSONObject standing = GenericJSONParser.retrieveJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
                     .getJSONObject("standing");
             if (isDaily(key)) {
                 value = standing.getInt("daily");
@@ -109,7 +109,7 @@ public class ChallengeHelper {
     private static JSONObject getChallenge(String key) {
         JSONObject challenge = new JSONObject();
         try {
-            JSONObject challenges = GenericJSONParser.getJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
                     .getJSONObject("challenges");
             if(challenges.has(key)) {
                 challenge = challenges.getJSONObject(key);

@@ -1,4 +1,4 @@
-package de.riagade.warframeBots.voidtrader;
+package de.riagade.warframeBots.voidtrader.tasks;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.GenericJSONParser;
@@ -61,7 +61,7 @@ public class ShopReminder extends TimerTask {
     private Date getDate(String key) {
         Date expireDate = new Date(0);
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONArray voidTraders = object.getJSONArray("VoidTraders");
             JSONObject firstEntry = voidTraders.getJSONObject(0);
             String expiry = firstEntry.getJSONObject(key).getJSONObject("$date").getString("$numberLong");
@@ -79,7 +79,7 @@ public class ShopReminder extends TimerTask {
     private List<ShopItem> generateShopItems() {
         List<ShopItem> shopItems = new ArrayList<>();
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONArray voidTraders = object.getJSONArray("VoidTraders");
             JSONObject firstEntry = voidTraders.getJSONObject(0);
             JSONArray manifest = firstEntry.getJSONArray("Manifest");

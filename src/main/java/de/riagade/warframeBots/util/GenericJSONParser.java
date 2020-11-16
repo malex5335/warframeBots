@@ -10,23 +10,40 @@ import java.util.Objects;
 @UtilityClass
 public class GenericJSONParser {
 
-    public static JSONObject getJSONObject(String jsonLocation) throws Exception {
-        StringBuilder sb = new StringBuilder();
+    /**
+     * reads JSON from an URL-Source
+     *
+     * @param jsonLocation URL of the JSON-String
+     * @return {@link JSONObject}
+     * @throws IOException if there are problems reading lines from the JSON-String
+     */
+    public static JSONObject retrieveJSONObject(String jsonLocation) throws IOException {
         URL url = new URL(jsonLocation);
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(url.openStream()));
-        String inputLine;
-        while ((inputLine = in.readLine()) != null) {
-            sb.append(inputLine);
-        }
-        in.close();
-        return new JSONObject(sb.toString());
+        return retrieveJSONFromBufferedReader(new BufferedReader(
+                new InputStreamReader(url.openStream())));
     }
 
-    public static JSONObject getJSONFromResource(String name) throws Exception {
+    /**
+     * reads JSON from a local resource
+     *
+     * @param name resource path to the JSON-String
+     * @return {@link JSONObject}
+     * @throws IOException if there are problems reading lines from the JSON-String
+     */
+    public static JSONObject retrieveJSONFromResource(String name) throws IOException {
+        return retrieveJSONFromBufferedReader(new BufferedReader(new InputStreamReader(Objects.requireNonNull(GenericJSONParser
+                .class.getClassLoader().getResourceAsStream(name)))));
+    }
+
+    /**
+     * extracts a JSON-Object using a BufferedReader
+     *
+     * @param in the {@link BufferedReader} to use
+     * @return {@link JSONObject}
+     * @throws IOException if there are problems reading lines from the JSON-String
+     */
+    private static JSONObject retrieveJSONFromBufferedReader(BufferedReader in) throws IOException {
         StringBuilder sb = new StringBuilder();
-        BufferedReader in = new BufferedReader(new InputStreamReader(Objects.requireNonNull(GenericJSONParser
-                .class.getClassLoader().getResourceAsStream(name))));
         String inputLine;
         while ((inputLine = in.readLine()) != null) {
             sb.append(inputLine);

@@ -25,6 +25,7 @@ public class Challenge {
     }
 
     public void sendMessage(BasicBot bot) {
+        // @TODO: a template for this message would be nice
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm z", bot.getLocale());
         StringBuilder messageBuilder = new StringBuilder();
         switch (getMissionType()) {

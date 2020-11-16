@@ -4,7 +4,6 @@ import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.GenericJSONParser;
 import lombok.experimental.UtilityClass;
 import org.codehaus.plexus.util.StringUtils;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.Calendar;
@@ -15,7 +14,7 @@ public class NoraHelper {
 
     public static boolean retrieveActiveState(Locale locale) {
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONObject seasonInfo = object.getJSONObject("SeasonInfo");
             Calendar activation = NoraHelper.getDateIn(seasonInfo.getJSONObject("Activation"), locale);
             Calendar expiry = NoraHelper.getDateIn(seasonInfo.getJSONObject("Expiry"), locale);
@@ -39,7 +38,7 @@ public class NoraHelper {
 
     public static int retrieveSeasonInfo() {
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONObject seasonInfo = object.getJSONObject("SeasonInfo");
             return seasonInfo.getInt("Season");
         } catch (Exception e){
@@ -50,7 +49,7 @@ public class NoraHelper {
 
     public static int retrievePhaseInfo() {
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONObject seasonInfo = object.getJSONObject("SeasonInfo");
             return seasonInfo.getInt("Phase");
         } catch (Exception e){

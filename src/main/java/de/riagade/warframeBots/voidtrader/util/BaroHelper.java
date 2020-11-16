@@ -10,7 +10,7 @@ import org.json.JSONObject;
 public class BaroHelper {
     public static boolean retrieveActiveState() {
         try {
-            JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+            JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             if(object.has("VoidTraders")) {
                 JSONArray voidTraders = object.getJSONArray("VoidTraders");
                 JSONObject firstEntry = voidTraders.getJSONObject(0);
@@ -28,7 +28,7 @@ public class BaroHelper {
     public static String retrieveShopLocation() {
         if(BaroHelper.retrieveActiveState()) {
             try {
-                JSONObject object = GenericJSONParser.getJSONObject(BasicBot.WORLD_STATE);
+                JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
                 if (object.has("VoidTraders")) {
                     JSONArray voidTraders = object.getJSONArray("VoidTraders");
                     JSONObject firstEntry = voidTraders.getJSONObject(0);
