@@ -17,16 +17,14 @@ import java.util.*;
 @Setter
 public class ShopReminder extends TimerTask {
     private BasicBot bot;
-    private boolean active;
 
     public ShopReminder(BasicBot bot){
         setBot(bot);
-        setActive(BaroHelper.retrieveActiveState());
     }
 
     @Override
     public void run() {
-        if(isActive()) {
+        if(BaroHelper.retrieveActiveState()) {
             List<ShopItem> shopItemList = generateShopItems();
             getBot().sendMessage(ShopItemHelper.createBaroTimeMessage(getBot(), getStartDate(), getExpireDate()));
             for(String category : orderShopItems(shopItemList).keySet()){
