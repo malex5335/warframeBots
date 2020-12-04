@@ -915,6 +915,26 @@
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponGlaiveSecondaryHeadshotKillMod": {
 			"desc": "Combo Killer",
 			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/WeaponIncreaseRadialExplosionModExpert": {
+			"desc": "Primed Firestorm",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Event/AmbulasEvent/Expert/SecondaryExplosionRadiusModExpert": {
+			"desc": "Primed Fulmination",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageGrineerExper": {
+			"desc": "Primed Cleanse Grineer",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageInfestedExpert": {
+			"desc": "Primed Cleanse Infested",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationE": {
+			"desc": "Arsa Luxxum Ornament",
+			"cat": 1
 		}
 	}
 }
