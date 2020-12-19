@@ -935,6 +935,22 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationE": {
 			"desc": "Arsa Luxxum Ornament",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols": {
+			"desc": "Prisma Dual Decurion",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationF": {
+			"desc": "Puspa Luxxum Ornament",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisTiberon": {
+			"desc": "Teberion Elixis Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Dragon/ChromaAlternateSkin": {
+			"desc": "Chroma Immortal Skin",
+			"cat": 1
 		}
 	}
 }
