@@ -951,6 +951,22 @@
 		"/Lotus/StoreItems/Upgrades/Skins/Dragon/ChromaAlternateSkin": {
 			"desc": "Chroma Immortal Skin",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/TwinSnakesGlyph": {
+			"desc": "Vome-Fass Glyph",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/KubrowKavatLowPolyPoster": {
+			"desc": "Prisma Companion Poster",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/BaroScytheMacheteSkin": {
+			"desc": "Machete Syachid Skin",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKubrow": {
+			"desc": "Prisma Kubrow Glyph",
+			"cat": 1
 		}
 	}
 }
