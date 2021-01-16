@@ -967,6 +967,30 @@
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKubrow": {
 			"desc": "Prisma Kubrow Glyph",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConE": {
+			"desc": "Deimos Lobotriscid Prex",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConF ": {
+			"desc": "Deimos Jugulus Prex",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/FurisArmor/PrismaFurisCArmor": {
+			"desc": "Prisma Avia Chest Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/FurisArmor/PrismaFurisLArmor": {
+			"desc": "Prisma Avia Ankle Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/FurisArmor/PrismaFurisAArmor": {
+			"desc": "Prisma Avia Shoulder Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageBaroTwoIcon": {
+			"desc": "Ki'Teer Tribute Glyph",
+			"cat": 1
 		}
 	}
 }
