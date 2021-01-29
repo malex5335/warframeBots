@@ -991,6 +991,22 @@
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageBaroTwoIcon": {
 			"desc": "Ki'Teer Tribute Glyph",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponGlaiveOnSixKillsBuffSecondary": {
+			"desc": "Mark of the Beast",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageCorpusExpert": {
+			"desc": "Primed Smite Corpus",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageCorruptedExpert": {
+			"desc": "Primed Smite Corrupted",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageGrineerExpert": {
+			"desc": "Primed Smite Grineer",
+			"cat": 3
 		}
 	}
 }
