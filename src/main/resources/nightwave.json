@@ -443,7 +443,7 @@
 		},
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyRequiemTotem": {
 			"desc": "Activate a Requiem Obelisk on Deimos",
-			"daily": true;
+			"daily": true
 		}
 	}
 }
