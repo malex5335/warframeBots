@@ -22,10 +22,10 @@ public class PastChallengeMessagesCorrector extends TimerTask {
 
     @Override
     public void run() {
-        MessageHistory.MessageRetrieveAction history = Objects.requireNonNull(getBot().getJda()
-                .getTextChannelById(getBot().getChannelId())).getHistoryFromBeginning(100);
+        MessageHistory history = Objects.requireNonNull(getBot().getJda()
+                .getTextChannelById(getBot().getChannelId())).getHistory();
         List<String> keys = ChallengeHelper.getKeys();
-        for (Message message : history.complete().getRetrievedHistory()) {
+        for (Message message : history.getRetrievedHistory()) {
             String newText = message.getContentRaw();
             boolean changedSomething = Boolean.FALSE;
             for (String key : keys) {

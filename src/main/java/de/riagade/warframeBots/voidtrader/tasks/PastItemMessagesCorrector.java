@@ -22,11 +22,10 @@ public class PastItemMessagesCorrector extends TimerTask {
 
     @Override
     public void run() {
-        MessageHistory.MessageRetrieveAction history = Objects.requireNonNull(getBot().getJda()
-                .getTextChannelById(getBot().getChannelId())).getHistoryFromBeginning(100);
+        MessageHistory history = Objects.requireNonNull(getBot().getJda()
+                .getTextChannelById(getBot().getChannelId())).getHistory();
         List<String> keys = ShopItemHelper.getKeys();
-        for (Message message : history.complete().getRetrievedHistory()) {
-            // @TODO: extract this part to another method to reduce complexity
+        for (Message message : history.getRetrievedHistory()) {
             String newText = message.getContentRaw();
             boolean changedSomething = Boolean.FALSE;
             for (String key : keys) {
