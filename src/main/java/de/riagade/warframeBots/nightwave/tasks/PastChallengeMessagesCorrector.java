@@ -20,20 +20,21 @@ public class PastChallengeMessagesCorrector extends TimerTask {
 
     @Override
     public void run() {
-
         List<String> keys = ChallengeHelper.getKeys();
         for (Message message : getBot().retrieveChannelMessages()) {
             String newText = message.getContentRaw();
-            boolean changedSomething = Boolean.FALSE;
-            for (String key : keys) {
-                if (newText.contains(key)) {
-                    assert ChallengeHelper.getDescription(key) != null;
-                    newText = newText.replace(key, ChallengeHelper.getDescription(key));
-                    changedSomething = Boolean.TRUE;
+            if(newText.contains("/Lotus/")) {
+                boolean changedSomething = Boolean.FALSE;
+                for (String key : keys) {
+                    if (newText.contains(key)) {
+                        assert ChallengeHelper.getDescription(key) != null;
+                        newText = newText.replace(key, ChallengeHelper.getDescription(key));
+                        changedSomething = Boolean.TRUE;
+                    }
                 }
-            }
-            if(changedSomething) {
-                getBot().editMessage(message.getId(), newText);
+                if (changedSomething) {
+                    getBot().editMessage(message.getId(), newText);
+                }
             }
         }
     }

@@ -23,16 +23,18 @@ public class PastItemMessagesCorrector extends TimerTask {
         List<String> keys = ShopItemHelper.getKeys();
         for (Message message : getBot().retrieveChannelMessages()) {
             String newText = message.getContentRaw();
-            boolean changedSomething = Boolean.FALSE;
-            for (String key : keys) {
-                if (newText.contains(key)) {
-                    assert ShopItemHelper.getDescription(key) != null;
-                    newText = newText.replace(key, ShopItemHelper.getDescription(key));
-                    changedSomething = Boolean.TRUE;
+            if(newText.contains("/Lotus/")) {
+                boolean changedSomething = Boolean.FALSE;
+                for (String key : keys) {
+                    if (newText.contains(key)) {
+                        assert ShopItemHelper.getDescription(key) != null;
+                        newText = newText.replace(key, ShopItemHelper.getDescription(key));
+                        changedSomething = Boolean.TRUE;
+                    }
                 }
-            }
-            if(changedSomething) {
-                getBot().editMessage(message.getId(), newText);
+                if (changedSomething) {
+                    getBot().editMessage(message.getId(), newText);
+                }
             }
         }
     }
