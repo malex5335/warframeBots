@@ -1007,6 +1007,22 @@
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageGrineerExpert": {
 			"desc": "Primed Smite Grineer",
 			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConG": {
+			"desc": "Deimos Saxxum Prex",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConH": {
+			"desc": "Deimos Carnis Prex",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationB": {
+			"desc": "Akka Luxxum Ornament",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/ParazonPoster": {
+			"desc": "Parazon Poster",
+			"cat": 1
 		}
 	}
 }
