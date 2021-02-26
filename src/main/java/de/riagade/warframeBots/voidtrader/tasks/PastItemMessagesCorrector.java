@@ -5,10 +5,8 @@ import de.riagade.warframeBots.voidtrader.util.ShopItemHelper;
 import lombok.Getter;
 import lombok.Setter;
 import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.entities.MessageHistory;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.TimerTask;
 
 @Getter
@@ -22,10 +20,8 @@ public class PastItemMessagesCorrector extends TimerTask {
 
     @Override
     public void run() {
-        MessageHistory history = Objects.requireNonNull(getBot().getJda()
-                .getTextChannelById(getBot().getChannelId())).getHistory();
         List<String> keys = ShopItemHelper.getKeys();
-        for (Message message : history.getRetrievedHistory()) {
+        for (Message message : getBot().retrieveChannelMessages()) {
             String newText = message.getContentRaw();
             boolean changedSomething = Boolean.FALSE;
             for (String key : keys) {

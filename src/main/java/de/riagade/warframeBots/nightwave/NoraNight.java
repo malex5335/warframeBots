@@ -40,8 +40,8 @@ public class NoraNight extends BasicBot {
                 TimeUnit.DAYS.toMillis(7));
         new Timer().scheduleAtFixedRate(
                 new PastChallengeMessagesCorrector(this),
-                CronHelper.getNextDate("0 0 * ? * * *"),
-                TimeUnit.HOURS.toMillis(1));
+                CronHelper.getNextDate("0 0/15 0 ? * * *"),
+                TimeUnit.MINUTES.toMillis(15));
         new Timer().scheduleAtFixedRate(
                 new NoraStatusSwitcher(this),
                 CronHelper.getNextDate("0 * * ? * * *"),
