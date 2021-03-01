@@ -2,6 +2,7 @@ package de.riagade.warframeBots.nightwave.tasks;
 
 import de.riagade.warframeBots.nightwave.util.ChallengeHelper;
 import de.riagade.warframeBots.util.BasicBot;
+import de.riagade.warframeBots.util.RegexHelper;
 import lombok.Getter;
 import lombok.Setter;
 import net.dv8tion.jda.api.entities.Message;
@@ -28,8 +29,10 @@ public class PastChallengeMessagesCorrector extends TimerTask {
                 for (String key : keys) {
                     if (newText.contains(key)) {
                         assert ChallengeHelper.getDescription(key) != null;
-                        newText = newText.replace(key, ChallengeHelper.getDescription(key));
-                        changedSomething = Boolean.TRUE;
+                        if(RegexHelper.containsExactSubstring(newText, key)) {
+                            newText = newText.replace(key, ChallengeHelper.getDescription(key));
+                            changedSomething = Boolean.TRUE;
+                        }
                     }
                 }
                 if (changedSomething) {
