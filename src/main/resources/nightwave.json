@@ -37,6 +37,10 @@
 			"desc": "Kill 200 Enemies",
 			"daily": true
 		},
+		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWhileOnKDrive": {
+			"desc": "Kill 20 enemies while riding a K-Drive",
+			"daily": true
+		},
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithAbilities": {
 			"desc": "Kill 150 Enemies with Abilities",
 			"daily": true
@@ -145,7 +149,7 @@
 			"desc": "Complete 3 Assassination missions",
 			"weekly": true
 		},
-		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteCapture": {
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteCapture": {EnemiesWhileOnKDrive
 			"desc": "Complete 3 Capture missions",
 			"weekly": true
 		},
@@ -347,6 +351,10 @@
 		},
 		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEnemies": {
 			"desc": "Kill 1,500 Enemies",
+			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEnemiesSteelPath": {
+			"desc": "Kill 100 Enemies on The Steel Path",
 			"elite": true
 		},
 		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardIndexWinStreak": {
