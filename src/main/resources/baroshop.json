@@ -1023,6 +1023,18 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/ParazonPoster": {
 			"desc": "Parazon Poster",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponFreezeDamageModExpert": {
+			"desc": "Primed Chilling Grasp",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponGlaiveOnKillBuffSecondary": {
+			"desc": "Combo Fur",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationA": {
+			"desc": "Mahd Luxxum Ornament",
+			"cat": 1
 		}
 	}
 }
