@@ -456,6 +456,14 @@
 		"/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPilotFallenMech": {
 			"desc": "Find and pilot a Fallen Necramech on Deimos",
 			"daily": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteSteelPathMissions": {
+			"desc": "Complete 5 Steel Path Missions",
+			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillEnemiesInMech": {
+			"desc": "Kill 100 enemies with a Mech",
+			"weekly": true
 		}
 	}
 }
