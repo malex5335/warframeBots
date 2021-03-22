@@ -464,6 +464,10 @@
 		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillEnemiesInMech": {
 			"desc": "Kill 100 enemies with a Mech",
 			"weekly": true
+		},
+		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCollectUniqueResources": {
+			"desc": "Collect 20 different types of resources",
+			"elite": true
 		}
 	}
 }
