@@ -12,7 +12,8 @@
 		"Consumables",
 		"Skins",
 		"Glyphs, Sigils",
-		"Decoration"
+		"Decoration",
+		"Colors, Patterns"
 	],
 	"items": {
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/AvatarImageGlyphCookieKubrow": {
@@ -37,7 +38,7 @@
 		},
 		"/Lotus/StoreItems/Types/StoreItems/SuitCustomizations/ColourPickerTwitchBItemA": {
 			"desc": "Eminence Color Pallette",
-			"cat": 1
+			"cat": 13
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Armor/GrineerTurbines/WraithTurbinesLegArmor": {
 			"desc": "Harkonar Wraith Leg Armor",
@@ -165,7 +166,7 @@
 		},
 		"/Lotus/Types/StoreItems/Packages/KavatColorPackNexus": {
 			"desc": "Nexus Gene-Masking Kit",
-			"cat": 1
+			"cat": 13
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/PrimedWeaponCritDamageMod": {
 			"desc": "Primed Target Cracker",
@@ -173,7 +174,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/ExcaliburArchwingBobbleHead": {
 			"desc": "Noggle Statue - Excalibur With Odonata",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetSkinVoidTrader": {
 			"desc": "Liset Prisma Skin",
@@ -249,7 +250,7 @@
 		},
 		"/Lotus/StoreItems/Types/Game/KubrowPet/Patterns/KubrowPetPatternPrimeTraderA": {
 			"desc": "Nexus Fur Pattern",
-			"cat": 1
+			"cat": 13
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetTwoSamurai/VTSetTwoArmRightArmor": {
 			"desc": "Right Prisma Edo Shoulder Plates",
@@ -429,7 +430,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/MiscItems/PhotoboothTileOrokinExtraction": {
 			"desc": "Ki'Teer Color Pallette",
-			"cat": 1
+			"cat": 13
 		},
 		"/Lotus/StoreItems/Weapons/Corpus/Melee/KickAndPunch/PrismaObex": {
 			"desc": "Prisma Obex",
@@ -473,7 +474,7 @@
 		},
 		"/Lotus/StoreItems/Types/StoreItems/SuitCustomizations/ColourPickerKiteerItemA": {
 			"desc": "Ki'Teer Color Pallette",
-			"cat": 1
+			"cat": 13
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetInsectSkinPrimeTrader": {
 			"desc": "Mantis Prisma Skin",
@@ -761,7 +762,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/KubrowBust": {
 			"desc": "Bronze Kubrow Bust",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationC": {
 			"desc": "Zag Luxxum Ornament",
