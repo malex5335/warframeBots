@@ -1035,6 +1035,10 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationA": {
 			"desc": "Mahd Luxxum Ornament",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/GarvLatroxPoster": {
+			"desc": "Garv & Latrox Poster",
+			"cat": 1
 		}
 	}
 }
