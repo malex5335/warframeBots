@@ -1,7 +1,7 @@
 {
 	"categories": [
 		"Newly Added",
-		"Skins, Cosmetics, Decoration and Glyphs",
+		"Cosmetics",
 		"Blueprints",
 		"Mods",
 		"Weapons and Sentinels",
@@ -9,12 +9,15 @@
 		"Relics",
 		"Random packs",
 		"Boosters",
-		"Consumables"
+		"Consumables",
+		"Skins",
+		"Glyphs, Sigils",
+		"Decoration"
 	],
 	"items": {
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/AvatarImageGlyphCookieKubrow": {
 			"desc": "Cookie Kubrow Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponToxinDamageModExpert": {
 			"desc": "Primed Fever Strike",
@@ -22,7 +25,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Armor/SetThreeWinged/VTSetThreeLegRightArmor": {
 			"desc": "Right Prisma Daedalus Knee Plates",
-			"cat":1
+			"cat": 1
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Scarves/VTHornSkullScarf": {
 			"desc": "Prisma Hecate Syandana",
@@ -30,7 +33,7 @@
 		},
 		"/Lotus/StoreItems/Types/Game/QuartersWallpapers/BaroWallpaper": {
 			"desc": "Ki'Teer Stencil",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/StoreItems/SuitCustomizations/ColourPickerTwitchBItemA": {
 			"desc": "Eminence Color Pallette",
@@ -42,7 +45,7 @@
 		},
 		"/Lotus/StoreItems/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum": {
 			"desc": "Prisma Angstrum",
-			"cat":4
+			"cat": 4
 		},
 		"/Lotus/StoreItems/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper": {
 			"desc": "Viper Wraith",
@@ -58,15 +61,15 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisTigris": {
 			"desc": "Tigris Elixis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisOpticor": {
 			"desc": "Opticor Elixis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/BaroArrow": {
 			"desc": "Ki'Teer Arrow Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Tails/PrismaFishTail": {
 			"desc": "Prisma Koi Sentinel Tail",
@@ -114,7 +117,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Pirate/HydroidAlternateSkin": {
 			"desc": "Hydroid Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Armor/GrineerTurbines/WraithTurbinesChestArmor": {
 			"desc": "Harkonar Wraith Chest Armor",
@@ -138,7 +141,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisSonicor": {
 			"desc": "Sonicor Elixis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/CorpusUMP/PrismaCorpusUMP": {
 			"desc": "Prisma Tetra",
@@ -174,7 +177,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetSkinVoidTrader": {
 			"desc": "Liset Prisma Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/Restoratives/Consumable/BaroFireWorksCrate": {
 			"desc": "Ki'Teer Fireworks",
@@ -190,7 +193,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetBlueSkySkinPrimeTrader": {
 			"desc": "Scimitar Prisma Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod": {
 			"desc": "Volcanic Edge",
@@ -206,7 +209,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropOstRugBaro": {
 			"desc": "Tenno Kindred Rug",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponFireDamageModExpert": {
 			"desc": "Primed Heated Charge",
@@ -214,11 +217,11 @@
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/ImageBaroKiteer": {
 			"desc": "Baro Ki'Teer Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/PedistalPrime": {
-			"desc": "Pedastal Prime",
-			"cat": 1
+			"desc": "Pedestal Prime",
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Weapons/ClanTech/Energy/VandalElectroProd": {
 			"desc": "Prova Vandal",
@@ -238,11 +241,11 @@
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageBaroIcon": {
 			"desc": "Ki'Teer Tribute Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/AvatarImageGlyphCookieKavat": {
 			"desc": "Cookie Kavat Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Game/KubrowPet/Patterns/KubrowPetPatternPrimeTraderA": {
 			"desc": "Nexus Fur Pattern",
@@ -278,7 +281,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sigils/PrimeTraderSigil": {
 			"desc": "Prisma Sigil",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/Types/StoreItems/Boosters/CreditBooster3DayStoreItem": {
 			"desc": "3-Day Credit Booster",
@@ -314,7 +317,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/OrbiterPictureFrameBaro": {
 			"desc": "Display - Argyle",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Archwing/Expert/ArchwingSuitAbilityStrengthModExpert": {
 			"desc": "Primed Morphic Transformer",
@@ -338,7 +341,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/Gyroscope/LisetGyroscopeSkinPrimeTrader": {
 			"desc": "Xiphos Prisma Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponDamageAmountModExpert": {
 			"desc": "Primed Point Blank",
@@ -358,7 +361,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/BaroInarosPolearmSkin": {
 			"desc": "Anpu Staff Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroQuantumBadgeItem": {
 			"desc": "Ki'Teer Sekhara",
@@ -366,7 +369,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/InarosLisetSkin": {
 			"desc": "Liset Cydonia Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/BaroVisor": {
 			"desc": "Ki'Teer Atmos Oculus",
@@ -382,7 +385,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/VTHalloweenDarkSword": {
 			"desc": "Dark Sword Day of the Dead Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolConvertAmmoModExpert": {
 			"desc": "Primed Pistol Ammo Mutation",
@@ -394,7 +397,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisOdonataSkin": {
 			"desc": "Odonata Elixis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/Items/Emotes/BaroEmote": {
 			"desc": "Ki'Teer Presence",
@@ -402,7 +405,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sigils/BaroKubrowSigil": {
 			"desc": "Pack Leader Sigil",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponPistolFactionDamageGrineerExpert": {
 			"desc": "Primed Expel Grineer",
@@ -446,7 +449,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/VTRedeemerSkin": {
 			"desc": "Redeemer Elixis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Tails/BaroPetTail": {
 			"desc": "Ki'Teer Sentinel Tail",
@@ -462,7 +465,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sigils/BaroKavatSigil": {
 			"desc": "Glaring Sigil",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Restoratives/Consumable/CorruptedHeavyGunnerBall": {
 			"desc": "Corrupted Heavy Gunner Specter",
@@ -474,11 +477,11 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetInsectSkinPrimeTrader": {
 			"desc": "Mantis Prisma Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sentinels/Skins/DesertTaxonSkin": {
 			"desc": "Taxon Desert-Camo Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/Machinegun/SupraVandal": {
 			"desc": "Supra Vandal",
@@ -486,7 +489,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/PrismaArrow": {
 			"desc": "Prisma Arrows",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Scarves/PrismaRazorScarf": {
 			"desc": "Prisma Uru Syandana",
@@ -590,11 +593,11 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/SummerSolstice/SummerSolsticeGorgon": {
 			"desc": "Gorgon Towsun Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerBobbleHead": {
 			"desc": "Noggle Statue - Baro Ki'Teer",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Weapons/Tenno/Akimbo/AkimboShotGun": {
 			"desc": "Akbronco",
@@ -606,11 +609,11 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Harlequin/MirageAlternateSkin": {
 			"desc": "Mirage Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/VTQuanta": {
 			"desc": "Quanta Aufeis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Operator/Accessories/BaroTiara": {
 			"desc": "Ki'Teer Atmos Diadem",
@@ -650,7 +653,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Tengu/ZephyrAlternateSkin": {
 			"desc": "Zephyr Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Pistol/Expert/WeaponCritChanceModBeginnerExpert": {
 			"desc": "Primed Pistol Gambit",
@@ -702,7 +705,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/SummerSolstice/SummerSolsticeTwinGrakatas": {
 			"desc": "Twin Grakatas Towsun Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/Types/StoreItems/Boosters/ResourceAmount3DayStoreItem": {
 			"desc": "3 Day Resource Booster",
@@ -746,15 +749,15 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Clan/PrismaLotusEmblem": {
 			"desc": "Prisma Lotus Emblem",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponImpactDamageModExpert": {
 			"desc": "Primed Heavy Trauma",
 			"cat": 3
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/SummerSolstice/SummerIgnisSkin": {
-			"desc": "Ignis Towsun SKin",
-			"cat": 1
+			"desc": "Ignis Towsun Skin",
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/KubrowBust": {
 			"desc": "Bronze Kubrow Bust",
@@ -762,11 +765,11 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationC": {
 			"desc": "Zag Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationD": {
 			"desc": "Dvad Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/CrpFreezeRay/Vandal/CrpFreezeRayVandalRifle": {
 			"desc": "Glaxion Vandal",
@@ -774,7 +777,7 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/KavatBust": {
 			"desc": "Bronze Kavat Bust",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnLatronArmor/TnLatronArmArmorPrisma": {
 			"desc": "Prisma Latron Shoulder Plate",
@@ -790,7 +793,7 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetBlueSkySkinInaros": {
 			"desc": "Scimitar Cydonia Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Archwing/Rifle/Expert/ArchwingRifleDamageAmountModExpert": {
 			"desc": "Primed Rubedo-Lined Barrel",
@@ -802,15 +805,15 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/PlushyDesertSkate": {
 			"desc": "Desert Skate Floof",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Camo/DesertDirigaSkin": {
 			"desc": "Diriga Desert-Camo Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Sigils/PrismaLotusSigil": {
 			"desc": "Prisma Lotus Sigil",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Sentinel/SentinelLootRadarEnemyRadarExpertMod": {
 			"desc": "Primed Animal Instinct",
@@ -818,7 +821,7 @@
 		},
 		"//Lotus/StoreItems/Upgrades/Skins/Cowgirl/MesaImmortallSkin": {
 			"desc": "Mesa Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Effects/BaroEphemeraA": {
 			"desc": "Ki'Teer Ephemera",
@@ -826,7 +829,7 @@
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKavat": {
 			"desc": "Prisma Kavat Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Effects/LotusFlowers": {
 			"desc": "Lotus Ephemera",
@@ -842,15 +845,15 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Magician/LimboImmortalSkin": {
 			"desc": "Limbo Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropCleaningDroneBaro": {
 			"desc": "Ki'Teer Domestik Drone",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/UmbraPedestal": {
 			"desc": "Pedestral Umbra",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Weapons/ClanTech/Chemical/FlameThrowerWraith": {
 			"desc": "Ignis Wraith",
@@ -866,15 +869,15 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKubrowBadgeItem": {
 			"desc": "Pack Leader Emblem",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationH": {
 			"desc": "Vez Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisLatronPistol": {
 			"desc": "Elixis Latron Pistol Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Hoverboard/HoverboardStickerBaroA": {
 			"desc": "Blue Ki'Teer Safari K-Drive Scrawl",
@@ -882,19 +885,19 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationG": {
 			"desc": "Sima Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Clan/BaroKavatBadgeItem": {
 			"desc": "Glaring Emblem",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConA": {
 			"desc": "Deimos Fass Prex",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConC": {
 			"desc": "Deimos Velocipod Prex",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Rifle/BowMultiShotOnHitMod": {
 			"desc": "Split Flights",
@@ -902,15 +905,15 @@
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Cowgirl/MesaImmortallSkin": {
 			"desc": "Mesa Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Halloween/HalloweenDread": {
 			"desc": "Dread Day of the Dead",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/Seasonal/Halloween2019GrendelTreat": {
 			"desc": "In Mah Belly Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponGlaiveSecondaryHeadshotKillMod": {
 			"desc": "Combo Killer",
@@ -934,47 +937,47 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationE": {
 			"desc": "Arsa Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols": {
 			"desc": "Prisma Dual Decurion",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationF": {
 			"desc": "Puspa Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisTiberon": {
 			"desc": "Teberion Elixis Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Dragon/ChromaAlternateSkin": {
 			"desc": "Chroma Immortal Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/TwinSnakesGlyph": {
 			"desc": "Vome-Fass Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/KubrowKavatLowPolyPoster": {
 			"desc": "Prisma Companion Poster",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/BaroScytheMacheteSkin": {
 			"desc": "Machete Syachid Skin",
-			"cat": 1
+			"cat": 10
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageLowPolyKubrow": {
 			"desc": "Prisma Kubrow Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConE": {
 			"desc": "Deimos Lobotriscid Prex",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConF": {
 			"desc": "Deimos Jugulus Prex",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Skins/Armor/FurisArmor/PrismaFurisCArmor": {
 			"desc": "Prisma Avia Chest Plate",
@@ -990,7 +993,7 @@
 		},
 		"/Lotus/StoreItems/Types/StoreItems/AvatarImages/AvatarImageBaroTwoIcon": {
 			"desc": "Ki'Teer Tribute Glyph",
-			"cat": 1
+			"cat": 11
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Melee/WeaponGlaiveOnSixKillsBuffSecondary": {
 			"desc": "Mark of the Beast",
@@ -1010,19 +1013,19 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConG": {
 			"desc": "Deimos Saxxum Prex",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConH": {
 			"desc": "Deimos Carnis Prex",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationB": {
 			"desc": "Akka Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/ParazonPoster": {
 			"desc": "Parazon Poster",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponFreezeDamageModExpert": {
 			"desc": "Primed Chilling Grasp",
@@ -1034,11 +1037,11 @@
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/BaroKiTeerDecorationA": {
 			"desc": "Mahd Luxxum Ornament",
-			"cat": 1
+			"cat": 12
 		},
 		"/Lotus/StoreItems/Types/Items/ShipDecos/GarvLatroxPoster": {
 			"desc": "Garv & Latrox Poster",
-			"cat": 1
+			"cat": 12
 		}
 	}
 }
