@@ -1043,6 +1043,14 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/GarvLatroxPoster": {
 			"desc": "Garv & Latrox Poster",
 			"cat": 12
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Melee/GrnBoomerang/HalikarWraithWeapon": {
+			"desc": "Halikar Wraith",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisBallasSword": {
+			"desc": "Paracesis Elixis Skin",
+			"cat": 10
 		}
 	}
 }
