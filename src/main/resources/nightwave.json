@@ -468,6 +468,10 @@
 		"/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCollectUniqueResources": {
 			"desc": "Collect 20 different types of resources",
 			"elite": true
+		},
+		"/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyIsolationBounties": {
+			"desc": "Complete an Isolation Vault Bounty Mission on Deimos",
+			"weekly": true
 		}
 	}
 }
