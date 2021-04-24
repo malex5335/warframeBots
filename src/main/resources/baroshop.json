@@ -1051,6 +1051,14 @@
 		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/ElixisBallasSword": {
 			"desc": "Paracesis Elixis Skin",
 			"cat": 10
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConI": {
+			"desc": "Xaku Prex",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConJ": {
+			"desc": "Deimos Kymaeros Prex",
+			"cat": 12
 		}
 	}
 }
