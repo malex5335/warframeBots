@@ -1059,6 +1059,18 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConJ": {
 			"desc": "Deimos Kymaeros Prex",
 			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/NecraArmor/NecraArmorC": {
+			"desc": "Mulciber Chest Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageCorpusExpert": {
+			"desc": "Primed Cleanse Corpus",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageCorruptedExpert": {
+			"desc": "Primed Cleanse Corrupted",
+			"cat": 3
 		}
 	}
 }
