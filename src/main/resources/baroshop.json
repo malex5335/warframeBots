@@ -1071,6 +1071,14 @@
 		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageCorruptedExpert": {
 			"desc": "Primed Cleanse Corrupted",
 			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/NecraArmor/NecraArmorL": {
+			"desc": "Mulciber Knee Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConB": {
+			"desc": "Deimos Scissus Prex",
+			"cat": 12
 		}
 	}
 }
