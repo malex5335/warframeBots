@@ -1079,6 +1079,14 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConB": {
 			"desc": "Deimos Scissus Prex",
 			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/NecraArmor/NecraArmorA": {
+			"desc": "Mulciber Shoulder Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConD": {
+			"desc": "Deimos Flagellocanth Prex",
+			"cat": 12
 		}
 	}
 }
