@@ -1087,6 +1087,14 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/TarotCardTennoConD": {
 			"desc": "Deimos Flagellocanth Prex",
 			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponReloadSpeedModExpert": {
+			"desc": "Primed Tactical Pump",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageGrineerExpert": {
+			"desc": "Primed Cleanse Grineer",
+			"cat": 3
 		}
 	}
 }
