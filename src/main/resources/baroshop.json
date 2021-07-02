@@ -1095,6 +1095,18 @@
 		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponShotgunFactionDamageGrineerExpert": {
 			"desc": "Primed Cleanse Grineer",
 			"cat": 3
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaMachete": {
+			"desc": "Prisma Machete",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Weapons/Corpus/LongGuns/CrpBFG/Vandal/VandalCrpBFG": {
+			"desc": "Opticor Vandal",
+			"cat": 4
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetInsectSkinInaros": {
+			"desc": "Mantis Cydonia Skin",
+			"cat": 10
 		}
 	}
 }
