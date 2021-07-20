@@ -1107,6 +1107,10 @@
 		"/Lotus/StoreItems/Upgrades/Skins/Liset/LisetInsectSkinInaros": {
 			"desc": "Mantis Cydonia Skin",
 			"cat": 10
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/MoaPet/BaroMoaPetSkin": {
+			"desc": "Ki'teer Moa Pet Skin",
+			"cat": 10
 		}
 	}
 }
