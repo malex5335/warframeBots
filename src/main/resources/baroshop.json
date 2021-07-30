@@ -1111,6 +1111,10 @@
 		"/Lotus/StoreItems/Upgrades/Skins/MoaPet/BaroMoaPetSkin": {
 			"desc": "Ki'teer Moa Pet Skin",
 			"cat": 10
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/Deimos/PlushySunMonsterCommon": {
+			"desc": "Fass Floof",
+			"cat": 12
 		}
 	}
 }
