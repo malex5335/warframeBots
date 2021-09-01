@@ -1115,6 +1115,18 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/Deimos/PlushySunMonsterCommon": {
 			"desc": "Fass Floof",
 			"cat": 12
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/Deimos/PlushyMoonMonsterCommon": {
+			"desc": "Vome Floof",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Melee/Expert/WeaponMeleeFactionDamageInfestedExpert": {
+			"desc": "Primed Smite Infested",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/WeaponClipMaxModExpert": {
+			"desc": "Primed Magazine Warp",
+			"cat": 3
 		}
 	}
 }
