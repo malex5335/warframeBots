@@ -19,6 +19,11 @@
             <name>jcenter-bintray</name>
             <url>https://jcenter.bintray.com</url>
         </repository>
+        <repository>
+            <id>in-project</id>
+            <name>In Project Repo</name>
+            <url>file://${project.basedir}/libs</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -64,6 +69,7 @@
             <groupId>de.riagade</groupId>
             <artifactId>genericDiscordBot</artifactId>
             <version>1.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -76,8 +82,14 @@
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
-                        <phase>package</phase>
+                        <phase>prepare-package</phase>
                         <goals><goal>copy-dependencies</goal></goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/libs</outputDirectory>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

@@ -31,5 +31,10 @@
       <option name="name" value="central" />
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="in-project" />
+      <option name="name" value="In Project Repo" />
+      <option name="url" value="file://C:\Users\maxim\IdeaProjects\warframeBots/libs" />
+    </remote-repository>
   </component>
 </project>
