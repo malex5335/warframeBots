@@ -15,14 +15,19 @@
 
     <repositories>
         <repository>
-            <id>jcenter</id>
-            <name>jcenter-bintray</name>
-            <url>https://jcenter.bintray.com</url>
+            <id>project</id>
+            <name>local-repo</name>
+            <url>file://${project.basedir}/src/main/resources/repo</url>
         </repository>
         <repository>
             <id>dv8tion</id>
             <name>m2-dv8tion</name>
             <url>https://m2.dv8tion.net/releases</url>
+        </repository>
+        <repository>
+            <id>jcenter</id>
+            <name>jcenter-bintray</name>
+            <url>https://jcenter.bintray.com</url>
         </repository>
     </repositories>
 
