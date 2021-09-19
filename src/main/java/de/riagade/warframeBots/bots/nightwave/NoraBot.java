@@ -22,10 +22,10 @@ public class NoraBot extends A_TimedBot {
     @Override
     public List<A_TimedTask> getTasksList() {
         List<A_TimedTask> tasks = new ArrayList<>();
-        tasks.add(new NoraDailyReminderTask(this,"0 0 1 ? * * *"));
-        tasks.add(new NoraWeeklyReminderTask(this,"5 0 1 ? * 2/7 *"));
-        tasks.add(new NoraStatusSwitcherTask(this,"0 * * ? * * *"));
-        tasks.add(new NoraPastMessagesCorrectorTask(this,"0 * * ? * * *"));
+        tasks.add(new NoraDailyReminderTask(this,"0 0 1 ? * *"));
+        tasks.add(new NoraWeeklyReminderTask(this,"5 0 1 ? * 2/7"));
+        tasks.add(new NoraStatusSwitcherTask(this,"0 * * ? * *"));
+        tasks.add(new NoraPastMessagesCorrectorTask(this,"0 * * ? * *"));
         return tasks;
     }
 }
