@@ -1,6 +1,7 @@
-package de.riagade.warframeBots.nightwave.util;
+package de.riagade.warframeBots.bots.nightwave.util;
 
-import de.riagade.warframeBots.util.BasicBot;
+import de.riagade.genericDiscordBot.A_BasicBot;
+import de.riagade.warframeBots.bots.nightwave.util.enums.E_ChallengeType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,22 +10,22 @@ import java.util.Date;
 
 @Getter
 @Setter
-public class Challenge {
+public class ChallengeDao {
     private String name;
     private String description;
     private String standing;
     private E_ChallengeType missionType;
     private Date expireDate;
 
-    public Challenge(String name, Date expireDate){
+    public ChallengeDao(String name, Date expireDate){
         setName(name);
-        setDescription(ChallengeHelper.getDescription(getName()));
-        setStanding(ChallengeHelper.getStanding(getName()));
-        setMissionType(ChallengeHelper.getMissionType(getName()));
+        setDescription(ChallengeUtil.getDescription(getName()));
+        setStanding(ChallengeUtil.getStanding(getName()));
+        setMissionType(ChallengeUtil.getMissionType(getName()));
         setExpireDate(expireDate);
     }
 
-    public void sendMessage(BasicBot bot) {
+    public void sendMessage(A_BasicBot bot) {
         // @TODO: a template for this message would be nice
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm z", bot.getLocale());
         StringBuilder messageBuilder = new StringBuilder();

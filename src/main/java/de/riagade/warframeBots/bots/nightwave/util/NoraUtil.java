@@ -1,4 +1,4 @@
-package de.riagade.warframeBots.nightwave.util;
+package de.riagade.warframeBots.bots.nightwave.util;
 
 import de.riagade.warframeBots.util.BasicBot;
 import de.riagade.warframeBots.util.GenericJSONParser;
@@ -10,14 +10,14 @@ import java.util.Calendar;
 import java.util.Locale;
 
 @UtilityClass
-public class NoraHelper {
+public class NoraUtil {
 
     public static boolean retrieveActiveState(Locale locale) {
         try {
             JSONObject object = GenericJSONParser.retrieveJSONObject(BasicBot.WORLD_STATE);
             JSONObject seasonInfo = object.getJSONObject("SeasonInfo");
-            Calendar activation = NoraHelper.getDateIn(seasonInfo.getJSONObject("Activation"), locale);
-            Calendar expiry = NoraHelper.getDateIn(seasonInfo.getJSONObject("Expiry"), locale);
+            Calendar activation = NoraUtil.getDateIn(seasonInfo.getJSONObject("Activation"), locale);
+            Calendar expiry = NoraUtil.getDateIn(seasonInfo.getJSONObject("Expiry"), locale);
             Calendar now = Calendar.getInstance(locale);
             return now.after(activation) && now.before(expiry);
         } catch (Exception e){

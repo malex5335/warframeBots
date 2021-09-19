@@ -1,24 +1,29 @@
-package de.riagade.warframeBots.nightwave.util;
+package de.riagade.warframeBots.bots.nightwave.util;
 
 import com.google.inject.internal.util.Lists;
+import de.riagade.warframeBots.bots.nightwave.util.enums.E_ChallengeType;
 import de.riagade.warframeBots.util.GenericJSONParser;
 import lombok.experimental.UtilityClass;
+import org.codehaus.plexus.util.StringUtils;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
 @UtilityClass
-public class ChallengeHelper {
+public class ChallengeUtil {
+    public static final String WORLD_STATE = "http://content.warframe.com/dynamic/worldState.php";
     public static final String CHALLENGE_DATA = "nightwave.json";
 
     public static List<String> getKeys() {
         List<String> keys = new ArrayList<>();
         try{
-            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource(ChallengeUtil.CHALLENGE_DATA)
                     .getJSONObject("challenges");
             keys.addAll(Lists.newArrayList(challenges.keys()));
         } catch (Exception e){
@@ -91,7 +96,7 @@ public class ChallengeHelper {
         DecimalFormat decimalFormat = (DecimalFormat) NumberFormat.getInstance(Locale.US);
         int value = 0;
         try {
-            JSONObject standing = GenericJSONParser.retrieveJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+            JSONObject standing = GenericJSONParser.retrieveJSONFromResource(ChallengeUtil.CHALLENGE_DATA)
                     .getJSONObject("standing");
             if (isDaily(key)) {
                 value = standing.getInt("daily");
@@ -109,7 +114,7 @@ public class ChallengeHelper {
     private static JSONObject getChallenge(String key) {
         JSONObject challenge = new JSONObject();
         try {
-            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource(ChallengeHelper.CHALLENGE_DATA)
+            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource(ChallengeUtil.CHALLENGE_DATA)
                     .getJSONObject("challenges");
             if(challenges.has(key)) {
                 challenge = challenges.getJSONObject(key);
@@ -129,5 +134,45 @@ public class ChallengeHelper {
             return E_ChallengeType.ELITE;
         }
         return null;
+    }
+
+    public static List<ChallengeDao> challengeList(Locale locale, E_ChallengeType... challengeTypes) {
+        List<ChallengeDao> challengeDaoList = new ArrayList<>();
+        try {
+            JSONObject object = GenericJSONParser.retrieveJSONObject(WORLD_STATE);
+            JSONObject seasonInfo = object.getJSONObject("SeasonInfo");
+            JSONArray activeChallenges = seasonInfo.getJSONArray("ActiveChallenges");
+            for(int i = 0; i < activeChallenges.length(); i++){
+                JSONObject challenge = activeChallenges.getJSONObject(i);
+                String name = challenge.getString("Challenge");
+                String expiry = challenge.getJSONObject("Expiry").getJSONObject("$date").getString("$numberLong");
+                Calendar expireDate = Calendar.getInstance(locale);
+                if(StringUtils.isNumeric(expiry)) {
+                    expireDate.setTimeInMillis(Long.parseLong(expiry));
+                }
+                for(E_ChallengeType challengeType : challengeTypes) {
+                    if(ChallengeUtil.representsType(name, challengeType)) {
+                        challengeDaoList.add(new ChallengeDao(name,
+                                expireDate.getTime()));
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return challengeDaoList;
+    }
+
+    private static boolean representsType(String name, E_ChallengeType challengeType) {
+        switch (challengeType) {
+            case DAILY:
+                return isDaily(name);
+            case WEEKLY:
+                return isWeekly(name);
+            case ELITE:
+                return isElite(name);
+            default:
+                return false;
+        }
     }
 }

@@ -111,6 +111,11 @@ public class BasicBot extends ListenerAdapter {
         }
     }
 
+    /**
+     * reads the last 100 messages send in channel
+     *
+     * @return the List of {@link Message} that where found
+     */
     public List<Message> retrieveChannelMessages() {
         MessageHistory history = Objects.requireNonNull(getJda()
                 .getTextChannelById(getChannelId())).getHistory();
