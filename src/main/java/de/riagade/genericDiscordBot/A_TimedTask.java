@@ -3,9 +3,11 @@ package de.riagade.genericDiscordBot;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.scheduling.support.CronSequenceGenerator;
+import org.springframework.scheduling.support.CronExpression;
 
+import java.time.ZonedDateTime;
 import java.util.Date;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
@@ -44,8 +46,9 @@ public abstract class A_TimedTask extends TimerTask {
     @Override
     public void run() {
         if(!getTask().isRunning()){
-            CronSequenceGenerator generator = new CronSequenceGenerator(getCronExpression());
-            new Timer().schedule(getTask(), generator.next(new Date()));
+            CronExpression expression = CronExpression.parse(getCronExpression());
+            new Timer().schedule(getTask(),
+                    Date.from(Objects.requireNonNull(expression.next(ZonedDateTime.now())).toInstant()));
             getTask().setRunning(Boolean.FALSE);
         } else {
             log.debug("task not running");
