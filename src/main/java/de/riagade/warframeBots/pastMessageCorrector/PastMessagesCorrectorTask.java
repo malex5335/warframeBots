@@ -17,6 +17,7 @@ public abstract class PastMessagesCorrectorTask extends A_TimedTask {
 
     @Override
     public void runTimedLogic() {
+        log.debug("message corrector running");
         for (Message message : getBot().retrieveChannelMessages()) {
             updateMessage(message);
         }

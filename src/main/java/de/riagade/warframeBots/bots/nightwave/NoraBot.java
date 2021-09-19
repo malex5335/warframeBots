@@ -26,6 +26,7 @@ public class NoraBot extends A_TimedBot {
         tasks.add(new NoraWeeklyReminderTask(this,"5 0 1 ? * 2/7"));
         tasks.add(new NoraStatusSwitcherTask(this,"0 * * ? * *"));
         tasks.add(new NoraPastMessagesCorrectorTask(this,"0 * * ? * *"));
+        log.debug("tasks initiated");
         return tasks;
     }
 }
