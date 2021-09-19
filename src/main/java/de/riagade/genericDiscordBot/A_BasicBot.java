@@ -2,7 +2,6 @@ package de.riagade.genericDiscordBot;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
@@ -23,7 +22,6 @@ import java.util.Objects;
  */
 @Getter
 @Setter
-@Slf4j
 @SuppressWarnings("unused")
 public abstract class A_BasicBot extends ListenerAdapter {
     private long guildId, channelId;
@@ -59,8 +57,8 @@ public abstract class A_BasicBot extends ListenerAdapter {
             getJdaBuilder().addEventListeners(this);
             setJda(getJdaBuilder().build());
             getJda().awaitReady();
-        } catch (LoginException | InterruptedException e){
-            log.error("connection was not established", e);
+        } catch (LoginException | InterruptedException e) {
+            e.printStackTrace();
         }
     }
 
@@ -79,7 +77,7 @@ public abstract class A_BasicBot extends ListenerAdapter {
         try {
             Objects.requireNonNull(getJda().getTextChannelById(getChannelId())).sendMessage(msg).queue();
         } catch (NullPointerException e){
-            log.error("message could not be send into channel with id " + getChannelId(), e);
+            e.printStackTrace();
         }
     }
     /**

@@ -2,11 +2,9 @@ package de.riagade.warframeBots.pastMessageCorrector;
 
 import de.riagade.genericDiscordBot.A_BasicBot;
 import de.riagade.warframeBots.bots.nightwave.util.ChallengeUtil;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-@Slf4j
 public class NoraPastMessagesCorrectorTask extends PastMessagesCorrectorTask {
 
     public NoraPastMessagesCorrectorTask(A_BasicBot bot, String cronExpression) {

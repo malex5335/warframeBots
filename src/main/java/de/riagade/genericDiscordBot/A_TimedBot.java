@@ -1,7 +1,5 @@
 package de.riagade.genericDiscordBot;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.util.List;
 import java.util.Locale;
 
@@ -10,7 +8,6 @@ import java.util.Locale;
  * and scheduled tasks which connects automatically.<br>
  * schedule tasks using {@link #getTasksList()}.
  */
-@Slf4j
 @SuppressWarnings("unused")
 public abstract class A_TimedBot extends A_BasicBot {
     /**
@@ -30,8 +27,6 @@ public abstract class A_TimedBot extends A_BasicBot {
             for (A_TimedTask task : getTasksList()) {
                 task.initiate();
             }
-        } else {
-            log.warn("no tasks found for bot");
         }
     }
 

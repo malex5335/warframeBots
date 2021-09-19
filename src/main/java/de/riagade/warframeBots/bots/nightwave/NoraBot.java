@@ -2,17 +2,15 @@ package de.riagade.warframeBots.bots.nightwave;
 
 import de.riagade.genericDiscordBot.A_TimedBot;
 import de.riagade.genericDiscordBot.A_TimedTask;
-import de.riagade.warframeBots.pastMessageCorrector.NoraPastMessagesCorrectorTask;
 import de.riagade.warframeBots.dailyReminder.NoraDailyReminderTask;
-import de.riagade.warframeBots.weeklyReminder.NoraWeeklyReminderTask;
+import de.riagade.warframeBots.pastMessageCorrector.NoraPastMessagesCorrectorTask;
 import de.riagade.warframeBots.statusSwitcher.NoraStatusSwitcherTask;
-import lombok.extern.slf4j.Slf4j;
+import de.riagade.warframeBots.weeklyReminder.NoraWeeklyReminderTask;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-@Slf4j
 public class NoraBot extends A_TimedBot {
 
     public NoraBot(String token, long guildId, long channelId, Locale locale) {
@@ -26,7 +24,6 @@ public class NoraBot extends A_TimedBot {
         tasks.add(new NoraWeeklyReminderTask(this,"5 0 1 ? * 2/7"));
         tasks.add(new NoraStatusSwitcherTask(this,"0 * * ? * *"));
         tasks.add(new NoraPastMessagesCorrectorTask(this,"0 * * ? * *"));
-        log.debug("tasks initiated");
         return tasks;
     }
 }

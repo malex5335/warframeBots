@@ -3,12 +3,10 @@ package de.riagade.warframeBots.pastMessageCorrector;
 import de.riagade.genericDiscordBot.A_BasicBot;
 import de.riagade.genericDiscordBot.A_TimedTask;
 import de.riagade.warframeBots.util.RegexHelper;
-import lombok.extern.slf4j.Slf4j;
 import net.dv8tion.jda.api.entities.Message;
 
 import java.util.List;
 
-@Slf4j
 public abstract class PastMessagesCorrectorTask extends A_TimedTask {
 
     public PastMessagesCorrectorTask(A_BasicBot bot, String cronExpression) {
@@ -17,7 +15,6 @@ public abstract class PastMessagesCorrectorTask extends A_TimedTask {
 
     @Override
     public void runTimedLogic() {
-        log.debug("message corrector running");
         for (Message message : getBot().retrieveChannelMessages()) {
             updateMessage(message);
         }
@@ -34,7 +31,7 @@ public abstract class PastMessagesCorrectorTask extends A_TimedTask {
                 try {
                     updateMessageForKey(key, message);
                 } catch (Exception e) {
-                    log.error("error on updating message", e);
+                    e.printStackTrace();
                 }
             }
         }

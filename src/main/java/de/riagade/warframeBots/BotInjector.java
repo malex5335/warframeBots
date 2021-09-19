@@ -2,11 +2,9 @@ package de.riagade.warframeBots;
 
 import de.riagade.warframeBots.bots.nightwave.NoraBot;
 import de.riagade.warframeBots.voidtrader.BaroKiTeer;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.Locale;
 
-@Slf4j
 public class BotInjector {
 
     public static void main(String[] args) {
@@ -14,7 +12,7 @@ public class BotInjector {
             startNoraNight();
             BaroKiTeer.injectInstance();
         } catch (Exception e) {
-            log.error("could not start bots", e);
+            e.printStackTrace();
         }
     }
 

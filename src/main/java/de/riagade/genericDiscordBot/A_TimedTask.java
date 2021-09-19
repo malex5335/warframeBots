@@ -2,7 +2,6 @@ package de.riagade.genericDiscordBot;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.support.CronExpression;
 
 import java.time.ZonedDateTime;
@@ -18,7 +17,6 @@ import java.util.concurrent.TimeUnit;
  */
 @Getter
 @Setter
-@Slf4j
 public abstract class A_TimedTask extends TimerTask {
     public static final long CHECK_INTERVAL = TimeUnit.SECONDS.toMillis(1);
     private String cronExpression;
@@ -50,8 +48,6 @@ public abstract class A_TimedTask extends TimerTask {
             new Timer().schedule(getTask(),
                     Date.from(Objects.requireNonNull(expression.next(ZonedDateTime.now())).toInstant()));
             getTask().setRunning(Boolean.FALSE);
-        } else {
-            log.debug("task not running");
         }
     }
 
