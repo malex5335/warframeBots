@@ -15,14 +15,13 @@
 
     <repositories>
         <repository>
-            <id>generic-discord-bot</id>
-            <name>generic-discord-bot</name>
-            <url>https://github.com/malex5335/genericDiscordBot</url>
-        </repository>
-        <repository>
             <id>jcenter</id>
             <name>jcenter-bintray</name>
             <url>https://jcenter.bintray.com</url>
+        </repository>
+        <repository>
+            <id>project-repo</id>
+            <url>file://${project.basedir}/src/main/resources/repo</url>
         </repository>
     </repositories>
 
@@ -69,7 +68,8 @@
             <groupId>de.riagade</groupId>
             <artifactId>genericDiscordBot</artifactId>
             <version>1.0</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/repo/genericDiscordBot-1.0.jar</systemPath>
         </dependency>
     </dependencies>
 
@@ -82,10 +82,11 @@
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
-                        <phase>prepare-package</phase>
+                        <phase>generate-resources</phase>
                         <goals><goal>copy-dependencies</goal></goals>
                         <configuration>
-                            <outputDirectory>${project.basedir}/libs</outputDirectory>
+                            <outputDirectory>file://${project.basedir}/src/main/resources/repo</outputDirectory>
+                            <includeScope>system</includeScope>
                             <overWriteReleases>true</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
                             <overWriteIfNewer>true</overWriteIfNewer>
