@@ -45,10 +45,8 @@ public abstract class PastMessagesCorrectorTask extends A_TimedTask {
      */
     private void updateMessageForKey(String key, Message message) {
         String newText = message.getContentRaw();
-        if (newText.contains(key)) {
-            if(RegexHelper.containsExactSubstring(newText, key)) {
-                getBot().editMessage(message.getId(), newText.replace(key, getDescription(key)));
-            }
+        if(RegexHelper.containsExactSubstring(newText, key)) {
+            getBot().editMessage(message.getId(), newText.replace(key, getDescription(key)));
         }
     }
 
