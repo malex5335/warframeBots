@@ -1139,6 +1139,46 @@
 		"/Lotus/StoreItems/Upgrades/Mods/Shotgun/Expert/WeaponClipMaxModExpert": {
 			"desc": "Primed Ammo Stock",
 			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Game/ActionFigureDioramas/EmpyreanRegionADiorama": {
+			"desc": "Empyrean Vignette",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropGrineerCutter": {
+			"desc": "Cutter Fighter Decoration",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Infestation/NidusAlternateSkin": {
+			"desc": "Nidus Immortal Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Weapons/DualSword/DualRibbonKamasSkin": {
+			"desc": "Dual Sword Lemnas Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnShinaiArmor/TnShinaiArmorA": {
+			"desc": "Tannukai Shoulder Plates",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnShinaiArmor/TnShinaiArmorC": {
+			"desc": "Tannukai Chest Plate",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Armor/TnShinaiArmor/TnShinaiArmorL": {
+			"desc": "Tannukai Leg Plates",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Weapons/Tenno/Melee/Swords/TnShinaiSword/TnShinaiSwordSkin": {
+			"desc": "Tannukai Longsword Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Weapons/Staff/TnRibbonStaffSkin": {
+			"desc": "Lemnas Staff Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade": {
+			"desc": "Vastilok",
+			"cat": 4
 		}
 	}
 }
