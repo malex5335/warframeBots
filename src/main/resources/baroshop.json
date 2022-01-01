@@ -1175,6 +1175,14 @@
 		"/Lotus/StoreItems/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade": {
 			"desc": "Vastilok",
 			"cat": 4
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropGrineerFlak": {
+			"desc": "Flak Fighter Decoration",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/SolsticeNelumboCape": {
+			"desc": "Wintercress Syandana",
+			"cat": 1
 		}
 	}
 }
