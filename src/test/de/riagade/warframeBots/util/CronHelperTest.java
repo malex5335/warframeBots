@@ -1,4 +1,4 @@
-package de.riagade.warframeBots.util;
+package de.riagade.warframe.util;
 
 import lombok.Getter;
 import lombok.Setter;
