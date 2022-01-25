@@ -40,7 +40,7 @@ public class ChallengeReminderService {
         for(var challenge : challengeList) {
             var challengeMessage = getChallengeConstructor().constructStringMessage(challenge);
             if(!getMessageSpreader().postMessage(challengeMessage)) {
-                log.error(String.format("try to post challenge %s", challenge));
+                log.error(String.format("failed to post challenge %s", challenge));
                 throw new MessagesNotSentException("one or more messages could not be sent");
             }
         }
@@ -50,7 +50,7 @@ public class ChallengeReminderService {
         for(var messageEntry : getMessageHolder().getLastMessages(100).entrySet()) {
             var updatedMessage = getMessageConstructor().replaceReferences(messageEntry.getValue());
             if(!getMessageSpreader().updateMessage(messageEntry.getKey(), updatedMessage)) {
-                log.error(String.format("try to update message with key %s to %s", messageEntry.getKey(), updatedMessage));
+                log.error(String.format("failed to update message with key %s to %s", messageEntry.getKey(), updatedMessage));
                 throw new MessagesNotSentException("one or more messages could not be updated");
             }
         }
