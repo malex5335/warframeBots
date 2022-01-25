@@ -1,10 +1,7 @@
 package de.riagade.warframe.nightwave;
 
 import de.riagade.warframe.nightwave.exceptions.MessagesNotSentException;
-import de.riagade.warframe.nightwave.ports.I_ChallengeConstructorPort;
-import de.riagade.warframe.nightwave.ports.I_MessageConstructorPort;
-import de.riagade.warframe.nightwave.ports.I_MessageHolderPort;
-import de.riagade.warframe.nightwave.ports.I_MessageSpreaderPort;
+import de.riagade.warframe.nightwave.ports.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,31 +14,36 @@ import java.util.Collections;
 @Slf4j
 public class ChallengeReminderService {
 
-    private I_ChallengeConstructorPort challengeConstructor;
+    private I_ChallengeHolderPort challengeHolder;
+    private I_ChallengeConverterPort challengeConverter;
     private I_MessageSpreaderPort messageSpreader;
     private I_MessageConstructorPort messageConstructor;
     private I_MessageHolderPort messageHolder;
 
-    public ChallengeReminderService(I_ChallengeConstructorPort challengeConstructor,
+    public ChallengeReminderService(I_ChallengeHolderPort challengeHolder,
+                                    I_ChallengeConverterPort challengeConverter,
                                     I_MessageSpreaderPort messageSpreader,
                                     I_MessageConstructorPort messageConstructor,
                                     I_MessageHolderPort messageHolder){
-        setChallengeConstructor(challengeConstructor);
+        setChallengeHolder(challengeHolder);
+        setChallengeConverter(challengeConverter);
         setMessageSpreader(messageSpreader);
         setMessageConstructor(messageConstructor);
         setMessageHolder(messageHolder);
     }
 
-    public void postMessages(boolean onlyPostLast) throws MessagesNotSentException {
-        var challengeList = getChallengeConstructor().getAllChallenges();
+    public void postChallenges(boolean onlyPostLast) throws MessagesNotSentException {
+        var challengeList = getChallengeHolder().getActiveChallenges();
         if(onlyPostLast) {
             challengeList = Collections.singletonList(challengeList.get(challengeList.size() - 1));
         }
         for(var challenge : challengeList) {
-            var challengeMessage = getChallengeConstructor().constructStringMessage(challenge);
-            if(!getMessageSpreader().postMessage(challengeMessage)) {
-                log.error(String.format("failed to post challenge %s", challenge));
-                throw new MessagesNotSentException("one or more messages could not be sent");
+            var challengeMessage = getChallengeConverter().convertToMessage(challenge);
+            if(!getMessageHolder().getLastMessages(100).containsValue(challengeMessage)) {
+                if (!getMessageSpreader().postMessage(challengeMessage)) {
+                    log.error(String.format("failed to post challenge %s", challenge));
+                    throw new MessagesNotSentException("one or more messages could not be sent");
+                }
             }
         }
     }

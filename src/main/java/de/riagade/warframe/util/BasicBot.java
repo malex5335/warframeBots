@@ -12,6 +12,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 import javax.security.auth.login.LoginException;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -23,15 +24,15 @@ public class BasicBot extends ListenerAdapter {
     private long guildId;
     private long channelId;
     private String botToken;
-    private Locale locale;
+    private ZoneId zoneId;
     private JDA jda;
     private JDABuilder jdaBuilder;
 
-    public BasicBot (String botToken, long guildId, long channelId, Locale locale){
+    public BasicBot (String botToken, long guildId, long channelId, ZoneId zoneId){
         setBotToken(botToken);
         setGuildId(guildId);
         setChannelId(channelId);
-        setLocale(locale);
+        setZoneId(zoneId);
     }
 
     /**

@@ -21,10 +21,10 @@ public class StatusRefresherService {
     }
 
     public void updateStatus() throws StatusNotUpdatedException {
-        var lastStatus = getStatusHolder().getLastStatus();
         var currentStatus = getStatusHolder().getCurrentStatus();
-        if(Objects.equals(lastStatus, currentStatus) && currentStatus != null) {
-            if(!getStatusSpreader().updateStatus(currentStatus)) {
+        if(currentStatus != null) {
+            var message = getStatusHolder().messageForStatus(currentStatus);
+            if(!getStatusSpreader().updateStatus(currentStatus, message)) {
                 throw new StatusNotUpdatedException("the status could not be updated");
             }
         }

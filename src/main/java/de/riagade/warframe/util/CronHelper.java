@@ -1,13 +1,11 @@
 package de.riagade.warframe.util;
 
-import lombok.experimental.UtilityClass;
 import org.quartz.CronExpression;
 
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
-@UtilityClass
 public class CronHelper {
 
     /**

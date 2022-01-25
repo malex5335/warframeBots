@@ -12,7 +12,8 @@ public class WebMessagesConstructor implements I_MessageConstructorPort {
     @Override
     public String replaceReferences(String message) {
         try {
-            JSONObject challenges = GenericJSONParser.retrieveJSONFromResource("nightwave.json")
+            JSONObject challenges = GenericJSONParser
+                    .retrieveJSONFromResource("nightwave.json")
                     .getJSONObject("challenges");
             var keys = challenges.keys();
             while(keys.hasNext()) {
