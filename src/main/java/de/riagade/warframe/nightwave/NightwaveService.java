@@ -12,7 +12,7 @@ import java.util.Collections;
 @Getter(AccessLevel.PRIVATE)
 @Setter
 @Slf4j
-public class ChallengeReminderService {
+public class NightwaveService {
 
     private I_ChallengeHolderPort challengeHolder;
     private I_ChallengeConverterPort challengeConverter;
@@ -20,11 +20,11 @@ public class ChallengeReminderService {
     private I_MessageConstructorPort messageConstructor;
     private I_MessageHolderPort messageHolder;
 
-    public ChallengeReminderService(I_ChallengeHolderPort challengeHolder,
-                                    I_ChallengeConverterPort challengeConverter,
-                                    I_MessageSpreaderPort messageSpreader,
-                                    I_MessageConstructorPort messageConstructor,
-                                    I_MessageHolderPort messageHolder){
+    public NightwaveService(I_ChallengeHolderPort challengeHolder,
+                            I_ChallengeConverterPort challengeConverter,
+                            I_MessageSpreaderPort messageSpreader,
+                            I_MessageConstructorPort messageConstructor,
+                            I_MessageHolderPort messageHolder){
         setChallengeHolder(challengeHolder);
         setChallengeConverter(challengeConverter);
         setMessageSpreader(messageSpreader);

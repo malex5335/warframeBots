@@ -1,16 +1,15 @@
 package de.riagade.warframe;
 
-import de.riagade.warframe.nightwave.ChallengeReminderService;
+import de.riagade.warframe.nightwave.NightwaveService;
 import de.riagade.warframe.nightwave.adapters.*;
 import de.riagade.warframe.nightwave.exceptions.MessagesNotSentException;
-import de.riagade.warframe.statusupdate.StatusRefresherService;
-import de.riagade.warframe.statusupdate.adapters.DiscordStatusSpreader;
-import de.riagade.warframe.statusupdate.adapters.WebStatusHolder;
-import de.riagade.warframe.statusupdate.exceptions.StatusNotUpdatedException;
+import de.riagade.warframe.status.StatusService;
+import de.riagade.warframe.status.adapters.DiscordStatusSpreader;
+import de.riagade.warframe.status.adapters.WebStatusHolder;
+import de.riagade.warframe.status.exceptions.StatusNotUpdatedException;
 import de.riagade.warframe.util.BasicBot;
 
 import java.time.ZoneOffset;
-import java.util.Locale;
 
 public class NoraApp {
     public static void startBot() {
@@ -23,7 +22,7 @@ public class NoraApp {
     }
 
     private static void startChallengeReminder(BasicBot bot) {
-        var challengeReminder = new ChallengeReminderService(
+        var nightwaveService = new NightwaveService(
                 new WebChallengeHolder(bot.getZoneId()),
                 new DiscordChallengeConverter(),
                 new DiscordMessageSpreader(bot),
@@ -31,20 +30,20 @@ public class NoraApp {
                 new DiscordMessageHolder(bot));
         try {
             // TODO: repeat via cron
-            challengeReminder.postChallenges(true);
-            challengeReminder.updateLastMessages();
+            nightwaveService.postChallenges(true);
+            nightwaveService.updateLastMessages();
         } catch (MessagesNotSentException e) {
             // TODO: warn me or something
         }
     }
 
     private static void startStatusRefresher(BasicBot bot) {
-        var statusRefresher = new StatusRefresherService(
+        var statusService = new StatusService(
                 new WebStatusHolder(bot.getZoneId()),
                 new DiscordStatusSpreader(bot));
         try {
             // TODO: repeat via cron
-            statusRefresher.updateStatus();
+            statusService.updateStatus();
         } catch (StatusNotUpdatedException e) {
             // TODO: warn me or something
         }

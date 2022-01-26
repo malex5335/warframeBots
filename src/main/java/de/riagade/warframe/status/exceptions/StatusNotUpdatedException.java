@@ -1,4 +1,4 @@
-package de.riagade.warframe.statusupdate.exceptions;
+package de.riagade.warframe.status.exceptions;
 
 public class StatusNotUpdatedException extends Throwable {
     public StatusNotUpdatedException(String message) {

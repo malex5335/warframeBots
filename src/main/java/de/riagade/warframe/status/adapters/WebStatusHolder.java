@@ -1,14 +1,13 @@
-package de.riagade.warframe.statusupdate.adapters;
+package de.riagade.warframe.status.adapters;
 
-import de.riagade.warframe.statusupdate.entities.E_Status;
-import de.riagade.warframe.statusupdate.ports.I_StatusHolderPort;
+import de.riagade.warframe.status.entities.E_Status;
+import de.riagade.warframe.status.ports.I_StatusHolderPort;
 import de.riagade.warframe.util.DateHelper;
 import de.riagade.warframe.util.GenericJSONParser;
 import lombok.Getter;
 import lombok.Setter;
 import org.json.JSONObject;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 

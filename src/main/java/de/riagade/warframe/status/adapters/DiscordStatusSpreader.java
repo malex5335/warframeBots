@@ -1,7 +1,7 @@
-package de.riagade.warframe.statusupdate.adapters;
+package de.riagade.warframe.status.adapters;
 
-import de.riagade.warframe.statusupdate.entities.E_Status;
-import de.riagade.warframe.statusupdate.ports.I_StatusSpreaderPort;
+import de.riagade.warframe.status.entities.E_Status;
+import de.riagade.warframe.status.ports.I_StatusSpreaderPort;
 import de.riagade.warframe.util.BasicBot;
 import lombok.AccessLevel;
 import lombok.Getter;
