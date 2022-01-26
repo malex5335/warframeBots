@@ -24,9 +24,6 @@ public class NoraApp {
     private static void startChallengeReminder(BasicBot bot) {
         var nightwaveService = new NightwaveService(
                 new WebChallengeHolder(bot.getZoneId()),
-                new DiscordChallengeConverter(),
-                new DiscordMessageSpreader(bot),
-                new WebMessagesConstructor(),
                 new DiscordMessageHolder(bot));
         try {
             // TODO: repeat via cron

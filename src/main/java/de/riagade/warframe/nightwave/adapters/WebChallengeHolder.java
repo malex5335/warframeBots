@@ -5,11 +5,13 @@ import de.riagade.warframe.nightwave.entities.E_ChallengeType;
 import de.riagade.warframe.nightwave.ports.I_ChallengeHolderPort;
 import de.riagade.warframe.util.DateHelper;
 import de.riagade.warframe.util.GenericJSONParser;
+import de.riagade.warframe.util.RegexHelper;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
