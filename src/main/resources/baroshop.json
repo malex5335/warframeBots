@@ -1135,6 +1135,14 @@
 		"/Lotus/StoreItems/Upgrades/Skins/Sigils/WeGameNewYearOxSigil": {
 			"desc": "Lunar Renewal Ox Sigil",
 			"cat": 11
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/AshLeverianLiosPistol": {
+			"desc": "De Nas Pistol Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropGrineerTaktis": {
+			"desc": "Taktis Fighter Decoration",
+			"cat": 12
 		}
 	}
 }
