@@ -1183,6 +1183,14 @@
 		"/Lotus/StoreItems/Upgrades/Skins/Scarves/SolsticeNelumboCape": {
 			"desc": "Wintercress Syandana",
 			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/VoidTrader/AshLeverianLiosPistol": {
+			"desc": "De Nas Pistol Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropGrineerTaktis": {
+			"desc": "Taktis Fighter Decoration",
+			"cat": 12
 		}
 	}
 }
