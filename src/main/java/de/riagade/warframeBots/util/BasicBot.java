@@ -20,6 +20,7 @@ import java.util.Objects;
 @Setter
 public class BasicBot extends ListenerAdapter {
     public static final String WORLD_STATE = "http://content.warframe.com/dynamic/worldState.php";
+    private static final long ADMIN_ID = 320275305233383425L;
     private long guildId;
     private long channelId;
     private String botToken;
@@ -53,6 +54,16 @@ public class BasicBot extends ListenerAdapter {
      */
     public void sendMessage(String msg) {
         Objects.requireNonNull(getJda().getTextChannelById(getChannelId())).sendMessage(msg).queue();
+    }
+
+    /**
+     * sends a message to the admin with id {@link #ADMIN_ID}
+     *
+     * @param msg the message to send
+     */
+    public void sendMessageToAdmin(String msg) {
+        Objects.requireNonNull(getJda().getUserById(ADMIN_ID)).openPrivateChannel().queue((channel) ->
+                channel.sendMessage(msg).queue());
     }
 
     /**

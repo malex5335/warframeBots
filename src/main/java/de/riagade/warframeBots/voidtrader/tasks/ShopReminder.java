@@ -12,6 +12,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Getter
 @Setter
@@ -27,9 +28,21 @@ public class ShopReminder extends TimerTask {
         if(BaroHelper.retrieveActiveState()) {
             List<ShopItem> shopItemList = generateShopItems();
             getBot().sendMessage(ShopItemHelper.createBaroTimeMessage(getBot(), getStartDate(), getExpireDate()));
-            for(String category : orderShopItems(shopItemList).keySet()){
+            for(String category : orderShopItems(shopItemList).keySet()) {
                 getBot().sendMessage(ShopItemHelper.createMessageForItemGroup(category, orderShopItems(shopItemList).get(category)));
             }
+            sendNewItems(shopItemList);
+        }
+    }
+
+    private void sendNewItems(List<ShopItem> shopItemList) {
+        List<ShopItem> newItems = shopItemList.stream().filter(ShopItem::isNewItem).collect(Collectors.toList());
+        for(ShopItem item : newItems) {
+            JSONObject jsonItem = new JSONObject();
+            jsonItem.append("desc", item.getName());
+            jsonItem.append("cat", ShopItemHelper.NEWLY_ADDED);
+            String msg = String.format("\"%s\": %s", item.getName(), jsonItem);
+            getBot().sendMessageToAdmin(msg);
         }
     }
 
