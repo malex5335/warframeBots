@@ -1195,6 +1195,42 @@
 		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropGrineerTaktis": {
 			"desc": "Taktis Fighter Decoration",
 			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Clan/CNY2022EmblemItem": {
+			"desc": "Lunar Renewal Tiger Emblem",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Sigils/WeGameNewYearFreeTigerSigil": {
+			"desc": "Lunar Renewal Tiger Sigil",
+			"cat": 11
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Glass/GaraAlternateSkin": {
+			"desc": "Gara Immortal Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Upgrades/Mods/Rifle/Expert/WeaponSnipersConvertAmmoModExpert": {
+			"desc": "Primed Sniper Ammo Mutation",
+			"cat": 3
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/EraHypnosisPoster": {
+			"desc": "Don't Be Afraid Poster",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Scarves/NezhaLeverianCape": {
+			"desc": "Reshantur Cult Syandana",
+			"cat": 1
+		},
+		"/Lotus/StoreItems/Upgrades/Skins/Leverian/NezhaLeverian/NezhaLeverianPolearm": {
+			"desc": "Reshantur Cult Spear Skin",
+			"cat": 10
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/BoredTennoPoster": {
+			"desc": "Class of Ten Zero Poster",
+			"cat": 12
+		},
+		"/Lotus/StoreItems/Types/Items/ShipDecos/LisetPropCorpusBasilisk": {
+			"desc": "Basilisk Fighter Decoration",
+			"cat": 12
 		}
 	}
 }
