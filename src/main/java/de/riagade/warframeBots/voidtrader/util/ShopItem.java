@@ -9,6 +9,7 @@ public class ShopItem {
     private String category;
     private String ducats;
     private String credits;
+    private boolean newItem;
 
     public ShopItem(String name, int ducats, int credits){
         setName(name);
@@ -16,5 +17,6 @@ public class ShopItem {
         setCategory(ShopItemHelper.getCategory(name));
         setDucats(ShopItemHelper.formatNumber(ducats));
         setCredits(ShopItemHelper.formatNumber(credits));
+        setNewItem(ShopItemHelper.isNewItem(this));
     }
 }

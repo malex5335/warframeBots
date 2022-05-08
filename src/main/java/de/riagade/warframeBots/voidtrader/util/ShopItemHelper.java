@@ -14,6 +14,7 @@ import java.util.*;
 
 public class ShopItemHelper {
     public static final String SHOP_ITEM_DATA = "baroshop.json";
+    public static final int NEWLY_ADDED = 0;
 
     public static List<String> getKeys() {
         List<String> keys = new ArrayList<>();
@@ -41,7 +42,7 @@ public class ShopItemHelper {
 
     public static String getCategory(String key) {
         try{
-            int catNumber = 0;
+            int catNumber = ShopItemHelper.NEWLY_ADDED;
             JSONObject shopItem = getItem(key);
             if (!shopItem.isEmpty()) {
                 catNumber = shopItem.getInt("cat");
@@ -114,5 +115,9 @@ public class ShopItemHelper {
                 "- Arrived: " + dateFormat.format(startDate) + "\n" +
                 "- Leaving: " + dateFormat.format(expireDate) + "\n" +
                 "```\n";
+    }
+
+    public static boolean isNewItem(ShopItem item) {
+        return getCategories().get(NEWLY_ADDED).equals(item.getCategory());
     }
 }
